@@ -775,8 +775,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: vr_cardboard_test
-  metroPackageVersion: 
+  metroPackageName: vrcardboardtest
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -784,7 +784,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: vr_cardboard_test
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: vr_cardboard_test
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

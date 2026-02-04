@@ -1,16 +1,20 @@
 using UnityEngine;
 
-public class ColorChange : MonoBehaviour
+public class ColorChange : Interactive
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Renderer objRenderer;
+
     void Start()
     {
-        
+        // Haetaan 3D-objektin renderer
+        objRenderer = GetComponent<Renderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public new void Interact()
     {
+        Debug.Log("Interacting with 3D Cube!");
         
+        // Muutetaan materiaalin väriä
+        objRenderer.material.color = new Color(Random.value, Random.value, Random.value);
     }
 }

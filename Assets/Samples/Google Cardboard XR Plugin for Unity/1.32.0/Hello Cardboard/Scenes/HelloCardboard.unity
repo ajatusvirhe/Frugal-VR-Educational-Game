@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 413333016}
   - component: {fileID: 413333015}
   - component: {fileID: 413333014}
-  - component: {fileID: 413333013}
+  - component: {fileID: 413333018}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -366,21 +366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &413333013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413333012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5396477a5d43d548b895786b44d8863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Interactive
-  interactModeOverride: 0
-  twistMultiplierOverride: 0
-  dwellTimerOverride: 0
 --- !u!65 &413333014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -427,7 +412,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 627ccf28272796040a0fdc895d326e51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -473,6 +458,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &413333018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413333012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df3212cc4a36af40b9c0ac92db7ee10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  interactModeOverride: 0
+  twistMultiplierOverride: 0
+  dwellTimerOverride: 0
 --- !u!1 &907292807
 GameObject:
   m_ObjectHideFlags: 0

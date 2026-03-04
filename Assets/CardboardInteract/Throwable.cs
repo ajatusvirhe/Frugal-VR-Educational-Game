@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class Throwable : Interactive
 {
-    [SerializeField] float grabSpeed = 5f;
-    [SerializeField] float throwForce = 15f; // Heittovoiman suuruus
+    [SerializeField] float grabSpeed = 7f;      // Kuinka nopeasti esine seuraa pelaajaa, kun se on kädessä
+    [SerializeField] float throwForce = 15f; 
+    [SerializeField] float holdDistance = 2f;   // Etäisyys, jolla esine pysyy kamerasta, kun se on kädessä
+    
     public bool useGravity = true;
     
     static Transform grabbed = null;
     static Transform cam = null;
     Rigidbody rb;
-    float grabDistance = 0f;
 
     private void Start()
     {
@@ -18,17 +19,16 @@ public class Throwable : Interactive
 
     public new void Interact()
     {
-        // Jos esine ei ole vielä kädessä, poimi se
         if (grabbed != transform)
         {
+            // Jos jokin muu on jo kädessä, se pitää pudottaa ensin
             grabbed = transform;
-            grabDistance = Vector3.Distance(cam.position, transform.position);
             
-            // Nollataan liike-energia poimiessa, ettei esine "sinkoa" heti
+            // Nollataan fysiikat, jotta veto pelaajaa kohti on tasainen
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
-        else // JOS esine on jo kädessä -> HEITÄ
+        else 
         {
             grabbed = null;
             ThrowObject();
@@ -37,14 +37,9 @@ public class Throwable : Interactive
 
     void ThrowObject()
     {
-        // Varmistetaan, että painovoima palaa heiton yhteydessä
         rb.useGravity = useGravity;
-        
-        // Lasketaan suunta (kamerasta eteenpäin) ja lisätään voima
         Vector3 forceDirection = cam.forward;
         rb.AddForce(forceDirection * throwForce, ForceMode.Impulse);
-        
-        Debug.Log("Heitettiin esine: " + gameObject.name);
     }
 
     void Update()
@@ -52,12 +47,13 @@ public class Throwable : Interactive
         if (!cam && Camera.main)
             cam = Camera.main.transform;
 
-        // Painovoima on pois päältä vain silloin, kun esine on kädessä
-        rb.useGravity = grabbed != transform && useGravity;
+        rb.useGravity = (grabbed != transform) && useGravity;
 
         if (grabbed == transform)
         {
-            Vector3 targetPoint = cam.position + cam.forward * grabDistance;
+            // Nyt targetPoint on AINA tietyn matkan päässä kamerasta (holdDistance)
+            Vector3 targetPoint = cam.position + cam.forward * holdDistance;
+            
             rb.linearVelocity = (targetPoint - transform.position) * grabSpeed;
         }
     }

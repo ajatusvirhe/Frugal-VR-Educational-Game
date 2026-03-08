@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity
     guid: b5981dbbaa346bc4ca95ff76c557374a
+  - enabled: 1
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity
+    guid: fc61118d2c36ce54fa97e2db59276232
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ea038ade32a58e342b1bd92ac25e0560, type: 2}

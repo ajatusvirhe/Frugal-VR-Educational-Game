@@ -1544,7 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorController
-  isLocked: 1
+  isLocked: 0
 --- !u!1 &413333012
 GameObject:
   m_ObjectHideFlags: 0

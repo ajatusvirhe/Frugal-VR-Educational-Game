@@ -25,9 +25,12 @@ extern void U3CShowFeedbackU3Ed__16_MoveNext_m9F4616D085509A8BE121EEE4B5A098F233
 extern void U3CShowFeedbackU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEA2CD84927265E9EC2BE8C995D95A81CA135D8F6 (void);
 extern void U3CShowFeedbackU3Ed__16_System_Collections_IEnumerator_Reset_mEAFB9D7DACF79DDC8CA23581D8D480A4744FB7D3 (void);
 extern void U3CShowFeedbackU3Ed__16_System_Collections_IEnumerator_get_Current_m47AC726F61D423AE37FE1AC4399452F5CE90D7D6 (void);
+extern void BasketWeightChecker_Start_m4778EDDC45F66642BB56B5967212FD1FAB4DEECD (void);
+extern void BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578 (void);
 extern void BasketWeightChecker_OnTriggerEnter_m17B58B52DBA0C484CA03480C0B15907A36D7310F (void);
 extern void BasketWeightChecker_OnTriggerExit_m666DA36A4A8CC2A3BDDE728B64E7B38A8EAC9504 (void);
 extern void BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754 (void);
+extern void BasketWeightChecker_ResetAllBalls_mD5C4C1DF2707902818EFD8FDF36EF73E37277927 (void);
 extern void BasketWeightChecker__ctor_m655A74D6FE2361B79B691DE67D2046A89C834676 (void);
 extern void CameraInteract_GetLatestHit_mE0D0FC01729686E05952F0A7876043F0548CB899 (void);
 extern void CameraInteract_GetPlayerTransform_m2842FB5C7987A888828BC3662D90EFAA35E54C3A (void);
@@ -60,9 +63,13 @@ extern void Throwable_Interact_mC8DD18891A50F38301377EE081BCDF4EB801149D (void);
 extern void Throwable_ThrowObject_m9E8BC2A143A0EC034917163465E8BC0510CF6D4D (void);
 extern void Throwable_Update_m4DB6D8B4CDE64BF9F4B083095CF152659940D768 (void);
 extern void Throwable__ctor_mAE24EB95204A3E3229E58A386D6B830EEC1EAF67 (void);
+extern void Kickable_Start_m224B9F1C0D6475C9774DBBABB34D699DDB6A8EBD (void);
+extern void Kickable_Interact_mA9D417068504740F413F3F23941A1B59F0766DDF (void);
+extern void Kickable_KickObject_m3FD81023A71EFE475F6875DC34CB1592BF50CDE9 (void);
+extern void Kickable__ctor_mA28BF0A57B96664552BA3082716B19221E03A8D3 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[55] = 
+static Il2CppMethodPointer s_methodPointers[62] = 
 {
 	Ball_Start_m6E8CBDA3753768BAFE8CE82AD74B01E8355C50D3,
 	Ball_ResetPosition_m7A04E63D504E96CC50BFAAF0017E3A1EEFC9D9B6,
@@ -82,9 +89,12 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	U3CShowFeedbackU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEA2CD84927265E9EC2BE8C995D95A81CA135D8F6,
 	U3CShowFeedbackU3Ed__16_System_Collections_IEnumerator_Reset_mEAFB9D7DACF79DDC8CA23581D8D480A4744FB7D3,
 	U3CShowFeedbackU3Ed__16_System_Collections_IEnumerator_get_Current_m47AC726F61D423AE37FE1AC4399452F5CE90D7D6,
+	BasketWeightChecker_Start_m4778EDDC45F66642BB56B5967212FD1FAB4DEECD,
+	BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578,
 	BasketWeightChecker_OnTriggerEnter_m17B58B52DBA0C484CA03480C0B15907A36D7310F,
 	BasketWeightChecker_OnTriggerExit_m666DA36A4A8CC2A3BDDE728B64E7B38A8EAC9504,
 	BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754,
+	BasketWeightChecker_ResetAllBalls_mD5C4C1DF2707902818EFD8FDF36EF73E37277927,
 	BasketWeightChecker__ctor_m655A74D6FE2361B79B691DE67D2046A89C834676,
 	CameraInteract_GetLatestHit_mE0D0FC01729686E05952F0A7876043F0548CB899,
 	CameraInteract_GetPlayerTransform_m2842FB5C7987A888828BC3662D90EFAA35E54C3A,
@@ -117,10 +127,14 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	Throwable_ThrowObject_m9E8BC2A143A0EC034917163465E8BC0510CF6D4D,
 	Throwable_Update_m4DB6D8B4CDE64BF9F4B083095CF152659940D768,
 	Throwable__ctor_mAE24EB95204A3E3229E58A386D6B830EEC1EAF67,
+	Kickable_Start_m224B9F1C0D6475C9774DBBABB34D699DDB6A8EBD,
+	Kickable_Interact_mA9D417068504740F413F3F23941A1B59F0766DDF,
+	Kickable_KickObject_m3FD81023A71EFE475F6875DC34CB1592BF50CDE9,
+	Kickable__ctor_mA28BF0A57B96664552BA3082716B19221E03A8D3,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[55] = 
+static const int32_t s_InvokerIndices[62] = 
 {
 	7774,
 	7774,
@@ -140,8 +154,11 @@ static const int32_t s_InvokerIndices[55] =
 	7642,
 	7774,
 	7642,
+	7774,
+	7774,
 	6122,
 	6122,
+	7774,
 	7774,
 	7774,
 	11048,
@@ -175,6 +192,10 @@ static const int32_t s_InvokerIndices[55] =
 	7774,
 	7774,
 	7774,
+	7774,
+	7774,
+	7774,
+	7774,
 	11107,
 	7774,
 };
@@ -182,7 +203,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	55,
+	62,
 	s_methodPointers,
 	0,
 	NULL,

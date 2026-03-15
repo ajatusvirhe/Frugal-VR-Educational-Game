@@ -4,11 +4,45 @@ using TMPro;
 
 public class BasketWeightChecker : MonoBehaviour
 {
-    public float targetWeight = 10f;           // Target total weight
-    public Light basketLight;                  // Assign your Unity Light here
-    public TextMeshPro textDisplay;           // Assign TMP text UI
+    [Header("Target generation (multiplication table up to 10)")]
+    public int minFactor = 1;
+    public int maxFactor = 10;
+
+    [Header("References")]
+    public Light basketLight;
+    public TextMeshPro targetText;
+    public TextMeshPro currentText;
+
+    [Header("Behaviour")]
+    public float successDelay = 2f;
+    public float tolerance = 0.1f;
+
+    private int targetWeight;
+    private int lastFactorA;
+    private int lastFactorB;
 
     private List<Rigidbody> objectsInBasket = new List<Rigidbody>();
+
+    void Start()
+    {
+        GenerateNewTarget();
+    }
+
+    void GenerateNewTarget()
+    {
+        lastFactorA = Random.Range(minFactor, maxFactor + 1);
+        lastFactorB = Random.Range(minFactor, maxFactor + 1);
+        targetWeight = lastFactorA * lastFactorB;
+
+        if (targetText != null)
+            targetText.text = $"Target: {lastFactorA} × {lastFactorB}";
+
+        if (currentText != null)
+            currentText.text = "Current: 0";
+
+        if (basketLight != null)
+            basketLight.enabled = false;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,25 +67,55 @@ public class BasketWeightChecker : MonoBehaviour
     void CheckWeight()
     {
         float totalWeight = 0f;
-        foreach (Rigidbody rb in objectsInBasket)
-        {
-            totalWeight += rb.mass;
-        }
 
-        // Show weight only if not correct
-        if (Mathf.Approximately(totalWeight, targetWeight))
+        foreach (Rigidbody rb in objectsInBasket)
+            totalWeight += rb.mass;
+
+        int roundedWeight = Mathf.RoundToInt(totalWeight);
+
+        if (currentText != null)
+            currentText.text = "Current: " + roundedWeight;
+
+        if (Mathf.Abs(totalWeight - targetWeight) < tolerance)
         {
-            basketLight.enabled = true;              // show the light
-            basketLight.color = Color.green;         // green light
-            textDisplay.gameObject.SetActive(true);  // show text
-            textDisplay.text = "Congratulations!";
+            if (basketLight != null)
+            {
+                basketLight.enabled = true;
+                basketLight.color = Color.green;
+            }
+
+            if (currentText != null)
+                currentText.text = $"Correct!  {roundedWeight}";
+
+            // RESET ALL BALLS
+            ResetAllBalls();
+
+            // CLEAR basket list
+            objectsInBasket.Clear();
+
+            // Queue next target
+            CancelInvoke(nameof(GenerateNewTarget));
+            Invoke(nameof(GenerateNewTarget), successDelay);
         }
         else
         {
-            basketLight.enabled = true;              // show the light
-            basketLight.color = Color.red;           // red light
-            textDisplay.gameObject.SetActive(true);  // show weight
-            textDisplay.text = "Weight: " + totalWeight.ToString("F2");
+            if (basketLight != null)
+            {
+                basketLight.enabled = true;
+                basketLight.color = Color.red;
+            }
         }
+    }
+
+    void ResetAllBalls()
+    {
+        Ball[] balls = FindObjectsOfType<Ball>();
+
+        foreach (Ball ball in balls)
+        {
+            ball.ResetPosition();
+        }
+
+        Debug.Log("All balls reset after correct answer");
     }
 }

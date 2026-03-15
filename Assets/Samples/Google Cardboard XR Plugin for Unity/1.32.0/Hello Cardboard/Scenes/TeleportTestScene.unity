@@ -161,6 +161,21 @@ MonoBehaviour:
   score: 0
   targetScore: 10
   feedbackDuration: 1.5
+  onGameCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 227699003}
+        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
+        m_MethodName: UnlockDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &10805217
 Transform:
   m_ObjectHideFlags: 0
@@ -415,6 +430,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 227699002}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 227699003}
   m_SourcePrefab: {fileID: 100100000, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
 --- !u!1 &227699000 stripped
 GameObject:
@@ -436,7 +454,8 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  sceneToLoad: RikunScene
+  sceneToLoad: NikonScene
+  doorController: {fileID: 227699003}
 --- !u!65 &227699002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -458,6 +477,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &227699003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227699000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  isLocked: 1
 --- !u!1 &346089624
 GameObject:
   m_ObjectHideFlags: 0

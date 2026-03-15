@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -23,6 +24,9 @@ public class BasketballGameManager : MonoBehaviour
     public int targetScore = 10;
     public float feedbackDuration = 2f;
 
+    [Header("Peli läpi")]
+    public UnityEvent onGameCompleted; // Tämä tapahtuma voidaan asettaa Unityn editorissa, esimerkiksi näyttämään onnitteluteksti tai siirtymään seuraavaan kohtaukseen pelin päätyttyä.
+
     private int correctAnswer;
     private bool isProcessing = false;
 
@@ -39,6 +43,10 @@ public class BasketballGameManager : MonoBehaviour
         if (submittedAnswer == correctAnswer)
         {
             score++;
+            if (score >= targetScore)
+            {
+                onGameCompleted.Invoke(); // Kutsu tapahtuma, kun pelaaja saavuttaa tavoitepisteet
+            }
             OnCorrectAnswer();
         }
         else
@@ -82,7 +90,7 @@ public class BasketballGameManager : MonoBehaviour
     {
         if (score >= targetScore)
         {
-            questionText.text = "You win! Game over.";
+            questionText.text = "Task is complete. You may continue to the next room";
             questionText.color = Color.yellow;
             if (feedbackLight != null) feedbackLight.color = Color.yellow;
             return;

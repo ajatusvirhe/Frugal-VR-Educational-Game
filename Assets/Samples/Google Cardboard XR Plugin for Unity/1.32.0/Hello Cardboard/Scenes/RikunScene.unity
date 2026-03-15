@@ -910,6 +910,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 316754124}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 316754126}
   m_SourcePrefab: {fileID: 100100000, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
 --- !u!1 &316754123 stripped
 GameObject:
@@ -953,6 +956,20 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   sceneToLoad: NikonScene
+  doorController: {fileID: 316754126}
+--- !u!114 &316754126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316754123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  isLocked: 0
 --- !u!1 &345175834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,6 +1485,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 411693749}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 411693754}
   m_SourcePrefab: {fileID: 100100000, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
 --- !u!1 &411693748 stripped
 GameObject:
@@ -1511,6 +1531,20 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   sceneToLoad: UrsulanScene
+  doorController: {fileID: 411693754}
+--- !u!114 &411693754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411693748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  isLocked: 1
 --- !u!1 &413333012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2592,7 @@ GameObject:
   - component: {fileID: 955127916}
   - component: {fileID: 955127917}
   - component: {fileID: 955127919}
+  - component: {fileID: 955127927}
   m_Layer: 6
   m_Name: Icosahedron
   m_TagString: Untagged
@@ -2675,6 +2710,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &955127927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955127915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  isLocked: 0
 --- !u!1 &959308587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4200,6 +4248,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1924301590}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1924301594}
   m_SourcePrefab: {fileID: 100100000, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
 --- !u!1 &1924301588 stripped
 GameObject:
@@ -4222,6 +4273,7 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   sceneToLoad: TeleportTestScene
+  doorController: {fileID: 1924301594}
 --- !u!65 &1924301590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4243,6 +4295,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999998, z: 1.9999998}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1924301594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924301588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  isLocked: 0
 --- !u!1 &1982611165
 GameObject:
   m_ObjectHideFlags: 0

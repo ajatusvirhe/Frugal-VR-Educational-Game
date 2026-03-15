@@ -4,17 +4,21 @@ using UnityEngine.SceneManagement;
 public class TeleportToScene : Interactive
 {
     [SerializeField] private string sceneToLoad; 
+    [SerializeField] private DoorController doorController; // Viittaus DoorControlleriin
 
     public new void Interact()
     {
-        if (!string.IsNullOrEmpty(sceneToLoad))
+        // Kysytään vain ovelta, pääseekö tästä läpi
+        if (doorController != null && doorController.CanTeleport())
         {
-            Debug.Log("Teleportataan sceneen: " + sceneToLoad);
-            SceneManager.LoadScene(sceneToLoad);
+            if (!string.IsNullOrEmpty(sceneToLoad))
+            {
+                SceneManager.LoadScene(sceneToLoad);
+            }
         }
         else
         {
-            Debug.LogError("Et ole asettanut scenen nimeä objektille: " + gameObject.name);
+            Debug.Log("Ovi on vielä lukossa!");
         }
     }
 }

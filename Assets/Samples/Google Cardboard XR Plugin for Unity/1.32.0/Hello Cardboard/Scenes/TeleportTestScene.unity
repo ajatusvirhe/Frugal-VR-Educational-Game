@@ -454,7 +454,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  sceneToLoad: NikonScene
+  sceneToLoad: RikunScene
   doorController: {fileID: 227699003}
 --- !u!65 &227699002
 BoxCollider:

@@ -157,6 +157,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral14C5473BE3A2D7272D20FB2943E201283501B29D
 IL2CPP_EXTERN_C String_t* _stringLiteral1DAB2B731CABAF96C21339FF0A0E75F0FE08E2F4;
 IL2CPP_EXTERN_C String_t* _stringLiteral1DB4AD956F84A5B56D82E62E91E5135C6CE40941;
 IL2CPP_EXTERN_C String_t* _stringLiteral326129114EB43E5A03AD980A3709D55FE7934916;
+IL2CPP_EXTERN_C String_t* _stringLiteral3B39B14CFE3E6645563A1AAA1DA7CFA0C88D0C73;
 IL2CPP_EXTERN_C String_t* _stringLiteral3BD49FAE6144AF7FCA61D6B3232A69073EA99CAD;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B44815BBE926F5486BCC2E24532AD046CC8B736;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21;
@@ -170,7 +171,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9296DD9B65914EFDA08541D0B648D0333B1122DE
 IL2CPP_EXTERN_C String_t* _stringLiteral970DBD957E951CBB2A0CADFAE721EDA0478353B9;
 IL2CPP_EXTERN_C String_t* _stringLiteral9E9A87DCD288D5BB3D6BE0CFD8D3CF81D4B2CDA3;
 IL2CPP_EXTERN_C String_t* _stringLiteralA0A1F14753B82C81052EA7509078DD8B837EA1E6;
-IL2CPP_EXTERN_C String_t* _stringLiteralA42028A974E9CE738DDFA245B90353A014DD0A58;
 IL2CPP_EXTERN_C String_t* _stringLiteralA56779C0A85F3DC0A0744E2D106ECAE754EAFAB3;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9;
 IL2CPP_EXTERN_C String_t* _stringLiteralC1CF74B3F5C428DC85A42B019C6DF26364BB1089;
@@ -3374,9 +3374,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_CheckWeight_mEC38AF2
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m07C977650071BA2868766F319367644BB006A29F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mCC0586D4E8BFC53C6DC7C0EC51807A6EC0C471BE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3B39B14CFE3E6645563A1AAA1DA7CFA0C88D0C73);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B44815BBE926F5486BCC2E24532AD046CC8B736);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7CCCED438859F90785466FC2ED07D85226C9B03E);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA42028A974E9CE738DDFA245B90353A014DD0A58);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC83EFB76EB5FECDBC9439B98CB59D627B53364E2);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -3538,7 +3538,7 @@ IL_00b2:
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:97>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_27 = __this->___currentText;
 		NullCheck(L_27);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_27, _stringLiteralA42028A974E9CE738DDFA245B90353A014DD0A58);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_27, _stringLiteral3B39B14CFE3E6645563A1AAA1DA7CFA0C88D0C73);
 	}
 
 IL_00e7:

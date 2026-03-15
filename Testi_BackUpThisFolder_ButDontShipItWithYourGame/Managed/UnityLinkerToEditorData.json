@@ -946,7 +946,8 @@
           {
             "name": "CapsuleCollider",
             "scenes": [
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity"
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
             ],
             "dependencyType": 0,
             "icon": null

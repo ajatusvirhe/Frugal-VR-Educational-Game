@@ -4,7 +4,6 @@ using TMPro;
 public class Ball : MonoBehaviour
 {
     public float weight = 1f;          // actual weight
-    public TextMeshPro label;          // number/weight label
     private Vector3 originalPosition;  // store initial position
     private Quaternion originalRotation; // store initial rotation
 
@@ -17,8 +16,6 @@ public class Ball : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null) rb.mass = weight;
 
-        if (label != null)
-            label.text = weight.ToString(); // show weight on ball/table
     }
 
     // Call this to reset ball to initial position

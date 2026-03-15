@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class BasketWeightChecker : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class BasketWeightChecker : MonoBehaviour
     [Header("Behaviour")]
     public float successDelay = 2f;
     public float tolerance = 0.1f;
+
+    [Header("Peli läpi")]
+    private int roundsCompleted = 0;
+    public UnityEvent onGameCompleted; // Tämä tapahtuma voidaan asettaa Unityn editorissa, esimerkiksi näyttämään onnitteluteksti tai siirtymään seuraavaan kohtaukseen pelin päätyttyä.
 
     private int targetWeight;
     private int lastFactorA;
@@ -72,7 +77,7 @@ public class BasketWeightChecker : MonoBehaviour
             totalWeight += rb.mass;
 
         int roundedWeight = Mathf.RoundToInt(totalWeight);
-
+        
         if (currentText != null)
             currentText.text = "Current: " + roundedWeight;
 
@@ -84,8 +89,18 @@ public class BasketWeightChecker : MonoBehaviour
                 basketLight.color = Color.green;
             }
 
+            roundsCompleted++;
+
+            if (roundsCompleted >= 5) // Oletetaan, että peli vaatii 5 onnistunutta tehtävää voittoon
+            {
+                if (currentText != null)
+                    currentText.text = $"Congratulations! You've completed all tasks! You can now proceed to the next level!";
+                winGame();
+                return; // Lopeta metodin suoritus, jotta ei generoida uutta tavoitetta pelin päätyttyä
+            }
+
             if (currentText != null)
-                currentText.text = $"Correct!  {roundedWeight}";
+            currentText.text = $"Correct!  {roundedWeight}";
 
             // RESET ALL BALLS
             ResetAllBalls();
@@ -117,5 +132,11 @@ public class BasketWeightChecker : MonoBehaviour
         }
 
         Debug.Log("All balls reset after correct answer");
+    }
+
+    void winGame()
+    {
+        Debug.Log("Peli voitettu! Kaikki tehtävät suoritettu.");
+        onGameCompleted.Invoke(); // Kutsu tapahtuma, kun pelaaja saavuttaa tavoitepisteet
     }
 }

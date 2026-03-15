@@ -5222,11 +5222,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42df580787ba5d049909bcc4d4c11f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasketWeightChecker
-  minTargetWeight: 5
-  maxTargetWeight: 20
+  minFactor: 1
+  maxFactor: 10
   basketLight: {fileID: 1314412168}
   targetText: {fileID: 1425880756}
   currentText: {fileID: 5150036}
+  successDelay: 2
+  tolerance: 0.1
+  onGameCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1684366847}
+        m_TargetAssemblyTypeName: DoorController, Assembly-CSharp
+        m_MethodName: UnlockDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1199523434
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11984,6 +12001,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1684366845}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1684366847}
   m_SourcePrefab: {fileID: 100100000, guid: ea9c24b803c41c44e867bee8bb7721d3, type: 3}
 --- !u!1 &1684366844 stripped
 GameObject:
@@ -12027,6 +12047,20 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   sceneToLoad: RikunScene
+  doorController: {fileID: 1684366847}
+--- !u!114 &1684366847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684366844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6c02777665ffc459ccbab8e573ab32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  isLocked: 1
 --- !u!1 &1814760795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 65c3f18ab2c759e4db734edcab2f21b8, type: 3}

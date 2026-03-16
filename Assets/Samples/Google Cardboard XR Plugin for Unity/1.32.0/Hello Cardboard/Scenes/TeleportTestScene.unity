@@ -296,8 +296,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -1, y: -0.5, z: 0}
+  m_Size: {x: 4, y: 1, z: 4}
+  m_Center: {x: -1.5, y: -0.5, z: 0}
 --- !u!1 &217076210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,8 +1282,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -1, y: -0.5, z: 0}
+  m_Size: {x: 4, y: 1, z: 4}
+  m_Center: {x: -1.5, y: -0.5, z: 0}
 --- !u!1001 &497812030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2126,8 +2126,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -1, y: -0.5, z: 0}
+  m_Size: {x: 4, y: 1, z: 4}
+  m_Center: {x: -1.5, y: -0.5, z: 0}
 --- !u!1 &886460215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8041,7 +8041,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 19ecd9679223cf44d817e1bd1474875d, type: 2}
+  - {fileID: 2100000, guid: e313c9e9782828546be079365f69be00, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9806,7 +9806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Throwable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 4
   dwellTimerOverride: 0
   grabSpeed: 5
   throwForce: 20
@@ -9959,7 +9959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSurface
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 4
   dwellTimerOverride: 0
 --- !u!1 &2047812822
 GameObject:

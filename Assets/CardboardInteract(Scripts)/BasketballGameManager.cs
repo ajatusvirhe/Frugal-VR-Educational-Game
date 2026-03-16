@@ -65,12 +65,12 @@ public class BasketballGameManager : MonoBehaviour
     private void OnCorrectAnswer()
     {
         if (confettiEffect != null) confettiEffect.Play();
-        StartCoroutine(ShowFeedback("Correct!", correctColor));
+        StartCoroutine(ShowFeedback("Oikein!", correctColor));
     }
 
     private void OnWrongAnswer()
     {
-        StartCoroutine(ShowFeedback("Incorrect, correct answer is " + correctAnswer, wrongColor));
+        StartCoroutine(ShowFeedback("Väärin, oikea vastaus on " + correctAnswer, wrongColor));
     }
 
     IEnumerator ShowFeedback(string message, Color color)
@@ -93,7 +93,7 @@ public class BasketballGameManager : MonoBehaviour
     {
         if (score >= targetScore)
         {
-            questionText.text = "Task is complete. You may continue to the next room";
+            questionText.text = "Tehtävä valmis. Voit jatkaa seuraavaan huoneeseen";
             questionText.color = Color.yellow;
             if (feedbackLight != null) feedbackLight.color = Color.yellow;
             return;

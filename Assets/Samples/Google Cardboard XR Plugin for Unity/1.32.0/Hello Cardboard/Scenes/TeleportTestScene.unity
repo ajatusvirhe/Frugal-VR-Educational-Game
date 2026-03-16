@@ -296,8 +296,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4, y: 1, z: 4}
-  m_Center: {x: -1.5, y: -0.5, z: 0}
+  m_Size: {x: 4, y: 6, z: 4}
+  m_Center: {x: -1.35, y: 2, z: -0.1}
 --- !u!1 &217076210
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.6
+  m_fontSize: 37.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -1.3526955, y: 0.30507278, z: -1.1308699, w: 0.48333335}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1282,8 +1282,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4, y: 1, z: 4}
-  m_Center: {x: -1.5, y: -0.5, z: 0}
+  m_Size: {x: 4, y: 6, z: 4}
+  m_Center: {x: -1.35, y: 2, z: -0.1}
 --- !u!1001 &497812030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Throw the ball towards the right answer
+  m_text: "Heit\xE4 pallo oikeaa vastausta kohti"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.1
+  m_fontSize: 30.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -46.050087, z: 0, w: 0}
+  m_margin: {x: -1.3738022, y: -46.050087, z: -3.817299, w: -41.045498}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2126,8 +2126,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4, y: 1, z: 4}
-  m_Center: {x: -1.5, y: -0.5, z: 0}
+  m_Size: {x: 4, y: 6, z: 4}
+  m_Center: {x: -1.35, y: 2, z: -0.1}
 --- !u!1 &886460215
 GameObject:
   m_ObjectHideFlags: 0
@@ -9730,6 +9730,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 74cd5d516a186ba4d98ad07b3e1badbe, type: 3}
       propertyPath: m_Name
       value: Basketball_dl
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74cd5d516a186ba4d98ad07b3e1badbe, type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

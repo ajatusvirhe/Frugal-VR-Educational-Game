@@ -696,13 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-
-    Look at the door.
-
-    Perform a Twist motion on the door to go
-    to next room.'
+  m_text: "Ovi-teleportti\n\nKatso ovea -> Tee k\xE4\xE4nt\xF6liike "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1378,7 +1372,7 @@ Transform:
   m_GameObject: {fileID: 360943097}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7275087, z: -0, w: 0.68609846}
-  m_LocalPosition: {x: 10.23, y: 0.5, z: -4.21}
+  m_LocalPosition: {x: 14.109, y: 0.5, z: -3.674}
   m_LocalScale: {x: 0.25, y: 1, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2257,14 +2251,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HOW TO MOVE
-
-
-
-    Look at the floor where you want to go.
-
-    Perform
-    a Twist motion on the surface to teleport instantly!'
+  m_text: "LIIKKUMINEN\n\n\nKatso lattiaa siihen kohti mihin haluat liikkua.\nK\xE4\xE4nn\xE4
+    p\xE4\xE4t\xE4si teleportataksesi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

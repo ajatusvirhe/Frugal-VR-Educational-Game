@@ -17,6 +17,7 @@ public class BasketWeightChecker : MonoBehaviour
     [Header("Behaviour")]
     public float successDelay = 2f;
     public float tolerance = 0.1f;
+    public float correctTextDuration = 3f;
 
     [Header("Peli läpi")]
     private int roundsCompleted = 0;
@@ -40,10 +41,10 @@ public class BasketWeightChecker : MonoBehaviour
         targetWeight = lastFactorA * lastFactorB;
 
         if (targetText != null)
-            targetText.text = $"Target: {lastFactorA} × {lastFactorB}";
+            targetText.text = $"Tavoite paino: {lastFactorA} × {lastFactorB}";
 
         if (currentText != null)
-            currentText.text = "Current: 0";
+            currentText.text = "Tämän hetkinen paino: 0";
 
         if (basketLight != null)
             basketLight.enabled = false;
@@ -79,7 +80,7 @@ public class BasketWeightChecker : MonoBehaviour
         int roundedWeight = Mathf.RoundToInt(totalWeight);
         
         if (currentText != null)
-            currentText.text = "Current: " + roundedWeight;
+            currentText.text = "Tämän hetkinen paino: " + roundedWeight;
 
         if (Mathf.Abs(totalWeight - targetWeight) < tolerance)
         {
@@ -93,24 +94,19 @@ public class BasketWeightChecker : MonoBehaviour
 
             if (roundsCompleted >= 5) // Oletetaan, että peli vaatii 5 onnistunutta tehtävää voittoon
             {
+                if (targetText != null)
+                    targetText.text = $"Onnea! Olet saavuttanut tavoiteen!";
                 if (currentText != null)
-                    currentText.text = $"Congratulations! You've completed all tasks! You can now proceed to the next level!";
+                    currentText.text = $"Voit nyt edetä!";
                 winGame();
                 return; // Lopeta metodin suoritus, jotta ei generoida uutta tavoitetta pelin päätyttyä
             }
 
             if (currentText != null)
-            currentText.text = $"Correct!  {roundedWeight}";
+                currentText.text = $"Oikein!";
 
-            // RESET ALL BALLS
-            ResetAllBalls();
-
-            // CLEAR basket list
-            objectsInBasket.Clear();
-
-            // Queue next target
-            CancelInvoke(nameof(GenerateNewTarget));
-            Invoke(nameof(GenerateNewTarget), successDelay);
+            CancelInvoke(nameof(StartNextRound));
+            Invoke(nameof(StartNextRound), correctTextDuration);
         }
         else
         {
@@ -129,6 +125,10 @@ public class BasketWeightChecker : MonoBehaviour
         foreach (Ball ball in balls)
         {
             ball.ResetPosition();
+
+            Grabbable grab = ball.GetComponent<Grabbable>();
+            if (grab != null)
+                grab.ResetBallState();
         }
 
         Debug.Log("All balls reset after correct answer");
@@ -139,4 +139,15 @@ public class BasketWeightChecker : MonoBehaviour
         Debug.Log("Peli voitettu! Kaikki tehtävät suoritettu.");
         onGameCompleted.Invoke(); // Kutsu tapahtuma, kun pelaaja saavuttaa tavoitepisteet
     }
+
+    void StartNextRound()
+{
+    // RESET ALL BALLS
+    ResetAllBalls();
+
+    // CLEAR basket list
+    objectsInBasket.Clear();
+
+    GenerateNewTarget();
+}
 }

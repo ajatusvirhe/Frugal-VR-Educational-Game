@@ -10,7 +10,9 @@
         "dependencies": [
           {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -431,6 +433,14 @@
             "icon": null
           },
           {
+            "name": "SkinnedMeshRenderer",
+            "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SortingGroup",
             "scenes": [],
             "dependencyType": 0,
@@ -450,7 +460,9 @@
           },
           {
             "name": "SpriteRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -989,8 +1001,6 @@
           {
             "name": "SphereCollider",
             "scenes": [
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity",
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
             ],
@@ -1343,9 +1353,7 @@
           },
           {
             "name": "TextMesh",
-            "scenes": [
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },

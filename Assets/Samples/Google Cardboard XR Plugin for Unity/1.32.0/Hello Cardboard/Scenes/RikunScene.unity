@@ -6771,7 +6771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSurface
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 4
   dwellTimerOverride: 0
 --- !u!1 &2124246821
 GameObject:

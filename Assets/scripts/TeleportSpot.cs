@@ -7,6 +7,10 @@ public class TeleportSpot : Interactive
     private bool _isOnCooldown;
     public new void Interact()
     {
+        if (_isOnCooldown)
+        {
+            return;
+        }
         var player = CameraInteract.GetPlayerTransform();
         // place player at the spot position, offset by player height along the spot's up direction
         player.position = transform.position + transform.up * CameraInteract.GetPlayerHeight();

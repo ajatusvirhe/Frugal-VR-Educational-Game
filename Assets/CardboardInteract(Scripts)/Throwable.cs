@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class Throwable : Interactive
 {
-    [SerializeField] float grabSpeed = 7f;      // Kuinka nopeasti esine seuraa pelaajaa, kun se on kädessä
+    [SerializeField] float grabSpeed = 8f; 
     [SerializeField] float throwForce = 15f; 
-    [SerializeField] float holdDistance = 2f;   // Etäisyys, jolla esine pysyy kamerasta, kun se on kädessä
+    
+    [Header("Pito-asetukset")]
+    [SerializeField] float holdDistance = 3.5f; // Pallo pysyy kauempana (kokeile 3-4)
+    [SerializeField] float verticalOffset = -0.5f; // Pallo laskeutuu hieman alemmas näkökentästä
     
     public bool useGravity = true;
     
@@ -21,10 +24,7 @@ public class Throwable : Interactive
     {
         if (grabbed != transform)
         {
-            // Jos jokin muu on jo kädessä, se pitää pudottaa ensin
             grabbed = transform;
-            
-            // Nollataan fysiikat, jotta veto pelaajaa kohti on tasainen
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
@@ -39,7 +39,8 @@ public class Throwable : Interactive
     {
         rb.useGravity = useGravity;
         Vector3 forceDirection = cam.forward;
-        rb.AddForce(forceDirection * throwForce, ForceMode.Impulse);
+        // Lisätään heittoon pieni yläviisto, jos pallo on alempana
+        rb.AddForce((forceDirection + Vector3.up * 0.1f) * throwForce, ForceMode.Impulse);
     }
 
     void Update()
@@ -51,8 +52,8 @@ public class Throwable : Interactive
 
         if (grabbed == transform)
         {
-            // Nyt targetPoint on AINA tietyn matkan päässä kamerasta (holdDistance)
-            Vector3 targetPoint = cam.position + cam.forward * holdDistance;
+            // Lasketaan paikka: Kamera + Suunta * Etäisyys + Pieni pudotus alaspäin
+            Vector3 targetPoint = cam.position + (cam.forward * holdDistance);
             
             rb.linearVelocity = (targetPoint - transform.position) * grabSpeed;
         }

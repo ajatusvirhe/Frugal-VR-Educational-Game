@@ -27,6 +27,7 @@ extern void U3CShowFeedbackU3Ed__17_System_Collections_Generic_IEnumeratorU3CSys
 extern void U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_Reset_m897BB5CFA9DEAA0AD183FA0B021077023B1A3192 (void);
 extern void U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_get_Current_m5D9BCDA84A47857D219DFB662A721DF878F1032C (void);
 extern void BasketWeightChecker_Start_m4778EDDC45F66642BB56B5967212FD1FAB4DEECD (void);
+extern void BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663 (void);
 extern void BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578 (void);
 extern void BasketWeightChecker_OnTriggerEnter_m17B58B52DBA0C484CA03480C0B15907A36D7310F (void);
 extern void BasketWeightChecker_OnTriggerExit_m666DA36A4A8CC2A3BDDE728B64E7B38A8EAC9504 (void);
@@ -88,7 +89,14 @@ extern void Kickable_Interact_mA9D417068504740F413F3F23941A1B59F0766DDF (void);
 extern void Kickable_KickObject_m3FD81023A71EFE475F6875DC34CB1592BF50CDE9 (void);
 extern void Kickable__ctor_mA28BF0A57B96664552BA3082716B19221E03A8D3 (void);
 extern void TeleportSpot_Interact_m0B1A5D468DD49A15C030A3EF646944837F5ECF42 (void);
+extern void TeleportSpot_TeleportCooldownRoutine_m675341D69C805E88A4F7838F6FEE695B41143E7A (void);
 extern void TeleportSpot__ctor_m57B6A1418186DE86BF99C21414B4F7D81E12AFBA (void);
+extern void U3CTeleportCooldownRoutineU3Ed__3__ctor_m46BE0862A461CEB4D747D788452940E32C8E5B31 (void);
+extern void U3CTeleportCooldownRoutineU3Ed__3_System_IDisposable_Dispose_m668E84AC58F317DB44F70FBFBABCEDBC9A246F22 (void);
+extern void U3CTeleportCooldownRoutineU3Ed__3_MoveNext_m342653B78692FED3F76055E3FB66D203FDD56D66 (void);
+extern void U3CTeleportCooldownRoutineU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8163542EA704672796DAB2AB78F2B0C51CA0845F (void);
+extern void U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_Reset_mE985621D9A8C92D43A3B7C6C69D2CCC32CF2EC6D (void);
+extern void U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_get_Current_m69FC2E31DC1C59B2A4E43D3B89A562B7A633616A (void);
 extern void TextureScale_Point_m2AE3872E9E41EDA1C80F3621DB02CDDDC37A16E9 (void);
 extern void TextureScale_Bilinear_m46D3FAF17B036C221322852995D13D65B93AD9A7 (void);
 extern void TextureScale_ThreadedScale_mCAFF7C32104EB62501C535FC53DAE5C9C3A11BB1 (void);
@@ -99,7 +107,7 @@ extern void TextureScale__ctor_m58F73B7E18FAEC7656C4EFBBCEFA2D5E06297906 (void);
 extern void ThreadData__ctor_m871190A9851FF9A4E07BBBAD8F2F6CB87CD185B2 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[92] = 
+static Il2CppMethodPointer s_methodPointers[100] = 
 {
 	Ball_Start_m6E8CBDA3753768BAFE8CE82AD74B01E8355C50D3,
 	Ball_ResetPosition_m7A04E63D504E96CC50BFAAF0017E3A1EEFC9D9B6,
@@ -121,6 +129,7 @@ static Il2CppMethodPointer s_methodPointers[92] =
 	U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_Reset_m897BB5CFA9DEAA0AD183FA0B021077023B1A3192,
 	U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_get_Current_m5D9BCDA84A47857D219DFB662A721DF878F1032C,
 	BasketWeightChecker_Start_m4778EDDC45F66642BB56B5967212FD1FAB4DEECD,
+	BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663,
 	BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578,
 	BasketWeightChecker_OnTriggerEnter_m17B58B52DBA0C484CA03480C0B15907A36D7310F,
 	BasketWeightChecker_OnTriggerExit_m666DA36A4A8CC2A3BDDE728B64E7B38A8EAC9504,
@@ -182,7 +191,14 @@ static Il2CppMethodPointer s_methodPointers[92] =
 	Kickable_KickObject_m3FD81023A71EFE475F6875DC34CB1592BF50CDE9,
 	Kickable__ctor_mA28BF0A57B96664552BA3082716B19221E03A8D3,
 	TeleportSpot_Interact_m0B1A5D468DD49A15C030A3EF646944837F5ECF42,
+	TeleportSpot_TeleportCooldownRoutine_m675341D69C805E88A4F7838F6FEE695B41143E7A,
 	TeleportSpot__ctor_m57B6A1418186DE86BF99C21414B4F7D81E12AFBA,
+	U3CTeleportCooldownRoutineU3Ed__3__ctor_m46BE0862A461CEB4D747D788452940E32C8E5B31,
+	U3CTeleportCooldownRoutineU3Ed__3_System_IDisposable_Dispose_m668E84AC58F317DB44F70FBFBABCEDBC9A246F22,
+	U3CTeleportCooldownRoutineU3Ed__3_MoveNext_m342653B78692FED3F76055E3FB66D203FDD56D66,
+	U3CTeleportCooldownRoutineU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8163542EA704672796DAB2AB78F2B0C51CA0845F,
+	U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_Reset_mE985621D9A8C92D43A3B7C6C69D2CCC32CF2EC6D,
+	U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_get_Current_m69FC2E31DC1C59B2A4E43D3B89A562B7A633616A,
 	TextureScale_Point_m2AE3872E9E41EDA1C80F3621DB02CDDDC37A16E9,
 	TextureScale_Bilinear_m46D3FAF17B036C221322852995D13D65B93AD9A7,
 	TextureScale_ThreadedScale_mCAFF7C32104EB62501C535FC53DAE5C9C3A11BB1,
@@ -194,7 +210,7 @@ static Il2CppMethodPointer s_methodPointers[92] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[92] = 
+static const int32_t s_InvokerIndices[100] = 
 {
 	7783,
 	7783,
@@ -217,6 +233,7 @@ static const int32_t s_InvokerIndices[92] =
 	7651,
 	7783,
 	7783,
+	7783,
 	6131,
 	6131,
 	7783,
@@ -224,20 +241,20 @@ static const int32_t s_InvokerIndices[92] =
 	7783,
 	7783,
 	7783,
-	11065,
-	11046,
-	11074,
+	11066,
+	11047,
+	11075,
 	7783,
 	7783,
 	7783,
-	11111,
+	11112,
 	7783,
 	7783,
 	7783,
 	7783,
 	7783,
-	11046,
-	10808,
+	11047,
+	10809,
 	7603,
 	6085,
 	7783,
@@ -277,23 +294,30 @@ static const int32_t s_InvokerIndices[92] =
 	7783,
 	7783,
 	7783,
+	7651,
 	7783,
-	9410,
-	9410,
+	6085,
+	7783,
+	7517,
+	7651,
+	7783,
+	7651,
+	9411,
+	9411,
 	8857,
-	10808,
-	10808,
+	10809,
+	10809,
 	9041,
 	7783,
 	2804,
-	11124,
+	11125,
 	7783,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	92,
+	100,
 	s_methodPointers,
 	0,
 	NULL,

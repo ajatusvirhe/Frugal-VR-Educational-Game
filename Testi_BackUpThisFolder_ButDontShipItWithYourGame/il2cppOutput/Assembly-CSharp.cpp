@@ -154,6 +154,7 @@ struct U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
+struct U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD;
 struct ThreadData_tAC630649EA28DE7B3DBF8900D3BEE4F3350633CD;
 
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
@@ -163,6 +164,7 @@ IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il
 IL2CPP_EXTERN_C RuntimeClass* DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Difficulty_t17A86ED975E6C5C9F72E821655C0B340769B9707_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Kickable_t46E60C764689373E7AB2D9F08C3BB2127DD954B4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t70C71660C368B9474B9889CBADDC30685A5D2363_il2cpp_TypeInfo_var;
@@ -178,17 +180,20 @@ IL2CPP_EXTERN_C RuntimeClass* ThreadData_tAC630649EA28DE7B3DBF8900D3BEE4F3350633
 IL2CPP_EXTERN_C RuntimeClass* Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____169C7A7F39B7134B269EBA49B31734D1C04AEA82444F37F40612EC943107A6EF_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6D3BC2C1A19573B26A4E1E32402C685E343783D05A093184C2BD6874714B32A3_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____817A514B3ACD4A0DD7F6A65E7644552A51DE2D1553A5EA7A740CCE514F1BFF6E_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral06128A3B0F1A2120E5F509DB87AC8D0BC62DA129;
 IL2CPP_EXTERN_C String_t* _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC;
 IL2CPP_EXTERN_C String_t* _stringLiteral14C5473BE3A2D7272D20FB2943E201283501B29D;
+IL2CPP_EXTERN_C String_t* _stringLiteral14FC7A51BEB46A43368286227875617A1FB63FA0;
 IL2CPP_EXTERN_C String_t* _stringLiteral15E5D91309270881F5BA5FC7B543EDD92BA0125A;
 IL2CPP_EXTERN_C String_t* _stringLiteral1DAB2B731CABAF96C21339FF0A0E75F0FE08E2F4;
-IL2CPP_EXTERN_C String_t* _stringLiteral26BFA803B42ED006869D19B0FF31D2B7F612B1F8;
+IL2CPP_EXTERN_C String_t* _stringLiteral20E39C3AB7068FAFD9E4B868E16D2E5BC64D4952;
 IL2CPP_EXTERN_C String_t* _stringLiteral26E9F4C2192FBE5C10569FB1203839339597A092;
 IL2CPP_EXTERN_C String_t* _stringLiteral2856AC634FC7E07EC3E06EF9E5A34097E4CA8B8C;
 IL2CPP_EXTERN_C String_t* _stringLiteral326129114EB43E5A03AD980A3709D55FE7934916;
@@ -205,16 +210,20 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7649AEE062EE200D5810926162F39A75BCEE5287
 IL2CPP_EXTERN_C String_t* _stringLiteral7DEAAF4E2D610A4B9B0DB943C030ADFA704C7111;
 IL2CPP_EXTERN_C String_t* _stringLiteral9296DD9B65914EFDA08541D0B648D0333B1122DE;
 IL2CPP_EXTERN_C String_t* _stringLiteral970DBD957E951CBB2A0CADFAE721EDA0478353B9;
+IL2CPP_EXTERN_C String_t* _stringLiteral9D5313975DA8153FF9A5262016CB413A4E84846E;
 IL2CPP_EXTERN_C String_t* _stringLiteralA0A1F14753B82C81052EA7509078DD8B837EA1E6;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9;
 IL2CPP_EXTERN_C String_t* _stringLiteralC1CF74B3F5C428DC85A42B019C6DF26364BB1089;
+IL2CPP_EXTERN_C String_t* _stringLiteralC25DC2BBE6E22A0C98CD0D5F261B6BB23386D8D7;
 IL2CPP_EXTERN_C String_t* _stringLiteralC590297A50BE85416C7529FB48CC395ED452A58A;
 IL2CPP_EXTERN_C String_t* _stringLiteralCCC644ED6E6E48855EFDE03CF0572FC77A24CF4E;
+IL2CPP_EXTERN_C String_t* _stringLiteralD6CD187967A8FF5EBD28F3D6332F463317186555;
 IL2CPP_EXTERN_C String_t* _stringLiteralD879E047BD7614419B083FA9C8B90B0470C923D5;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA9A9CA08BD9875E7EB99E5089F19CE1B8115A52;
 IL2CPP_EXTERN_C String_t* _stringLiteralE6130A647EDA9B6C4E883A157D13D5ECA60E417A;
 IL2CPP_EXTERN_C String_t* _stringLiteralE908144AF9E49D3C09BA8265753985DBEDA329F9;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1EB6F6728F0C913C0DFAB7F58BC996D0649A11C;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisGrabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_mFCBB6800CD4C352141423A49D9BE38892D8C44EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisInteractive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C_mB5C088DE1895862CFFA6D6BD63448149495B2288_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var;
@@ -241,6 +250,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisBall_t3B9BED217
 IL2CPP_EXTERN_C const RuntimeMethod* TextureScale_BilinearScale_m22923828DE2338530B8F46A6364FAA89BAB2C92F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TextureScale_PointScale_mFFA5765213B531DA43626AC5822CA48F72EC07D1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_Reset_m897BB5CFA9DEAA0AD183FA0B021077023B1A3192_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_Reset_mE985621D9A8C92D43A3B7C6C69D2CCC32CF2EC6D_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -337,6 +347,12 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 };
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
+};
+struct U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* ___U3CU3E4__this;
 };
 struct ThreadData_tAC630649EA28DE7B3DBF8900D3BEE4F3350633CD  : public RuntimeObject
 {
@@ -639,6 +655,21 @@ struct __StaticArrayInitTypeSizeU3D1112_t380B2B945E61AC2D0347534C05254B8B8996A6B
 			};
 		};
 		uint8_t __StaticArrayInitTypeSizeU3D1112_t380B2B945E61AC2D0347534C05254B8B8996A6B2__padding[1112];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A__padding[24];
 	};
 };
 #pragma pack(pop, tp)
@@ -1409,6 +1440,7 @@ struct BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64  : public M
 	int32_t ___targetWeight;
 	int32_t ___lastFactorA;
 	int32_t ___lastFactorB;
+	bool ___isAdditionQuestion;
 	List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* ___objectsInBasket;
 };
 struct BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -1491,9 +1523,13 @@ struct Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C  : public Interactive
 {
 	float ___grabSpeed;
 	bool ___useGravity;
+	int32_t ___ballLayer;
+	int32_t ___defaultLayer;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___col;
 	float ___grabDistance;
-	bool ___gravityActivated;
+	bool ___firstGrab;
+	bool ___isGrabbed;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
 {
@@ -1528,6 +1564,8 @@ struct ResetBalls_t6C23246C6E2BE9A114CD5C31F19F31BACF89F1A2  : public Interactiv
 };
 struct TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5  : public Interactive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C
 {
+	float ____teleportCooldown;
+	bool ____isOnCooldown;
 };
 struct TeleportSurface_t34CF5423EF9B2BFB4E54F663BC77D37EE6BB6C70  : public Interactive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C
 {
@@ -1810,6 +1848,7 @@ struct List_1_t70C71660C368B9474B9889CBADDC30685A5D2363_StaticFields
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
 	__StaticArrayInitTypeSizeU3D401_t9054BD6094D09EE6D360A6B1B2526C6E3B22BF9E ___169C7A7F39B7134B269EBA49B31734D1C04AEA82444F37F40612EC943107A6EF;
+	__StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A ___6D3BC2C1A19573B26A4E1E32402C685E343783D05A093184C2BD6874714B32A3;
 	__StaticArrayInitTypeSizeU3D1112_t380B2B945E61AC2D0347534C05254B8B8996A6B2 ___817A514B3ACD4A0DD7F6A65E7644552A51DE2D1553A5EA7A740CCE514F1BFF6E;
 };
 struct String_t_StaticFields
@@ -1918,7 +1957,6 @@ struct DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB_StaticFields
 };
 struct Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields
 {
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___grabbed;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___cam;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
@@ -2025,6 +2063,38 @@ struct TMP_TextU5BU5D_t12384CBAF397196B9A7886087BDC8C19D800C24F  : public Runtim
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
 struct BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62  : public RuntimeArray
 {
 	ALIGN_FIELD (8) Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* m_Items[1];
@@ -2119,38 +2189,6 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
-	{
-		m_Items[index] = value;
-	}
-};
-struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C  : public RuntimeArray
-{
-	ALIGN_FIELD (8) int32_t m_Items[1];
-
-	inline int32_t GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, int32_t value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
 	{
 		m_Items[index] = value;
 	}
@@ -2290,8 +2328,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, const RuntimeMethod* method) ;
 inline bool List_1_Contains_mB763294B7D9C4C7F1D89446AE276E991E94587BC (List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* __this, Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___0_item, const RuntimeMethod* method)
@@ -2338,7 +2380,6 @@ inline Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* Component_GetCompone
 	return ((  Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_ResetBallState_mB9DE33FE1D18518EF6408238C8848FBC780C1CE8 (Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_ResetAllBalls_mD5C4C1DF2707902818EFD8FDF36EF73E37277927 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) ;
 inline void List_1_Clear_m07C977650071BA2868766F319367644BB006A29F_inline (List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* __this, const RuntimeMethod* method)
 {
@@ -2402,9 +2443,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DifficultyManager_set_Instan
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_target, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DifficultyManager_set_CurrentDifficulty_mDCC222316C5CC6910600443D83C489E756AE2A58_inline (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
+inline Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139 (String_t* ___0_layerName, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879 (int32_t ___0_layer1, int32_t ___1_layer2, bool ___2_ignore, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_set_layer_m6E1AF478A2CC86BD222B96317BEB78B7D89B18D0 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
@@ -2418,10 +2465,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CameraInteract_GetPlayerHeight_m108A83D9DA96C61392C1AD846F411411F1AFB8F8 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_ThrowObject_m9E8BC2A143A0EC034917163465E8BC0510CF6D4D (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_force, int32_t ___1_mode, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint_Return_m2D29806D15835DCD0612972A7DE16B38F327C106 (FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable_KickObject_m3FD81023A71EFE475F6875DC34CB1592BF50CDE9 (Kickable_t46E60C764689373E7AB2D9F08C3BB2127DD954B4* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TeleportSpot_TeleportCooldownRoutine_m675341D69C805E88A4F7838F6FEE695B41143E7A (TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportCooldownRoutineU3Ed__3__ctor_m46BE0862A461CEB4D747D788452940E32C8E5B31 (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_ThreadedScale_mCAFF7C32104EB62501C535FC53DAE5C9C3A11BB1 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, int32_t ___1_newWidth, int32_t ___2_newHeight, bool ___3_useBilinear, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* Texture2D_GetPixels_m77A00D71DF5CDC7DAA0EE66FF2C90A24C7604039 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_get_processorCount_m6B20AC11AEA09CA06278FBC47BAAEAA01BC7DB55 (const RuntimeMethod* method) ;
@@ -2440,7 +2490,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D_Apply_mA014182C9EE0BBF6EEE3B28
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F TextureScale_ColorLerpUnclamped_m1E513C5098D6689AC1C66818609B160416F01512 (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_c1, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_c2, float ___2_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mutex_ReleaseMutex_m72AE23EAAF122BA84AB32006A01D6B2D4A4B167C (Mutex_t20344F093646D8679E9E11939981AE14DD8B3148* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_Internal_ToEulerRad_m5BD0EEC543120C320DC77FCCDFD2CE2E6BD3F1A8 (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_Internal_MakePositive_m73E2D01920CB0DFE661A55022C129E8617F0C9A8 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_m66D4475341F53949471E6870FB5C5E4A5E9BA93E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) ;
@@ -2468,7 +2517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38256
+// Method Definition Index: 38194
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball_Start_m6E8CBDA3753768BAFE8CE82AD74B01E8355C50D3 (Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2522,7 +2571,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 38257
+// Method Definition Index: 38195
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball_ResetPosition_m7A04E63D504E96CC50BFAAF0017E3A1EEFC9D9B6 (Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2581,7 +2630,7 @@ IL_0026:
 		return;
 	}
 }
-// Method Definition Index: 38258
+// Method Definition Index: 38196
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball__ctor_mDFF93D8FA13BD70DF4F2FA2B9B402E3B10BD6EDC (Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2599,7 +2648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball__ctor_mDFF93D8FA13BD70DF4F2FA2B9B40
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38259
+// Method Definition Index: 38197
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Basket_OnTriggerEnter_m1ACADC52F0C4911A30E6EE5FB3B0978C47715DEB (Basket_tEC4D8B4DA475ADBC2DC5C2B39154A3EDFCFB8E18* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2709,7 +2758,7 @@ IL_0072:
 		return;
 	}
 }
-// Method Definition Index: 38260
+// Method Definition Index: 38198
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Basket__ctor_m65F74C0136073A712AD73EB3EE9D6B7888E307BB (Basket_tEC4D8B4DA475ADBC2DC5C2B39154A3EDFCFB8E18* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2725,7 +2774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Basket__ctor_m65F74C0136073A712AD73EB3EE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38261
+// Method Definition Index: 38199
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_Start_m6B704EF16016E91812AEB33966BC301DC9258171 (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2761,7 +2810,7 @@ IL_001f:
 		return;
 	}
 }
-// Method Definition Index: 38262
+// Method Definition Index: 38200
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_CheckAnswer_m26091EF16B2F4835714C9F867A1185E628B83ECC (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, int32_t ___0_submittedAnswer, const RuntimeMethod* method) 
 {
 	{
@@ -2821,7 +2870,7 @@ IL_0040:
 		return;
 	}
 }
-// Method Definition Index: 38263
+// Method Definition Index: 38201
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnCorrectAnswer_mC1B6FE5C2BE7A4C43D1119544BEC5B52AF69805A (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2861,7 +2910,7 @@ IL_0019:
 		return;
 	}
 }
-// Method Definition Index: 38264
+// Method Definition Index: 38202
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnWrongAnswer_m3781939E1014068F587B0ECF79313519F4ACE5F2 (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2886,7 +2935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnWrongAnswer_m378
 		return;
 	}
 }
-// Method Definition Index: 38265
+// Method Definition Index: 38203
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BasketballGameManager_ShowFeedback_mD5D6034A70161FCF7A0A1F101A6581D3E922B61C (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, String_t* ___0_message, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_color, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2914,7 +2963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BasketballGameManager_ShowFeed
 		return L_4;
 	}
 }
-// Method Definition Index: 38266
+// Method Definition Index: 38204
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateNewQuestion_m11BAD8473D0051953031137D0090E24E55D94B72 (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3220,7 +3269,7 @@ IL_015b:
 		return;
 	}
 }
-// Method Definition Index: 38267
+// Method Definition Index: 38205
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateQuestion_m810302499949F2CB87E994DCF8ADDB07D076B27D (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, int32_t ___0_difficulty, String_t** ___1_questionString, int32_t* ___2_answer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3366,7 +3415,7 @@ IL_009d:
 		return;
 	}
 }
-// Method Definition Index: 38268
+// Method Definition Index: 38206
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager__ctor_mDC2930633C8BD6F721F9C25234533B55D71BD3AC (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3398,7 +3447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager__ctor_mDC2930633C8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38269
+// Method Definition Index: 38207
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__17__ctor_m679754F1A791580F69476BFF1B3C01FA8E2345D7 (U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -3408,14 +3457,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__17__ctor_m679754F1A
 		return;
 	}
 }
-// Method Definition Index: 38270
+// Method Definition Index: 38208
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__17_System_IDisposable_Dispose_m38D34B2DD45FDEABFE2A266FD2B5E3AFA404C1D5 (U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 38271
+// Method Definition Index: 38209
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowFeedbackU3Ed__17_MoveNext_mAE4CA5FF2362FAC2FC2470DAB7060D924F1603D6 (U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3547,7 +3596,7 @@ IL_00a6:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 38272
+// Method Definition Index: 38210
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8DDD16D6D02F8F225AC1912A62CD0EE42E882904 (U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3555,7 +3604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__17_System
 		return L_0;
 	}
 }
-// Method Definition Index: 38273
+// Method Definition Index: 38211
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_Reset_m897BB5CFA9DEAA0AD183FA0B021077023B1A3192 (U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3564,7 +3613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__17_System_Collectio
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_Reset_m897BB5CFA9DEAA0AD183FA0B021077023B1A3192_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 38274
+// Method Definition Index: 38212
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__17_System_Collections_IEnumerator_get_Current_m5D9BCDA84A47857D219DFB662A721DF878F1032C (U3CShowFeedbackU3Ed__17_tF0761E9C6624C11B2137959608DC9E49C0C8FE4B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3580,114 +3629,314 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__17_System
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38275
+// Method Definition Index: 38213
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_Start_m4778EDDC45F66642BB56B5967212FD1FAB4DEECD (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:34>
-		BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578(__this, NULL);
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:35>
+		BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663(__this, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:36>
+		BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578(__this, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:37>
 		return;
 	}
 }
-// Method Definition Index: 38276
+// Method Definition Index: 38214
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Difficulty_t17A86ED975E6C5C9F72E821655C0B340769B9707_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD6CD187967A8FF5EBD28F3D6332F463317186555);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:41>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:42>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:43>
+		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_0;
+		L_0 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		G_B3_0 = 2;
+		goto IL_001a;
+	}
+
+IL_0010:
+	{
+		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_2;
+		L_2 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = DifficultyManager_get_CurrentDifficulty_m420B0BD06B1A3EF9696EF13FC8EC1B0E93CE1C38_inline(L_2, NULL);
+		G_B3_0 = ((int32_t)(L_3));
+	}
+
+IL_001a:
+	{
+		V_0 = G_B3_0;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:45>
+		int32_t L_4 = V_0;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Difficulty_t17A86ED975E6C5C9F72E821655C0B340769B9707_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7;
+		L_7 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralD6CD187967A8FF5EBD28F3D6332F463317186555, L_6, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:46>
+		return;
+	}
+}
+// Method Definition Index: 38215
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26BFA803B42ED006869D19B0FF31D2B7F612B1F8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6D3BC2C1A19573B26A4E1E32402C685E343783D05A093184C2BD6874714B32A3_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral14FC7A51BEB46A43368286227875617A1FB63FA0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral20E39C3AB7068FAFD9E4B868E16D2E5BC64D4952);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC25DC2BBE6E22A0C98CD0D5F261B6BB23386D8D7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6130A647EDA9B6C4E883A157D13D5ECA60E417A);
 		s_Il2CppMethodInitialized = true;
 	}
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:39>
-		int32_t L_0 = __this->___minFactor;
-		int32_t L_1 = __this->___maxFactor;
-		int32_t L_2;
-		L_2 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(L_0, ((int32_t)il2cpp_codegen_add(L_1, 1)), NULL);
-		__this->___lastFactorA = L_2;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:40>
-		int32_t L_3 = __this->___minFactor;
-		int32_t L_4 = __this->___maxFactor;
-		int32_t L_5;
-		L_5 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(L_3, ((int32_t)il2cpp_codegen_add(L_4, 1)), NULL);
-		__this->___lastFactorB = L_5;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:41>
-		int32_t L_6 = __this->___lastFactorA;
-		int32_t L_7 = __this->___lastFactorB;
-		__this->___targetWeight = ((int32_t)il2cpp_codegen_multiply(L_6, L_7));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:43>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_8 = __this->___targetText;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_9;
-		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_9)
-		{
-			goto IL_007e;
-		}
-	}
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:44>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_10 = __this->___targetText;
-		int32_t L_11 = __this->___lastFactorA;
-		int32_t L_12 = L_11;
-		RuntimeObject* L_13 = Box(il2cpp_defaults.int32_class, &L_12);
-		int32_t L_14 = __this->___lastFactorB;
-		int32_t L_15 = L_14;
-		RuntimeObject* L_16 = Box(il2cpp_defaults.int32_class, &L_15);
-		String_t* L_17;
-		L_17 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral26BFA803B42ED006869D19B0FF31D2B7F612B1F8, L_13, L_16, NULL);
-		NullCheck(L_10);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_10, L_17);
-	}
-
-IL_007e:
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:46>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_18 = __this->___currentText;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_19;
-		L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_19)
-		{
-			goto IL_009c;
-		}
-	}
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:47>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_20 = __this->___currentText;
-		NullCheck(L_20);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_20, _stringLiteralE6130A647EDA9B6C4E883A157D13D5ECA60E417A);
-	}
-
-IL_009c:
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:49>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_21 = __this->___basketLight;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_22;
-		L_22 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_22)
-		{
-			goto IL_00b6;
-		}
-	}
+	int32_t V_0 = 0;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_1 = NULL;
+	String_t* V_2 = NULL;
+	int32_t G_B3_0 = 0;
+	String_t* G_B12_0 = NULL;
 	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:50>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_23 = __this->___basketLight;
-		NullCheck(L_23);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_23, (bool)0, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:51>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:52>
+		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_0;
+		L_0 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		G_B3_0 = 2;
+		goto IL_001a;
 	}
 
-IL_00b6:
+IL_0010:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:51>
+		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_2;
+		L_2 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = DifficultyManager_get_CurrentDifficulty_m420B0BD06B1A3EF9696EF13FC8EC1B0E93CE1C38_inline(L_2, NULL);
+		G_B3_0 = ((int32_t)(L_3));
+	}
+
+IL_001a:
+	{
+		V_0 = G_B3_0;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:54>
+		__this->___isAdditionQuestion = (bool)0;
+		int32_t L_4 = V_0;
+		switch (L_4)
+		{
+			case 0:
+			{
+				goto IL_0039;
+			}
+			case 1:
+			{
+				goto IL_0074;
+			}
+			case 2:
+			{
+				goto IL_00ba;
+			}
+		}
+	}
+	{
+		goto IL_00ba;
+	}
+
+IL_0039:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:60>
+		int32_t L_5;
+		L_5 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
+		__this->___lastFactorA = L_5;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:61>
+		int32_t L_6;
+		L_6 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
+		__this->___lastFactorB = L_6;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:62>
+		int32_t L_7 = __this->___lastFactorA;
+		int32_t L_8 = __this->___lastFactorB;
+		__this->___targetWeight = ((int32_t)il2cpp_codegen_add(L_7, L_8));
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:63>
+		__this->___isAdditionQuestion = (bool)1;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:64>
+		goto IL_00ff;
+	}
+
+IL_0074:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:68>
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)6);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_10 = L_9;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_11 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6D3BC2C1A19573B26A4E1E32402C685E343783D05A093184C2BD6874714B32A3_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_10, L_11, NULL);
+		V_1 = L_10;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:69>
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_12 = V_1;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13 = V_1;
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)(((RuntimeArray*)L_13)->max_length)), NULL);
+		NullCheck(L_12);
+		int32_t L_15 = L_14;
+		int32_t L_16 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		__this->___lastFactorA = L_16;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:70>
+		int32_t L_17;
+		L_17 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
+		__this->___lastFactorB = L_17;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:71>
+		int32_t L_18 = __this->___lastFactorA;
+		int32_t L_19 = __this->___lastFactorB;
+		__this->___targetWeight = ((int32_t)il2cpp_codegen_multiply(L_18, L_19));
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:72>
+		goto IL_00ff;
+	}
+
+IL_00ba:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:77>
+		int32_t L_20 = __this->___minFactor;
+		int32_t L_21 = __this->___maxFactor;
+		int32_t L_22;
+		L_22 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(L_20, ((int32_t)il2cpp_codegen_add(L_21, 1)), NULL);
+		__this->___lastFactorA = L_22;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:78>
+		int32_t L_23 = __this->___minFactor;
+		int32_t L_24 = __this->___maxFactor;
+		int32_t L_25;
+		L_25 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(L_23, ((int32_t)il2cpp_codegen_add(L_24, 1)), NULL);
+		__this->___lastFactorB = L_25;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:79>
+		int32_t L_26 = __this->___lastFactorA;
+		int32_t L_27 = __this->___lastFactorB;
+		__this->___targetWeight = ((int32_t)il2cpp_codegen_multiply(L_26, L_27));
+	}
+
+IL_00ff:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:83>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_28 = __this->___targetText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_29;
+		L_29 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_28, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_29)
+		{
+			goto IL_014e;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:85>
+		bool L_30 = __this->___isAdditionQuestion;
+		if (L_30)
+		{
+			goto IL_011c;
+		}
+	}
+	{
+		G_B12_0 = _stringLiteralC25DC2BBE6E22A0C98CD0D5F261B6BB23386D8D7;
+		goto IL_0121;
+	}
+
+IL_011c:
+	{
+		G_B12_0 = _stringLiteral20E39C3AB7068FAFD9E4B868E16D2E5BC64D4952;
+	}
+
+IL_0121:
+	{
+		V_2 = G_B12_0;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:86>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_31 = __this->___targetText;
+		int32_t L_32 = __this->___lastFactorA;
+		int32_t L_33 = L_32;
+		RuntimeObject* L_34 = Box(il2cpp_defaults.int32_class, &L_33);
+		String_t* L_35 = V_2;
+		int32_t L_36 = __this->___lastFactorB;
+		int32_t L_37 = L_36;
+		RuntimeObject* L_38 = Box(il2cpp_defaults.int32_class, &L_37);
+		String_t* L_39;
+		L_39 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteral14FC7A51BEB46A43368286227875617A1FB63FA0, L_34, L_35, L_38, NULL);
+		NullCheck(L_31);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_31, L_39);
+	}
+
+IL_014e:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:89>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_40 = __this->___currentText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_41;
+		L_41 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_40, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_41)
+		{
+			goto IL_016c;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:90>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_42 = __this->___currentText;
+		NullCheck(L_42);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_42, _stringLiteralE6130A647EDA9B6C4E883A157D13D5ECA60E417A);
+	}
+
+IL_016c:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:92>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_43 = __this->___basketLight;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_44;
+		L_44 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_43, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_44)
+		{
+			goto IL_0186;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:93>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_45 = __this->___basketLight;
+		NullCheck(L_45);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_45, (bool)0, NULL);
+	}
+
+IL_0186:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:94>
 		return;
 	}
 }
-// Method Definition Index: 38277
+// Method Definition Index: 38216
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerEnter_m17B58B52DBA0C484CA03480C0B15907A36D7310F (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3700,13 +3949,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerEnter_m17B5
 	}
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_0 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:55>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:98>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1;
 		L_1 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:56>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:99>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -3728,22 +3977,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerEnter_m17B5
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:58>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:101>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_7 = __this->___objectsInBasket;
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = V_0;
 		NullCheck(L_7);
 		List_1_Add_m7E180794A20B911D4907125A9C8D6580E7CC7D51_inline(L_7, L_8, List_1_Add_m7E180794A20B911D4907125A9C8D6580E7CC7D51_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:59>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:102>
 		BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754(__this, NULL);
 	}
 
 IL_0030:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:61>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:104>
 		return;
 	}
 }
-// Method Definition Index: 38278
+// Method Definition Index: 38217
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerExit_m666DA36A4A8CC2A3BDDE728B64E7B38A8EAC9504 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3756,13 +4005,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerExit_m666DA
 	}
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_0 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:65>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:108>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1;
 		L_1 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:66>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:109>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -3784,23 +4033,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerExit_m666DA
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:68>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:111>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_7 = __this->___objectsInBasket;
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = V_0;
 		NullCheck(L_7);
 		bool L_9;
 		L_9 = List_1_Remove_mE5EB1011929CA6332FA47E6969BE302D3E2B9160(L_7, L_8, List_1_Remove_mE5EB1011929CA6332FA47E6969BE302D3E2B9160_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:69>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:112>
 		BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754(__this, NULL);
 	}
 
 IL_0031:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:71>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:114>
 		return;
 	}
 }
-// Method Definition Index: 38279
+// Method Definition Index: 38218
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3824,9 +4073,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_CheckWeight_mEC38AF2
 	memset((&V_2), 0, sizeof(V_2));
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_3 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:75>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:118>
 		V_0 = (0.0f);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:77>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:120>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_0 = __this->___objectsInBasket;
 		NullCheck(L_0);
 		Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 L_1;
@@ -3851,11 +4100,11 @@ FINALLY_0030:
 
 IL_0014_1:
 			{
-				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:77>
+				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:120>
 				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2;
 				L_2 = Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_inline((&V_2), Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_RuntimeMethod_var);
 				V_3 = L_2;
-				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:78>
+				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:121>
 				float L_3 = V_0;
 				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = V_3;
 				NullCheck(L_4);
@@ -3866,7 +4115,7 @@ IL_0014_1:
 
 IL_0025_1:
 			{
-				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:77>
+				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:120>
 				bool L_6;
 				L_6 = Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A((&V_2), Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A_RuntimeMethod_var);
 				if (L_6)
@@ -3886,12 +4135,12 @@ IL_0025_1:
 
 IL_003e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:80>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:123>
 		float L_7 = V_0;
 		int32_t L_8;
 		L_8 = Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline(L_7, NULL);
 		V_1 = L_8;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:82>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:125>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_9 = __this->___currentText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -3902,7 +4151,7 @@ IL_003e:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:83>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:126>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_11 = __this->___currentText;
 		String_t* L_12;
 		L_12 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
@@ -3914,7 +4163,7 @@ IL_003e:
 
 IL_006f:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:85>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:128>
 		float L_14 = V_0;
 		int32_t L_15 = __this->___targetWeight;
 		float L_16;
@@ -3926,7 +4175,7 @@ IL_006f:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:87>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:130>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_18 = __this->___basketLight;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_19;
@@ -3937,11 +4186,11 @@ IL_006f:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:89>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:132>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_20 = __this->___basketLight;
 		NullCheck(L_20);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_20, (bool)1, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:90>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:133>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_21 = __this->___basketLight;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_22;
 		L_22 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
@@ -3951,10 +4200,10 @@ IL_006f:
 
 IL_00b2:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:93>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:136>
 		int32_t L_23 = __this->___roundsCompleted;
 		__this->___roundsCompleted = ((int32_t)il2cpp_codegen_add(L_23, 1));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:95>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:138>
 		int32_t L_24 = __this->___roundsCompleted;
 		if ((((int32_t)L_24) < ((int32_t)5)))
 		{
@@ -3962,7 +4211,7 @@ IL_00b2:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:97>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:140>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_25 = __this->___targetText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_26;
@@ -3973,7 +4222,7 @@ IL_00b2:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:98>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:141>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_27 = __this->___targetText;
 		NullCheck(L_27);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_27, _stringLiteral60E26AA5D945597B380AC45E6D362BE600B81EE9);
@@ -3981,7 +4230,7 @@ IL_00b2:
 
 IL_00e7:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:99>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:142>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_28 = __this->___currentText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_29;
@@ -3992,7 +4241,7 @@ IL_00e7:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:100>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:143>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_30 = __this->___currentText;
 		NullCheck(L_30);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_30, _stringLiteral7DEAAF4E2D610A4B9B0DB943C030ADFA704C7111);
@@ -4000,15 +4249,15 @@ IL_00e7:
 
 IL_0105:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:101>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:144>
 		BasketWeightChecker_winGame_mB7B0E4CD76FF5F3E2573B43FA83B24436C9C6840(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:102>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:145>
 		return;
 	}
 
 IL_010c:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:105>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:148>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_31 = __this->___currentText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_32;
@@ -4019,7 +4268,7 @@ IL_010c:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:106>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:149>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_33 = __this->___currentText;
 		NullCheck(L_33);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_33, _stringLiteral26E9F4C2192FBE5C10569FB1203839339597A092);
@@ -4027,9 +4276,9 @@ IL_010c:
 
 IL_012a:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:108>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:151>
 		MonoBehaviour_CancelInvoke_m268FFD58AFF64C07FD4C9B9B8B85F58BD86F3A01(__this, _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:109>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:152>
 		float L_34 = __this->___correctTextDuration;
 		MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB(__this, _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC, L_34, NULL);
 		return;
@@ -4037,7 +4286,7 @@ IL_012a:
 
 IL_0147:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:113>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:156>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_35 = __this->___basketLight;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_36;
@@ -4048,11 +4297,11 @@ IL_0147:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:115>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:158>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_37 = __this->___basketLight;
 		NullCheck(L_37);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_37, (bool)1, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:116>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:159>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_38 = __this->___basketLight;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_39;
 		L_39 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
@@ -4062,11 +4311,11 @@ IL_0147:
 
 IL_0171:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:119>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:162>
 		return;
 	}
 }
-// Method Definition Index: 38280
+// Method Definition Index: 38219
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_ResetAllBalls_mD5C4C1DF2707902818EFD8FDF36EF73E37277927 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4083,11 +4332,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_ResetAllBalls_mD5C4C
 	int32_t V_1 = 0;
 	Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* V_2 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:123>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:166>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62* L_0;
 		L_0 = Object_FindObjectsOfType_TisBall_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B_m676CB3F8A176F9F282C03FF73DBA4E3ED8C5E008(Object_FindObjectsOfType_TisBall_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B_m676CB3F8A176F9F282C03FF73DBA4E3ED8C5E008_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:125>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:168>
 		V_0 = L_0;
 		V_1 = 0;
 		goto IL_002c;
@@ -4095,22 +4344,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_ResetAllBalls_mD5C4C
 
 IL_000a:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:125>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:168>
 		BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:127>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:170>
 		Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* L_5 = L_4;
 		NullCheck(L_5);
 		Ball_ResetPosition_m7A04E63D504E96CC50BFAAF0017E3A1EEFC9D9B6(L_5, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:129>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:172>
 		NullCheck(L_5);
 		Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* L_6;
 		L_6 = Component_GetComponent_TisGrabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_mFCBB6800CD4C352141423A49D9BE38892D8C44EC(L_5, Component_GetComponent_TisGrabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_mFCBB6800CD4C352141423A49D9BE38892D8C44EC_RuntimeMethod_var);
 		V_2 = L_6;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:130>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:173>
 		Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* L_7 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
@@ -4121,7 +4370,7 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:131>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:174>
 		Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* L_9 = V_2;
 		NullCheck(L_9);
 		Grabbable_ResetBallState_mB9DE33FE1D18518EF6408238C8848FBC780C1CE8(L_9, NULL);
@@ -4135,7 +4384,7 @@ IL_0028:
 
 IL_002c:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:125>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:168>
 		int32_t L_11 = V_1;
 		BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62* L_12 = V_0;
 		NullCheck(L_12);
@@ -4145,14 +4394,14 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:134>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:177>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralA0A1F14753B82C81052EA7509078DD8B837EA1E6, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:135>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:178>
 		return;
 	}
 }
-// Method Definition Index: 38281
+// Method Definition Index: 38220
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_winGame_mB7B0E4CD76FF5F3E2573B43FA83B24436C9C6840 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4163,18 +4412,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_winGame_mB7B0E4CD76F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:139>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:182>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralDA9A9CA08BD9875E7EB99E5089F19CE1B8115A52, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:140>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:183>
 		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->___onGameCompleted;
 		NullCheck(L_0);
 		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(L_0, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:141>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:184>
 		return;
 	}
 }
-// Method Definition Index: 38282
+// Method Definition Index: 38221
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_StartNextRound_m9235132C59054E43AA510DC34F297804AFF0E823 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4184,19 +4433,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_StartNextRound_m9235
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:146>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:189>
 		BasketWeightChecker_ResetAllBalls_mD5C4C1DF2707902818EFD8FDF36EF73E37277927(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:149>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:192>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_0 = __this->___objectsInBasket;
 		NullCheck(L_0);
 		List_1_Clear_m07C977650071BA2868766F319367644BB006A29F_inline(L_0, List_1_Clear_m07C977650071BA2868766F319367644BB006A29F_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:151>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:194>
 		BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:152>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:195>
 		return;
 	}
 }
-// Method Definition Index: 38283
+// Method Definition Index: 38222
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker__ctor_m655A74D6FE2361B79B691DE67D2046A89C834676 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4217,7 +4466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker__ctor_m655A74D6FE236
 		__this->___tolerance = (0.100000001f);
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:20>
 		__this->___correctTextDuration = (3.0f);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:30>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:31>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_0 = (List_1_t70C71660C368B9474B9889CBADDC30685A5D2363*)il2cpp_codegen_object_new(List_1_t70C71660C368B9474B9889CBADDC30685A5D2363_il2cpp_TypeInfo_var);
 		List_1__ctor_mAEFDDA2AADB3407D6DDE862E67A61FBEC34B4025(L_0, List_1__ctor_mAEFDDA2AADB3407D6DDE862E67A61FBEC34B4025_RuntimeMethod_var);
 		__this->___objectsInBasket = L_0;
@@ -4242,7 +4491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker__ctor_m655A74D6FE236
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38284
+// Method Definition Index: 38223
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 CameraInteract_GetLatestHit_mE0D0FC01729686E05952F0A7876043F0548CB899 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4258,7 +4507,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2A
 		return L_0;
 	}
 }
-// Method Definition Index: 38285
+// Method Definition Index: 38224
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* CameraInteract_GetPlayerTransform_m2842FB5C7987A888828BC3662D90EFAA35E54C3A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4303,7 +4552,7 @@ IL_0021:
 		return L_7;
 	}
 }
-// Method Definition Index: 38286
+// Method Definition Index: 38225
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CameraInteract_GetPlayerHeight_m108A83D9DA96C61392C1AD846F411411F1AFB8F8 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4321,7 +4570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CameraInteract_GetPlayerHeight_m108A83D
 		return L_1;
 	}
 }
-// Method Definition Index: 38287
+// Method Definition Index: 38226
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract_Start_mA88229954EAA0A0CECD44F516C72D926F78CEE49 (CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4339,7 +4588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract_Start_mA88229954EAA0A0CEC
 		return;
 	}
 }
-// Method Definition Index: 38288
+// Method Definition Index: 38227
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract_Update_m881BE590449CC0D91CA0BE099E63988EA8075D5E (CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5132,7 +5381,7 @@ IL_04f6:
 		return;
 	}
 }
-// Method Definition Index: 38289
+// Method Definition Index: 38228
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract__ctor_m18E192F755639D26AFAD65F1FCBAB9E476927E0B (CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5158,7 +5407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract__ctor_m18E192F755639D26AF
 		return;
 	}
 }
-// Method Definition Index: 38290
+// Method Definition Index: 38229
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract__cctor_m21F98833D171D6290BF29E44B98D79D90005C269 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5186,7 +5435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraInteract__cctor_m21F98833D171D6290
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38291
+// Method Definition Index: 38230
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorChange_Start_m6E095BB9A0880AAC6355C7F90876124463BF3CFA (ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5205,7 +5454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorChange_Start_m6E095BB9A0880AAC6355C
 		return;
 	}
 }
-// Method Definition Index: 38292
+// Method Definition Index: 38231
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorChange_Interact_mBD6D25D4925E129EDBF21A0FB3C61B85739C3E0B (ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5239,7 +5488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorChange_Interact_mBD6D25D4925E129EDB
 		return;
 	}
 }
-// Method Definition Index: 38293
+// Method Definition Index: 38232
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorChange__ctor_m3E128E0C85951AA888492A7CA54304503843762F (ColorChange_t4FE34D8D450BF12148F5E87E82E8DF2775E79E4B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5255,7 +5504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ColorChange__ctor_m3E128E0C85951AA888492
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38294
+// Method Definition Index: 38233
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyDoor_Interact_mED22494FE8B6C83442CE7BAAC81A6B2D7F26F406 (DifficultyDoor_t61C724C883F769DD32E2A3F1B368FAE97BC72962* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5356,7 +5605,7 @@ IL_0068:
 		return;
 	}
 }
-// Method Definition Index: 38295
+// Method Definition Index: 38234
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyDoor__ctor_mF2BAC62A0C133C0488A31A7FFF5EFF4E9637C54E (DifficultyDoor_t61C724C883F769DD32E2A3F1B368FAE97BC72962* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5380,7 +5629,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyDoor__ctor_mF2BAC62A0C133C0488
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38296
+// Method Definition Index: 38235
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5395,7 +5644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DifficultyManager_t476F546A209C1C6F943E4A9A65
 		return L_0;
 	}
 }
-// Method Definition Index: 38297
+// Method Definition Index: 38236
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_set_Instance_m5373E95C0A5BF41612391F1593D8DBDFCF62FBD4 (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5412,7 +5661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_set_Instance_m5373E95C
 		return;
 	}
 }
-// Method Definition Index: 38298
+// Method Definition Index: 38237
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DifficultyManager_get_CurrentDifficulty_m420B0BD06B1A3EF9696EF13FC8EC1B0E93CE1C38 (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5421,7 +5670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DifficultyManager_get_CurrentDifficul
 		return L_0;
 	}
 }
-// Method Definition Index: 38299
+// Method Definition Index: 38238
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_set_CurrentDifficulty_mDCC222316C5CC6910600443D83C489E756AE2A58 (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5431,7 +5680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_set_CurrentDifficulty_
 		return;
 	}
 }
-// Method Definition Index: 38300
+// Method Definition Index: 38239
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_Awake_mB3A1840A8422040E4B15D42ECF5F97788E5638B2 (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5486,7 +5735,7 @@ IL_0026:
 		return;
 	}
 }
-// Method Definition Index: 38301
+// Method Definition Index: 38240
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_SetDifficulty_mC8A9C580CFD4AA842D2D868433C2AAF9B586E414 (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, int32_t ___0_difficulty, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5513,7 +5762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager_SetDifficulty_mC8A9C58
 		return;
 	}
 }
-// Method Definition Index: 38302
+// Method Definition Index: 38241
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager__ctor_m8DE20DDE51CBE6FF5241AB458376BF9F2116A2A5 (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5529,7 +5778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DifficultyManager__ctor_m8DE20DDE51CBE6F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38303
+// Method Definition Index: 38242
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoorController_UnlockDoor_m75CE552D85D00B918051025353430A14FCB17C06 (DoorController_tF2F99340EB03FDC2F2F1CDC7C67770C13D62849A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5549,7 +5798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoorController_UnlockDoor_m75CE552D85D00
 		return;
 	}
 }
-// Method Definition Index: 38304
+// Method Definition Index: 38243
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DoorController_CanTeleport_m73795B365324B600B9289788E29B33759F6DE3DE (DoorController_tF2F99340EB03FDC2F2F1CDC7C67770C13D62849A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5558,7 +5807,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DoorController_CanTeleport_m73795B365324
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 38305
+// Method Definition Index: 38244
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoorController__ctor_mD89F4B49FFD160724C7040A3E91E96951CEC5BF3 (DoorController_tF2F99340EB03FDC2F2F1CDC7C67770C13D62849A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5576,26 +5825,77 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoorController__ctor_mD89F4B49FFD160724C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38306
+// Method Definition Index: 38245
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Start_mA5DD123A54568CD70E8FAA6E2203A8BAC126AB4D (Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D5313975DA8153FF9A5262016CB413A4E84846E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:18>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:23>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
 		L_0 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
 		__this->___rb = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:19>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:24>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_1;
+		L_1 = Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14(__this, Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var);
+		__this->___col = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___col), (void*)L_1);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:26>
+		int32_t L_2;
+		L_2 = LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139(_stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9, NULL);
+		__this->___ballLayer = L_2;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:27>
+		int32_t L_3;
+		L_3 = LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139(_stringLiteral9D5313975DA8153FF9A5262016CB413A4E84846E, NULL);
+		__this->___defaultLayer = L_3;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:29>
+		int32_t L_4 = __this->___ballLayer;
+		if ((((int32_t)L_4) == ((int32_t)(-1))))
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		int32_t L_5 = __this->___defaultLayer;
+		if ((((int32_t)L_5) == ((int32_t)(-1))))
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:32>
+		int32_t L_6 = __this->___ballLayer;
+		int32_t L_7 = __this->___defaultLayer;
+		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		Physics_IgnoreLayerCollision_mBB904E854512B9F1A4EFD4E23D61BF2D0E0AA879(L_6, L_7, (bool)1, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:33>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		int32_t L_9 = __this->___ballLayer;
+		NullCheck(L_8);
+		GameObject_set_layer_m6E1AF478A2CC86BD222B96317BEB78B7D89B18D0(L_8, L_9, NULL);
+	}
+
+IL_006d:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:36>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_10 = __this->___rb;
+		NullCheck(L_10);
+		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_10, (bool)0, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:37>
 		return;
 	}
 }
-// Method Definition Index: 38307
+// Method Definition Index: 38246
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Interact_m355C00DD314F35322B8BE715C6E5EC74C9600F8D (Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5603,71 +5903,79 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Interact_m355C00DD314F35322B8B
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D5313975DA8153FF9A5262016CB413A4E84846E);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:23>
-		bool L_0 = __this->___gravityActivated;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:41>
+		bool L_0 = __this->___firstGrab;
 		if (L_0)
 		{
-			goto IL_001b;
+			goto IL_0035;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:25>
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:43>
+		__this->___firstGrab = (bool)1;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:46>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		int32_t L_2;
+		L_2 = LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139(_stringLiteral9D5313975DA8153FF9A5262016CB413A4E84846E, NULL);
 		NullCheck(L_1);
-		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_1, (bool)1, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:26>
-		__this->___gravityActivated = (bool)1;
+		GameObject_set_layer_m6E1AF478A2CC86BD222B96317BEB78B7D89B18D0(L_1, L_2, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:49>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___rb;
+		bool L_4 = __this->___useGravity;
+		NullCheck(L_3);
+		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_3, L_4, NULL);
 	}
 
-IL_001b:
+IL_0035:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:29>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___grabbed;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
-		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, L_3, NULL);
-		if (!L_4)
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:53>
+		bool L_5 = __this->___isGrabbed;
+		__this->___isGrabbed = (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:55>
+		bool L_6 = __this->___isGrabbed;
+		if (!L_6)
 		{
-			goto IL_0059;
+			goto IL_0079;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:31>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
-		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___grabbed = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___grabbed), (void*)L_5);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:32>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
-		NullCheck(L_6);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
-		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
-		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_8);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
-		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
-		float L_10;
-		L_10 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_7, L_9, NULL);
-		__this->___grabDistance = L_10;
-		return;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:57>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		float L_13;
+		L_13 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_10, L_12, NULL);
+		__this->___grabDistance = L_13;
 	}
 
-IL_0059:
+IL_0079:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:35>
-		((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___grabbed = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___grabbed), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:36>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:59>
 		return;
 	}
 }
-// Method Definition Index: 38308
+// Method Definition Index: 38247
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Update_m8096DEEA9D4BD2F68CEB3825D1C2729324E7585C (Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5680,7 +5988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Update_m8096DEEA9D4BD2F68CEB38
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:40>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:63>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5702,7 +6010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Update_m8096DEEA9D4BD2F68CEB38
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:41>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:64>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
 		L_4 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		NullCheck(L_4);
@@ -5714,84 +6022,94 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_Update_m8096DEEA9D4BD2F68CEB38
 
 IL_0027:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:43>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___grabbed;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
-		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_8;
-		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_6, L_7, NULL);
-		if (!L_8)
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:66>
+		bool L_6 = __this->___isGrabbed;
+		if (!L_6)
 		{
-			goto IL_0085;
+			goto IL_007b;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:45>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:68>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
 		NullCheck(L_9);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
-		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = ((Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_StaticFields*)il2cpp_codegen_static_fields_for(Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_il2cpp_TypeInfo_var))->___cam;
-		NullCheck(L_11);
+		L_10 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_9, NULL);
+		float L_11 = __this->___grabDistance;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
-		L_12 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_11, NULL);
-		float L_13 = __this->___grabDistance;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
-		L_14 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_12, L_13, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
-		L_15 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_10, L_14, NULL);
-		V_0 = L_15;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:46>
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_16 = __this->___rb;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_0;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
-		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_18);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
-		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		L_20 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_17, L_19, NULL);
-		float L_21 = __this->___grabSpeed;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
-		L_22 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_20, L_21, NULL);
+		L_12 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_10, L_11, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_8, L_12, NULL);
+		V_0 = L_13;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:69>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_14 = __this->___rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_16);
-		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_16, L_22, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_16, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_15, L_17, NULL);
+		float L_19 = __this->___grabSpeed;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_18, L_19, NULL);
+		NullCheck(L_14);
+		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_14, L_20, NULL);
 	}
 
-IL_0085:
+IL_007b:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:48>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:71>
 		return;
 	}
 }
-// Method Definition Index: 38309
+// Method Definition Index: 38248
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable_ResetBallState_mB9DE33FE1D18518EF6408238C8848FBC780C1CE8 (Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:51>
-		__this->___gravityActivated = (bool)0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:52>
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:75>
+		__this->___firstGrab = (bool)0;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:76>
+		__this->___isGrabbed = (bool)0;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:78>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0 = __this->___rb;
 		NullCheck(L_0);
 		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(L_0, (bool)0, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:53>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:79>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1 = __this->___rb;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_1);
 		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_1, L_2, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:54>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:80>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___rb;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		NullCheck(L_3);
 		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_3, L_4, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:55>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:83>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		int32_t L_6;
+		L_6 = LayerMask_NameToLayer_m2764C530EDA9EC3226A36E3FD43E020B413AF139(_stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9, NULL);
+		NullCheck(L_5);
+		GameObject_set_layer_m6E1AF478A2CC86BD222B96317BEB78B7D89B18D0(L_5, L_6, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Grabbable.cs:84>
 		return;
 	}
 }
-// Method Definition Index: 38310
+// Method Definition Index: 38249
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable__ctor_m5311080046742D51943DFE9C04AABE64E0C7DC6E (Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5811,7 +6129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Grabbable__ctor_m5311080046742D51943DFE9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38311
+// Method Definition Index: 38250
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interactive_Interact_mFFF3152A6F2BDB952E82DEB7816C8F5ABFCA7220 (Interactive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5836,7 +6154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interactive_Interact_mFFF3152A6F2BDB952E
 		return;
 	}
 }
-// Method Definition Index: 38312
+// Method Definition Index: 38251
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interactive__ctor_m9472BC9251A8B48C45C1CCF1C1ECBA21ACAA31F3 (Interactive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5852,7 +6170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interactive__ctor_m9472BC9251A8B48C45C1C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38313
+// Method Definition Index: 38252
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetBalls_Interact_m597AEC52EE93C69C94638EBBB75712CF228F14F9 (ResetBalls_t6C23246C6E2BE9A114CD5C31F19F31BACF89F1A2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5940,7 +6258,7 @@ IL_0032:
 		return;
 	}
 }
-// Method Definition Index: 38314
+// Method Definition Index: 38253
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetBalls__ctor_m83981456C2A347D38AC3AD32A4FF2BE8A0182014 (ResetBalls_t6C23246C6E2BE9A114CD5C31F19F31BACF89F1A2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5956,7 +6274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResetBalls__ctor_m83981456C2A347D38AC3AD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38315
+// Method Definition Index: 38254
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint_Start_m9EB1E2920DEE59C67B438A1A519C12043611B609 (ReturnToPoint_t90DDB9626DE89F0EE51CCF27318599CEB0D125F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5989,7 +6307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint_Start_m9EB1E2920DEE59C67B4
 		return;
 	}
 }
-// Method Definition Index: 38316
+// Method Definition Index: 38255
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint_OnCollisionEnter_m9ECA07F6C3BF1D7AA100995E4A8B6B1B01699928 (ReturnToPoint_t90DDB9626DE89F0EE51CCF27318599CEB0D125F4* __this, Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* ___0_collision, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6023,7 +6341,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 38317
+// Method Definition Index: 38256
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint_Return_m644A28894BE76C76B2AD86FEB57476C1E5221F76 (ReturnToPoint_t90DDB9626DE89F0EE51CCF27318599CEB0D125F4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6119,7 +6437,7 @@ IL_008c:
 		return;
 	}
 }
-// Method Definition Index: 38318
+// Method Definition Index: 38257
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint__ctor_m9E4E22E0AB2CA8A01BCA3498A74A2C192EC72665 (ReturnToPoint_t90DDB9626DE89F0EE51CCF27318599CEB0D125F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6135,7 +6453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint__ctor_m9E4E22E0AB2CA8A01BC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38319
+// Method Definition Index: 38258
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSurface_Interact_mA5DA2F5BFC9217E05FD876D0D56E234137429987 (TeleportSurface_t34CF5423EF9B2BFB4E54F663BC77D37EE6BB6C70* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6172,7 +6490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSurface_Interact_mA5DA2F5BFC9217
 		return;
 	}
 }
-// Method Definition Index: 38320
+// Method Definition Index: 38259
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSurface__ctor_mA15D37C78E4341A59D3B6E7BA9BE427DC80B4F1A (TeleportSurface_t34CF5423EF9B2BFB4E54F663BC77D37EE6BB6C70* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6188,7 +6506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSurface__ctor_mA15D37C78E4341A59
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38321
+// Method Definition Index: 38260
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportToScene_Interact_m06B297B73EEF26409808AA4AF2E2AEA024D004A6 (TeleportToScene_t3DE2407F4A9D59935B6C05B159F50984F795C547* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6252,7 +6570,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 38322
+// Method Definition Index: 38261
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportToScene__ctor_m3FF3E9267A30D069607670EC161ABFBF357DFF66 (TeleportToScene_t3DE2407F4A9D59935B6C05B159F50984F795C547* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6268,7 +6586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportToScene__ctor_m3FF3E9267A30D0696
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38323
+// Method Definition Index: 38262
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Start_mB5CB1F2FF8680E9248A863A6B8F47AC840526B5B (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6287,7 +6605,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Start_mB5CB1F2FF8680E9248A863A
 		return;
 	}
 }
-// Method Definition Index: 38324
+// Method Definition Index: 38263
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Interact_mC8DD18891A50F38301377EE081BCDF4EB801149D (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6342,7 +6660,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 38325
+// Method Definition Index: 38264
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_ThrowObject_m9E8BC2A143A0EC034917163465E8BC0510CF6D4D (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6377,7 +6695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_ThrowObject_m9E8BC2A143A0EC034
 		return;
 	}
 }
-// Method Definition Index: 38326
+// Method Definition Index: 38265
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Update_m4DB6D8B4CDE64BF9F4B083095CF152659940D768 (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6511,7 +6829,7 @@ IL_00ab:
 		return;
 	}
 }
-// Method Definition Index: 38327
+// Method Definition Index: 38266
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable__ctor_mAE24EB95204A3E3229E58A386D6B830EEC1EAF67 (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6535,7 +6853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable__ctor_mAE24EB95204A3E3229E58A3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38328
+// Method Definition Index: 38267
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint_Start_m09EED92E38926270AF4D5CAA30978EFB17096712 (FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6568,7 +6886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint_Start_m09EED92E38926
 		return;
 	}
 }
-// Method Definition Index: 38329
+// Method Definition Index: 38268
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint_OnCollisionEnter_m73C4752E14C0A1065FDFC797A9D0620A767026B6 (FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B* __this, Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* ___0_collision, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6602,7 +6920,7 @@ IL_0018:
 		return;
 	}
 }
-// Method Definition Index: 38330
+// Method Definition Index: 38269
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint_Return_m2D29806D15835DCD0612972A7DE16B38F327C106 (FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6698,7 +7016,7 @@ IL_008c:
 		return;
 	}
 }
-// Method Definition Index: 38331
+// Method Definition Index: 38270
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint__ctor_m979B268C6FB6B7BACEB985DC8B22DF4730034BBC (FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6714,7 +7032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint__ctor_m979B268C6FB6B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38332
+// Method Definition Index: 38271
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable_Start_m224B9F1C0D6475C9774DBBABB34D699DDB6A8EBD (Kickable_t46E60C764689373E7AB2D9F08C3BB2127DD954B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6733,7 +7051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable_Start_m224B9F1C0D6475C9774DBBAB
 		return;
 	}
 }
-// Method Definition Index: 38333
+// Method Definition Index: 38272
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable_Interact_mA9D417068504740F413F3F23941A1B59F0766DDF (Kickable_t46E60C764689373E7AB2D9F08C3BB2127DD954B4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6743,7 +7061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable_Interact_mA9D417068504740F413F3
 		return;
 	}
 }
-// Method Definition Index: 38334
+// Method Definition Index: 38273
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable_KickObject_m3FD81023A71EFE475F6875DC34CB1592BF50CDE9 (Kickable_t46E60C764689373E7AB2D9F08C3BB2127DD954B4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6824,7 +7142,7 @@ IL_004d:
 		return;
 	}
 }
-// Method Definition Index: 38335
+// Method Definition Index: 38274
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable__ctor_mA28BF0A57B96664552BA3082716B19221E03A8D3 (Kickable_t46E60C764689373E7AB2D9F08C3BB2127DD954B4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6844,7 +7162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Kickable__ctor_mA28BF0A57B96664552BA3082
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38336
+// Method Definition Index: 38275
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSpot_Interact_m0B1A5D468DD49A15C030A3EF646944837F5ECF42 (TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6854,37 +7172,77 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSpot_Interact_m0B1A5D468DD49A15C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:7>
-		il2cpp_codegen_runtime_class_init_inline(CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D_il2cpp_TypeInfo_var);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
-		L_0 = CameraInteract_GetPlayerTransform_m2842FB5C7987A888828BC3662D90EFAA35E54C3A(NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:9>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
-		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_1);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
-		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
-		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_3);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
-		L_4 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_3, NULL);
-		float L_5;
-		L_5 = CameraInteract_GetPlayerHeight_m108A83D9DA96C61392C1AD846F411411F1AFB8F8(NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_4, L_5, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
-		L_7 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2, L_6, NULL);
-		NullCheck(L_0);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_0, L_7, NULL);
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:10>
+		bool L_0 = __this->____isOnCooldown;
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:12>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:14>
+		il2cpp_codegen_runtime_class_init_inline(CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D_il2cpp_TypeInfo_var);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = CameraInteract_GetPlayerTransform_m2842FB5C7987A888828BC3662D90EFAA35E54C3A(NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:16>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2(L_4, NULL);
+		float L_6;
+		L_6 = CameraInteract_GetPlayerHeight_m108A83D9DA96C61392C1AD846F411411F1AFB8F8(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_5, L_6, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3, L_7, NULL);
+		NullCheck(L_1);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_8, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:18>
+		RuntimeObject* L_9;
+		L_9 = TeleportSpot_TeleportCooldownRoutine_m675341D69C805E88A4F7838F6FEE695B41143E7A(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_10;
+		L_10 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_9, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:19>
 		return;
 	}
 }
-// Method Definition Index: 38337
+// Method Definition Index: 38276
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TeleportSpot_TeleportCooldownRoutine_m675341D69C805E88A4F7838F6FEE695B41143E7A (TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* L_0 = (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD*)il2cpp_codegen_object_new(U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD_il2cpp_TypeInfo_var);
+		U3CTeleportCooldownRoutineU3Ed__3__ctor_m46BE0862A461CEB4D747D788452940E32C8E5B31(L_0, 0, NULL);
+		U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 38277
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSpot__ctor_m57B6A1418186DE86BF99C21414B4F7D81E12AFBA (TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:6>
+		__this->____teleportCooldown = (0.5f);
 		Interactive__ctor_m9472BC9251A8B48C45C1CCF1C1ECBA21ACAA31F3(__this, NULL);
 		return;
 	}
@@ -6897,7 +7255,120 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSpot__ctor_m57B6A1418186DE86BF99
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38338
+// Method Definition Index: 38278
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportCooldownRoutineU3Ed__3__ctor_m46BE0862A461CEB4D747D788452940E32C8E5B31 (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 38279
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportCooldownRoutineU3Ed__3_System_IDisposable_Dispose_m668E84AC58F317DB44F70FBFBABCEDBC9A246F22 (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 38280
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTeleportCooldownRoutineU3Ed__3_MoveNext_m342653B78692FED3F76055E3FB66D203FDD56D66 (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:23>
+		TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* L_4 = V_1;
+		NullCheck(L_4);
+		L_4->____isOnCooldown = (bool)1;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:24>
+		TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* L_5 = V_1;
+		NullCheck(L_5);
+		float L_6 = L_5->____teleportCooldown;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_7 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_7, L_6, NULL);
+		__this->___U3CU3E2__current = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_7);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_003f:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:25>
+		TeleportSpot_tC71D2511DE120B92CB378DE94DCF7DA8884A16F5* L_8 = V_1;
+		NullCheck(L_8);
+		L_8->____isOnCooldown = (bool)0;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:26>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 38281
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTeleportCooldownRoutineU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8163542EA704672796DAB2AB78F2B0C51CA0845F (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 38282
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_Reset_mE985621D9A8C92D43A3B7C6C69D2CCC32CF2EC6D (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_Reset_mE985621D9A8C92D43A3B7C6C69D2CCC32CF2EC6D_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 38283
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_get_Current_m69FC2E31DC1C59B2A4E43D3B89A562B7A633616A (U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 38284
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_Point_m2AE3872E9E41EDA1C80F3621DB02CDDDC37A16E9 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, int32_t ___1_newWidth, int32_t ___2_newHeight, const RuntimeMethod* method) 
 {
 	{
@@ -6910,7 +7381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_Point_m2AE3872E9E41EDA1C80F
 		return;
 	}
 }
-// Method Definition Index: 38339
+// Method Definition Index: 38285
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_Bilinear_m46D3FAF17B036C221322852995D13D65B93AD9A7 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, int32_t ___1_newWidth, int32_t ___2_newHeight, const RuntimeMethod* method) 
 {
 	{
@@ -6923,7 +7394,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_Bilinear_m46D3FAF17B036C221
 		return;
 	}
 }
-// Method Definition Index: 38340
+// Method Definition Index: 38286
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_ThreadedScale_mCAFF7C32104EB62501C535FC53DAE5C9C3A11BB1 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, int32_t ___1_newWidth, int32_t ___2_newHeight, bool ___3_useBilinear, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7219,7 +7690,7 @@ IL_0135:
 		return;
 	}
 }
-// Method Definition Index: 38341
+// Method Definition Index: 38287
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_BilinearScale_m22923828DE2338530B8F46A6364FAA89BAB2C92F (RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7381,7 +7852,7 @@ IL_00e7:
 		return;
 	}
 }
-// Method Definition Index: 38342
+// Method Definition Index: 38288
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale_PointScale_mFFA5765213B531DA43626AC5822CA48F72EC07D1 (RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7489,7 +7960,7 @@ IL_0065:
 		return;
 	}
 }
-// Method Definition Index: 38343
+// Method Definition Index: 38289
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F TextureScale_ColorLerpUnclamped_m1E513C5098D6689AC1C66818609B160416F01512 (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_c1, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_c2, float ___2_value, const RuntimeMethod* method) 
 {
 	{
@@ -7531,7 +8002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 		return L_28;
 	}
 }
-// Method Definition Index: 38344
+// Method Definition Index: 38290
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale__ctor_m58F73B7E18FAEC7656C4EFBBCEFA2D5E06297906 (TextureScale_t4752149BC6A67080B203E066A06A40705BDCE952* __this, const RuntimeMethod* method) 
 {
 	{
@@ -7547,7 +8018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureScale__ctor_m58F73B7E18FAEC7656C4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38345
+// Method Definition Index: 38291
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThreadData__ctor_m871190A9851FF9A4E07BBBAD8F2F6CB87CD185B2 (ThreadData_tAC630649EA28DE7B3DBF8900D3BEE4F3350633CD* __this, int32_t ___0_s, int32_t ___1_e, const RuntimeMethod* method) 
 {
 	{
@@ -7571,7 +8042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThreadData__ctor_m871190A9851FF9A4E07BBB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 38346
+// Method Definition Index: 38292
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7605,7 +8076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 38347
+// Method Definition Index: 38293
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -7710,6 +8181,14 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 // Method Definition Index: 29873
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
@@ -7743,7 +8222,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 38296
+// Method Definition Index: 38235
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7758,7 +8237,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DifficultyManager_t476F546A209C1C
 		return L_0;
 	}
 }
-// Method Definition Index: 38298
+// Method Definition Index: 38237
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DifficultyManager_get_CurrentDifficulty_m420B0BD06B1A3EF9696EF13FC8EC1B0E93CE1C38_inline (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8049,7 +8528,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F187
 		return;
 	}
 }
-// Method Definition Index: 38297
+// Method Definition Index: 38236
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DifficultyManager_set_Instance_m5373E95C0A5BF41612391F1593D8DBDFCF62FBD4_inline (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8066,7 +8545,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DifficultyManager_set_Instan
 		return;
 	}
 }
-// Method Definition Index: 38299
+// Method Definition Index: 38238
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DifficultyManager_set_CurrentDifficulty_mDCC222316C5CC6910600443D83C489E756AE2A58_inline (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -8214,7 +8693,7 @@ IL_0030:
 		return L_13;
 	}
 }
-// Method Definition Index: 38284
+// Method Definition Index: 38223
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 CameraInteract_GetLatestHit_mE0D0FC01729686E05952F0A7876043F0548CB899_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

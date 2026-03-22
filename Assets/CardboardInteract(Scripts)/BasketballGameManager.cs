@@ -1,10 +1,3 @@
-// BasketballGameManager.cs
-// ========================
-// Muutokset alkuperäiseen:
-//   - GenerateNewQuestion() lukee vaikeustason DifficultyManager.Instance.CurrentDifficulty
-//   - Kysymystyyppi ja lukualueet määräytyvät vaikeustason mukaan
-//   - Kaikki muu logiikka on ennallaan
-
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
@@ -140,9 +133,7 @@ public class BasketballGameManager : MonoBehaviour
         }
     }
 
-    // ---------------------------------------------------------------
     // GenerateQuestion — kaikki vaikeustasologiikka on tässä metodissa
-    // ---------------------------------------------------------------
     private void GenerateQuestion(Difficulty difficulty, out string questionString, out int answer)
     {
         int a, b;

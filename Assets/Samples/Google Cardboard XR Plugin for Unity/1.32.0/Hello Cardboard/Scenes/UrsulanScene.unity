@@ -548,7 +548,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  sceneToLoad: RikunScene
+  sceneToLoad: FinalScene
   doorController: {fileID: 132667009}
 --- !u!1 &171580864
 GameObject:

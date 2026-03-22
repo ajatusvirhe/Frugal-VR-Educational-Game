@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSpot
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2
   dwellTimerOverride: 0
 --- !u!1 &63579757
 GameObject:
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSpot
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2
   dwellTimerOverride: 0
 --- !u!1001 &132667007
 PrefabInstance:
@@ -548,7 +548,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  sceneToLoad: RikunScene
+  sceneToLoad: FinalScene
   doorController: {fileID: 132667009}
 --- !u!1 &171580864
 GameObject:
@@ -3678,7 +3678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSpot
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2
   dwellTimerOverride: 0
 --- !u!1001 &1420918494
 PrefabInstance:

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TeleportSpot : Interactive
 {
-    private float _teleportCooldown = 0.5f;
+    private float _teleportCooldown = 1f;
     private bool _isOnCooldown;
     public new void Interact()
     {

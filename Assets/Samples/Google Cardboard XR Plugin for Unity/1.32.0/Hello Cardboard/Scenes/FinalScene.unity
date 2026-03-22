@@ -221,8 +221,8 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  kickForce: 12
-  flattenDirection: 1
+  kickForce: 8
+  flattenDirection: 0
 --- !u!136 &9499597
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -376,8 +376,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &13092071
 CapsuleCollider:
@@ -686,8 +687,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &58298976
 CapsuleCollider:
@@ -1198,8 +1200,8 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  kickForce: 12
-  flattenDirection: 1
+  kickForce: 8
+  flattenDirection: 0
 --- !u!136 &384077269
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1449,8 +1451,8 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  kickForce: 12
-  flattenDirection: 1
+  kickForce: 8
+  flattenDirection: 0
 --- !u!136 &434767249
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1746,8 +1748,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &509848541
 CapsuleCollider:
@@ -2624,8 +2627,8 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  kickForce: 12
-  flattenDirection: 1
+  kickForce: 8
+  flattenDirection: 0
 --- !u!136 &1100600078
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2779,8 +2782,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &1229483577
 CapsuleCollider:
@@ -3451,8 +3455,8 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  kickForce: 12
-  flattenDirection: 1
+  kickForce: 8
+  flattenDirection: 0
 --- !u!136 &1593270332
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3786,8 +3790,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &1970430078
 CapsuleCollider:
@@ -4224,8 +4229,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &2079385226
 CapsuleCollider:
@@ -4492,8 +4498,9 @@ MonoBehaviour:
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
   grabSpeed: 7
-  throwForce: 15
+  throwForce: 8
   holdDistance: 2
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!136 &2143389806
 CapsuleCollider:

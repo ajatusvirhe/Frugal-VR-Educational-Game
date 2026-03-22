@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class BasketWeightChecker : MonoBehaviour
 {
-    [Header("Target generation (multiplication table up to 10)")]
+    [Header("Hard difficulty multiplication range")]
     public int minFactor = 1;
     public int maxFactor = 10;
 
@@ -26,22 +26,65 @@ public class BasketWeightChecker : MonoBehaviour
     private int targetWeight;
     private int lastFactorA;
     private int lastFactorB;
+    private bool isAdditionQuestion;
 
     private List<Rigidbody> objectsInBasket = new List<Rigidbody>();
 
     void Start()
     {
+        LogCurrentDifficulty();
         GenerateNewTarget();
+    }
+
+    void LogCurrentDifficulty()
+    {
+        Difficulty activeDifficulty = DifficultyManager.Instance != null
+            ? DifficultyManager.Instance.CurrentDifficulty
+            : Difficulty.Hard;
+
+        Debug.Log($"BasketWeightChecker difficulty: {activeDifficulty}");
     }
 
     void GenerateNewTarget()
     {
-        lastFactorA = Random.Range(minFactor, maxFactor + 1);
-        lastFactorB = Random.Range(minFactor, maxFactor + 1);
-        targetWeight = lastFactorA * lastFactorB;
+        Difficulty activeDifficulty = DifficultyManager.Instance != null
+            ? DifficultyManager.Instance.CurrentDifficulty
+            : Difficulty.Hard;
+
+        isAdditionQuestion = false;
+
+        switch (activeDifficulty)
+        {
+            case Difficulty.Easy:
+                // Easy: addition with numbers 1-10.
+                lastFactorA = Random.Range(1, 11);
+                lastFactorB = Random.Range(1, 11);
+                targetWeight = lastFactorA + lastFactorB;
+                isAdditionQuestion = true;
+                break;
+
+            case Difficulty.Medium:
+                // Medium: multiplication tables 1-5 and 10.
+                int[] mediumTables = { 1, 2, 3, 4, 5, 10 };
+                lastFactorA = mediumTables[Random.Range(0, mediumTables.Length)];
+                lastFactorB = Random.Range(1, 11);
+                targetWeight = lastFactorA * lastFactorB;
+                break;
+
+            case Difficulty.Hard:
+            default:
+                // Hard: multiplication 1-10 (existing behavior).
+                lastFactorA = Random.Range(minFactor, maxFactor + 1);
+                lastFactorB = Random.Range(minFactor, maxFactor + 1);
+                targetWeight = lastFactorA * lastFactorB;
+                break;
+        }
 
         if (targetText != null)
-            targetText.text = $"Tavoite paino: {lastFactorA} × {lastFactorB}";
+        {
+            string symbol = isAdditionQuestion ? "+" : "×";
+            targetText.text = $"Tavoite paino: {lastFactorA} {symbol} {lastFactorB}";
+        }
 
         if (currentText != null)
             currentText.text = "Tämän hetkinen paino: 0";

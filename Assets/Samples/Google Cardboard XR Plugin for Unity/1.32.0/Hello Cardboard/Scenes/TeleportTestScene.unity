@@ -9928,7 +9928,8 @@ MonoBehaviour:
   dwellTimerOverride: 0
   grabSpeed: 5
   throwForce: 20
-  holdDistance: 2
+  holdDistance: 4.5
+  verticalOffset: -0.5
   useGravity: 1
 --- !u!135 &2039086382
 SphereCollider:

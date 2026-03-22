@@ -2707,7 +2707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 2
+  twistMultiplierOverride: 0
   dwellTimerOverride: 0
   sceneToLoad: FinalScene
   doorController: {fileID: 558636605}

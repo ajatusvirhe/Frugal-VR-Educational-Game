@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity
     guid: 22dd51bf181f28e49980cc42c687d1ed
+  - enabled: 1
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/FinalScene.unity
+    guid: dd7bcc55691db4046b54992f09f88122
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ea038ade32a58e342b1bd92ac25e0560, type: 2}

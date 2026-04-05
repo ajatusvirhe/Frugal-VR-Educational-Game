@@ -2398,7 +2398,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9847142, b: 0.8915094, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -2692,7 +2692,7 @@ Camera:
   m_GameObject: {fileID: 959308587}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -3276,7 +3276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1020291217
 Transform:
   m_ObjectHideFlags: 0
@@ -5051,7 +5051,7 @@ Transform:
   m_GameObject: {fileID: 1787493288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.56, z: 0}
+  m_LocalPosition: {x: 0, y: 7.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSurface
   interactModeOverride: 0
-  twistMultiplierOverride: 4
+  twistMultiplierOverride: 5
   dwellTimerOverride: 0
 --- !u!1001 &2070007128
 PrefabInstance:
@@ -6082,9 +6082,6 @@ PrefabInstance:
       addedObject: {fileID: 2143389806}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 697ad22ca0e8d3144919bd956aeaec13, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2143389805}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 697ad22ca0e8d3144919bd956aeaec13, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2143389808}
   m_SourcePrefab: {fileID: 100100000, guid: 697ad22ca0e8d3144919bd956aeaec13, type: 3}
 --- !u!1 &2143389804 stripped
@@ -6092,26 +6089,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 697ad22ca0e8d3144919bd956aeaec13, type: 3}
   m_PrefabInstance: {fileID: 2143389803}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2143389805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143389804}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d83f13fcdf9b7547ab4698425c15140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Throwable
-  interactModeOverride: 0
-  twistMultiplierOverride: 0
-  dwellTimerOverride: 0
-  grabSpeed: 7
-  throwForce: 8
-  holdDistance: 2
-  verticalOffset: -0.5
-  useGravity: 1
 --- !u!136 &2143389806
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6177,7 +6154,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  _apexHeight: 1.5
+  _apexHeight: 5
   _startKinematic: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

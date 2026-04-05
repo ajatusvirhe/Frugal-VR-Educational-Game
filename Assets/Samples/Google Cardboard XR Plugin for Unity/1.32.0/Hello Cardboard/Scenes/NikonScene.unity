@@ -15497,7 +15497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -17718,7 +17718,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.6272114, y: 0.3265056, z: -0.3265056, w: 0.6272114}
   m_LocalPosition: {x: 1.61133, y: 1.05314, z: -3.9448102}
-  m_LocalScale: {x: 0.40000004, y: 0.40000004, z: 0.40000015}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035209185}
@@ -18369,7 +18369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -18556,7 +18556,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.2008292, y: 0.677988, z: -0.677988, w: -0.2008292}
   m_LocalPosition: {x: -8.11067, y: 0.60614, z: -12.55881}
-  m_LocalScale: {x: 0.40000004, y: 0.4000001, z: 0.40000015}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035209185}
@@ -18595,7 +18595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -18812,7 +18812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19128,7 +19128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19374,7 +19374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19511,7 +19511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19610,7 +19610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19724,7 +19724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19861,7 +19861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19954,7 +19954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20047,7 +20047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20161,7 +20161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20254,7 +20254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20391,7 +20391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20484,7 +20484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20577,7 +20577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20729,7 +20729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 2.5
+  twistMultiplierOverride: 3
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1

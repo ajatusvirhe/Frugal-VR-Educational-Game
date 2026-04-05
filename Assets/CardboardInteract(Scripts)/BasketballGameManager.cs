@@ -16,8 +16,13 @@ public class BasketballGameManager : MonoBehaviour
     public Color correctColor = Color.green;
     public Color wrongColor = Color.red;
 
-    [Header("Efektit")]
+    [Header("Visuaaliefektit")]
     public ParticleSystem confettiEffect;
+
+    [Header("Ääniefektit")]
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
+    private AudioSource audioSource;
 
     [Header("Pelin asetukset")]
     public int score = 0;
@@ -36,6 +41,7 @@ public class BasketballGameManager : MonoBehaviour
 
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
         if (feedbackLight != null) feedbackLight.color = normalColor;
         GenerateNewQuestion();
     }
@@ -75,11 +81,13 @@ public class BasketballGameManager : MonoBehaviour
     private void OnCorrectAnswer()
     {
         if (confettiEffect != null) confettiEffect.Play();
+        if (audioSource != null && correctSound != null) audioSource.PlayOneShot(correctSound);
         StartCoroutine(ShowFeedback("Oikein!", correctColor));
     }
 
     private void OnWrongAnswer()
     {
+        if (audioSource != null && wrongSound != null) audioSource.PlayOneShot(wrongSound);
         StartCoroutine(ShowFeedback("Väärin, oikea vastaus on " + correctAnswer, wrongColor));
     }
 

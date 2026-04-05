@@ -67,6 +67,8 @@ struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
 struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
 struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
+struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20;
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 struct Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B;
 struct BalloonThrow_tD498BFF2F63ACCD29662B46E2523DE1E166350B8;
 struct Basket_tEC4D8B4DA475ADBC2DC5C2B39154A3EDFCFB8E18;
@@ -151,7 +153,9 @@ struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852B
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
-struct U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9;
+struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
+struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
+struct U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
@@ -179,7 +183,7 @@ IL2CPP_EXTERN_C RuntimeClass* TextureScale_t4752149BC6A67080B203E066A06A40705BDC
 IL2CPP_EXTERN_C RuntimeClass* ThreadData_tAC630649EA28DE7B3DBF8900D3BEE4F3350633CD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CTeleportCooldownRoutineU3Ed__3_t6D545AB86F471D4999C2D4869D7F70AFB458E1CD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
@@ -222,6 +226,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDA9A9CA08BD9875E7EB99E5089F19CE1B8115A52
 IL2CPP_EXTERN_C String_t* _stringLiteralE6130A647EDA9B6C4E883A157D13D5ECA60E417A;
 IL2CPP_EXTERN_C String_t* _stringLiteralE908144AF9E49D3C09BA8265753985DBEDA329F9;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1EB6F6728F0C913C0DFAB7F58BC996D0649A11C;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisGrabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_mFCBB6800CD4C352141423A49D9BE38892D8C44EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisInteractive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C_mB5C088DE1895862CFFA6D6BD63448149495B2288_RuntimeMethod_var;
@@ -232,6 +237,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisThrowable_t56B3F6
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m3B62AD039A11BDA3C9140A67B3F38E869492B280_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m7E180794A20B911D4907125A9C8D6580E7CC7D51_RuntimeMethod_var;
@@ -248,7 +254,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_set_Item_m95629806F31CF369D937590912
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisBall_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B_m676CB3F8A176F9F282C03FF73DBA4E3ED8C5E008_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TextureScale_BilinearScale_m22923828DE2338530B8F46A6364FAA89BAB2C92F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TextureScale_PointScale_mFFA5765213B531DA43626AC5822CA48F72EC07D1_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CShowFeedbackU3Ed__20_System_Collections_IEnumerator_Reset_m1D61987AC0568F48D1F65B52893800BF7DD5F8BF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CShowFeedbackU3Ed__23_System_Collections_IEnumerator_Reset_m5415F9BE0F57429DF0C8ECB0A1A53535639777DC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CTeleportCooldownRoutineU3Ed__3_System_Collections_IEnumerator_Reset_mE985621D9A8C92D43A3B7C6C69D2CCC32CF2EC6D_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -1011,7 +1017,7 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshaled_com : publ
 	void* ___safeWaitHandle;
 	int32_t ___hasThreadAffinity;
 };
-struct U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9  : public RuntimeObject
+struct U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -1049,6 +1055,9 @@ struct TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0
 	int32_t ___m_Capacity;
 	int32_t ___m_RolloverSize;
 	int32_t ___m_Count;
+};
+struct AudioResource_t35B84706031E4F08C928B1640B804839F4B6500A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
 };
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
@@ -1122,6 +1131,11 @@ struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3
 };
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
+};
+struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20  : public AudioResource_t35B84706031E4F08C928B1640B804839F4B6500A
+{
+	PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E* ___m_PCMReaderCallback;
+	PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072* ___m_PCMSetPositionCallback;
 };
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -1385,6 +1399,9 @@ struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F
 	int32_t ___m_RolloverSize;
 	int32_t ___m_Count;
 };
+struct AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
 	uint32_t ___m_NonSerializedVersion;
@@ -1397,6 +1414,9 @@ struct Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3  : public Behaviour_t0197
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
+{
 };
 struct Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1421,6 +1441,9 @@ struct BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64  : public M
 	float ___correctTextDuration;
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___confettiEffect;
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___splashEffect;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___correctSound;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___watersplashSound;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource;
 	int32_t ___roundsCompleted;
 	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___onGameCompleted;
 	int32_t ___targetWeight;
@@ -1438,6 +1461,9 @@ struct BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C  : public
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___correctColor;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___wrongColor;
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___confettiEffect;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___correctSound;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___wrongSound;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audioSource;
 	int32_t ___score;
 	int32_t ___targetScore;
 	float ___feedbackDuration;
@@ -2224,6 +2250,7 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_gshared_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___0_item, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_gshared_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) ;
@@ -2274,6 +2301,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReturnToPoint_Return_m644A28894BE76C76B2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+inline AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateNewQuestion_m11BAD8473D0051953031137D0090E24E55D94B72 (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) ;
 inline void List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8 (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method)
@@ -2301,11 +2333,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnCorrectAnswer_mC1B6FE5C2BE7A4C43D1119544BEC5B52AF69805A (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnWrongAnswer_m3781939E1014068F587B0ECF79313519F4ACE5F2 (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_clip, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BasketballGameManager_ShowFeedback_mD5D6034A70161FCF7A0A1F101A6581D3E922B61C (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, String_t* ___0_message, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_color, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__20__ctor_m4E757304A5CC47DA6D043C48DD89558A99F4F957 (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__23__ctor_m7C5EC54828253759BBBFC69312C91C34B37CFB9C (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_yellow_m66637FA14383E8D74F24AE256B577CE1D55D469F_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DifficultyManager_get_CurrentDifficulty_m420B0BD06B1A3EF9696EF13FC8EC1B0E93CE1C38_inline (DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* __this, const RuntimeMethod* method) ;
@@ -2322,6 +2355,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+inline AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578 (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
@@ -2394,7 +2432,6 @@ inline Interactive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C* Component_GetCompo
 {
 	return ((  Interactive_t746BD5660A310D9D849BCFCA4A7F4AE2A9A0457C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
@@ -2460,7 +2497,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CameraInteract_GetPlayerHeight_m108A83D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_ThrowObject_m9E8BC2A143A0EC034917163465E8BC0510CF6D4D (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_force, int32_t ___1_mode, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_m6C3FD3EA358DADA3B191F2449CF1C4F8B22695ED (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Rigidbody_get_isKinematic_mC20906CA5A89983DE06EAC6E3AFC5BC012F90CA1 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Physics_get_gravity_m94393492AE4ED8B38A22ECCDCD2DDDB71BFA010D (const RuntimeMethod* method) ;
@@ -2781,33 +2817,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_Start_m6B704EF1601
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:39>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_0 = __this->___feedbackLight;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:44>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_0);
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_1;
+		L_1 = GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14(L_0, GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var);
+		__this->___audioSource = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___audioSource), (void*)L_1);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:45>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_2 = __this->___feedbackLight;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
 		{
-			goto IL_001f;
+			goto IL_0030;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:39>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_2 = __this->___feedbackLight;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = __this->___normalColor;
-		NullCheck(L_2);
-		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_2, L_3, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:45>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_4 = __this->___feedbackLight;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_5 = __this->___normalColor;
+		NullCheck(L_4);
+		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_4, L_5, NULL);
 	}
 
-IL_001f:
+IL_0030:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:40>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:46>
 		BasketballGameManager_GenerateNewQuestion_m11BAD8473D0051953031137D0090E24E55D94B72(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:41>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:47>
 		return;
 	}
 }
@@ -2829,7 +2874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_ShuffleMediumMulti
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:45>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:51>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_0 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_0, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_1 = L_0;
@@ -2849,7 +2894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_ShuffleMediumMulti
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_5, 5, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 		__this->____mediumMultipliers = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____mediumMultipliers), (void*)L_5);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:46>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:52>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_6 = __this->____mediumMultipliers;
 		NullCheck(L_6);
 		int32_t L_7;
@@ -2860,19 +2905,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_ShuffleMediumMulti
 
 IL_003e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:48>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:54>
 		int32_t L_8 = V_0;
 		int32_t L_9;
 		L_9 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, ((int32_t)il2cpp_codegen_add(L_8, 1)), NULL);
 		V_1 = L_9;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:49>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:55>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_10 = __this->____mediumMultipliers;
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
 		int32_t L_12;
 		L_12 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_10, L_11, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
 		V_2 = L_12;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:50>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:56>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_13 = __this->____mediumMultipliers;
 		int32_t L_14 = V_0;
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_15 = __this->____mediumMultipliers;
@@ -2882,20 +2927,20 @@ IL_003e:
 		L_17 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_15, L_16, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
 		NullCheck(L_13);
 		List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587(L_13, L_14, L_17, List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:51>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:57>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_18 = __this->____mediumMultipliers;
 		int32_t L_19 = V_1;
 		int32_t L_20 = V_2;
 		NullCheck(L_18);
 		List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587(L_18, L_19, L_20, List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:46>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:52>
 		int32_t L_21 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_21, 1));
 	}
 
 IL_007e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:46>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:52>
 		int32_t L_22 = V_0;
 		if ((((int32_t)L_22) > ((int32_t)0)))
 		{
@@ -2903,9 +2948,9 @@ IL_007e:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:53>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:59>
 		__this->____mediumRound = 0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:54>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:60>
 		return;
 	}
 }
@@ -2913,7 +2958,7 @@ IL_007e:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_CheckAnswer_m26091EF16B2F4835714C9F867A1185E628B83ECC (BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* __this, int32_t ___0_submittedAnswer, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:58>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:64>
 		bool L_0 = __this->___isProcessing;
 		if (!L_0)
 		{
@@ -2921,13 +2966,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_CheckAnswer_m26091
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:58>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:64>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:60>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:66>
 		int32_t L_1 = ___0_submittedAnswer;
 		int32_t L_2 = __this->___correctAnswer;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_2))))
@@ -2936,10 +2981,10 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:62>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:68>
 		int32_t L_3 = __this->___score;
 		__this->___score = ((int32_t)il2cpp_codegen_add(L_3, 1));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:63>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:69>
 		int32_t L_4 = __this->___score;
 		int32_t L_5 = __this->___targetScore;
 		if ((((int32_t)L_4) < ((int32_t)L_5)))
@@ -2948,7 +2993,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:65>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:71>
 		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_6 = __this->___onGameCompleted;
 		NullCheck(L_6);
 		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(L_6, NULL);
@@ -2956,16 +3001,16 @@ IL_0009:
 
 IL_0039:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:67>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:73>
 		BasketballGameManager_OnCorrectAnswer_mC1B6FE5C2BE7A4C43D1119544BEC5B52AF69805A(__this, NULL);
 		return;
 	}
 
 IL_0040:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:71>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:77>
 		BasketballGameManager_OnWrongAnswer_m3781939E1014068F587B0ECF79313519F4ACE5F2(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:73>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:79>
 		return;
 	}
 }
@@ -2980,7 +3025,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnCorrectAnswer_mC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:77>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:83>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_0 = __this->___confettiEffect;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -2991,7 +3036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnCorrectAnswer_mC
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:77>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:83>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_2 = __this->___confettiEffect;
 		NullCheck(L_2);
 		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_2, NULL);
@@ -2999,13 +3044,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnCorrectAnswer_mC
 
 IL_0019:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:78>
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = __this->___correctColor;
-		RuntimeObject* L_4;
-		L_4 = BasketballGameManager_ShowFeedback_mD5D6034A70161FCF7A0A1F101A6581D3E922B61C(__this, _stringLiteral26E9F4C2192FBE5C10569FB1203839339597A092, L_3, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
-		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:79>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:84>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_3 = __this->___audioSource;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_5 = __this->___correctSound;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:84>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_7 = __this->___audioSource;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_8 = __this->___correctSound;
+		NullCheck(L_7);
+		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_7, L_8, NULL);
+	}
+
+IL_0046:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:85>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = __this->___correctColor;
+		RuntimeObject* L_10;
+		L_10 = BasketballGameManager_ShowFeedback_mD5D6034A70161FCF7A0A1F101A6581D3E922B61C(__this, _stringLiteral26E9F4C2192FBE5C10569FB1203839339597A092, L_9, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_11;
+		L_11 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_10, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:86>
 		return;
 	}
 }
@@ -3015,22 +3090,53 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_OnWrongAnswer_m378
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral15E5D91309270881F5BA5FC7B543EDD92BA0125A);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:83>
-		int32_t* L_0 = (int32_t*)(&__this->___correctAnswer);
-		String_t* L_1;
-		L_1 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_0, NULL);
-		String_t* L_2;
-		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral15E5D91309270881F5BA5FC7B543EDD92BA0125A, L_1, NULL);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = __this->___wrongColor;
-		RuntimeObject* L_4;
-		L_4 = BasketballGameManager_ShowFeedback_mD5D6034A70161FCF7A0A1F101A6581D3E922B61C(__this, L_2, L_3, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
-		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:84>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:90>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0 = __this->___audioSource;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_2 = __this->___wrongSound;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:90>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_4 = __this->___audioSource;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_5 = __this->___wrongSound;
+		NullCheck(L_4);
+		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_4, L_5, NULL);
+	}
+
+IL_002d:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:91>
+		int32_t* L_6 = (int32_t*)(&__this->___correctAnswer);
+		String_t* L_7;
+		L_7 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_6, NULL);
+		String_t* L_8;
+		L_8 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral15E5D91309270881F5BA5FC7B543EDD92BA0125A, L_7, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = __this->___wrongColor;
+		RuntimeObject* L_10;
+		L_10 = BasketballGameManager_ShowFeedback_mD5D6034A70161FCF7A0A1F101A6581D3E922B61C(__this, L_8, L_9, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_11;
+		L_11 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_10, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:92>
 		return;
 	}
 }
@@ -3040,22 +3146,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BasketballGameManager_ShowFeed
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* L_0 = (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9*)il2cpp_codegen_object_new(U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9_il2cpp_TypeInfo_var);
-		U3CShowFeedbackU3Ed__20__ctor_m4E757304A5CC47DA6D043C48DD89558A99F4F957(L_0, 0, NULL);
-		U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* L_1 = L_0;
+		U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* L_0 = (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B*)il2cpp_codegen_object_new(U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B_il2cpp_TypeInfo_var);
+		U3CShowFeedbackU3Ed__23__ctor_m7C5EC54828253759BBBFC69312C91C34B37CFB9C(L_0, 0, NULL);
+		U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* L_2 = L_1;
+		U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* L_2 = L_1;
 		String_t* L_3 = ___0_message;
 		NullCheck(L_2);
 		L_2->___message = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___message), (void*)L_3);
-		U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* L_4 = L_2;
+		U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* L_4 = L_2;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_5 = ___1_color;
 		NullCheck(L_4);
 		L_4->___color = L_5;
@@ -3092,7 +3198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateNewQuestio
 	int32_t V_10 = 0;
 	int32_t G_B7_0 = 0;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:104>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:112>
 		int32_t L_0 = __this->___score;
 		int32_t L_1 = __this->___targetScore;
 		if ((((int32_t)L_0) < ((int32_t)L_1)))
@@ -3101,17 +3207,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateNewQuestio
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:106>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:114>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___questionText;
 		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_2, _stringLiteralF1EB6F6728F0C913C0DFAB7F58BC996D0649A11C);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:107>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:115>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___questionText;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4;
 		L_4 = Color_get_yellow_m66637FA14383E8D74F24AE256B577CE1D55D469F_inline(NULL);
 		NullCheck(L_3);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_3, L_4);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:108>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:116>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_5 = __this->___feedbackLight;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -3122,7 +3228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateNewQuestio
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:108>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:116>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_7 = __this->___feedbackLight;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
 		L_8 = Color_get_yellow_m66637FA14383E8D74F24AE256B577CE1D55D469F_inline(NULL);
@@ -3132,15 +3238,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateNewQuestio
 
 IL_004c:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:109>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:117>
 		return;
 	}
 
 IL_004d:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:112>
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:113>
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:114>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:120>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:121>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:122>
 		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_9;
 		L_9 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -3169,44 +3275,44 @@ IL_005d:
 IL_0067:
 	{
 		V_0 = G_B7_0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:117>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:125>
 		int32_t L_13 = V_0;
 		int32_t* L_14 = (int32_t*)(&__this->___correctAnswer);
 		BasketballGameManager_GenerateQuestion_m810302499949F2CB87E994DCF8ADDB07D076B27D(__this, L_13, (&V_1), L_14, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:119>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:127>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_15 = __this->___questionText;
 		String_t* L_16 = V_1;
 		NullCheck(L_15);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_15, L_16);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:120>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:128>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_17 = __this->___questionText;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_18;
 		L_18 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
 		NullCheck(L_17);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_17, L_18);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:122>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:130>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_19 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_19, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		V_2 = L_19;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:123>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:131>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_20 = V_2;
 		int32_t L_21 = __this->___correctAnswer;
 		NullCheck(L_20);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_20, L_21, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:125>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:133>
 		V_3 = 0;
 		goto IL_00ca;
 	}
 
 IL_00a9:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:128>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:136>
 		int32_t L_22 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_22, 1));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:131>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:139>
 		int32_t L_23 = V_0;
 		BasketballGameManager_GenerateQuestion_m810302499949F2CB87E994DCF8ADDB07D076B27D(__this, L_23, (&V_4), (&V_5), NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:132>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:140>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_24 = V_2;
 		int32_t L_25 = V_5;
 		NullCheck(L_24);
@@ -3218,7 +3324,7 @@ IL_00a9:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:132>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:140>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_27 = V_2;
 		int32_t L_28 = V_5;
 		NullCheck(L_27);
@@ -3227,7 +3333,7 @@ IL_00a9:
 
 IL_00ca:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:126>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:134>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_29 = V_2;
 		NullCheck(L_29);
 		int32_t L_30;
@@ -3247,21 +3353,21 @@ IL_00ca:
 
 IL_00d8:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:135>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:143>
 		V_6 = 0;
 		goto IL_0116;
 	}
 
 IL_00dd:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:137>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:145>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_32 = V_2;
 		int32_t L_33 = V_6;
 		NullCheck(L_32);
 		int32_t L_34;
 		L_34 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_32, L_33, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
 		V_7 = L_34;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:138>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:146>
 		int32_t L_35 = V_6;
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_36 = V_2;
 		NullCheck(L_36);
@@ -3270,7 +3376,7 @@ IL_00dd:
 		int32_t L_38;
 		L_38 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(L_35, L_37, NULL);
 		V_8 = L_38;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:139>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:147>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_39 = V_2;
 		int32_t L_40 = V_6;
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_41 = V_2;
@@ -3280,20 +3386,20 @@ IL_00dd:
 		L_43 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_41, L_42, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
 		NullCheck(L_39);
 		List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587(L_39, L_40, L_43, List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:140>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:148>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_44 = V_2;
 		int32_t L_45 = V_8;
 		int32_t L_46 = V_7;
 		NullCheck(L_44);
 		List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587(L_44, L_45, L_46, List_1_set_Item_m95629806F31CF369D937590912E0B6A53FF7C587_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:135>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:143>
 		int32_t L_47 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_47, 1));
 	}
 
 IL_0116:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:135>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:143>
 		int32_t L_48 = V_6;
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_49 = V_2;
 		NullCheck(L_49);
@@ -3305,14 +3411,14 @@ IL_0116:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:143>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:151>
 		V_9 = 0;
 		goto IL_015b;
 	}
 
 IL_0125:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:145>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:153>
 		TMP_TextU5BU5D_t12384CBAF397196B9A7886087BDC8C19D800C24F* L_51 = __this->___basketTexts;
 		int32_t L_52 = V_9;
 		NullCheck(L_51);
@@ -3327,7 +3433,7 @@ IL_0125:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:146>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:154>
 		TMP_TextU5BU5D_t12384CBAF397196B9A7886087BDC8C19D800C24F* L_56 = __this->___basketTexts;
 		int32_t L_57 = V_9;
 		NullCheck(L_56);
@@ -3347,14 +3453,14 @@ IL_0125:
 
 IL_0155:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:143>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:151>
 		int32_t L_64 = V_9;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_64, 1));
 	}
 
 IL_015b:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:143>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:151>
 		int32_t L_65 = V_9;
 		TMP_TextU5BU5D_t12384CBAF397196B9A7886087BDC8C19D800C24F* L_66 = __this->___basketTexts;
 		NullCheck(L_66);
@@ -3364,7 +3470,7 @@ IL_015b:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:148>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:156>
 		return;
 	}
 }
@@ -3415,20 +3521,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager_GenerateQuestion_m
 
 IL_0017:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:158>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:166>
 		int32_t L_1;
 		L_1 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:159>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:167>
 		int32_t L_2;
 		L_2 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		V_1 = L_2;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:160>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:168>
 		int32_t* L_3 = ___2_answer;
 		int32_t L_4 = V_0;
 		int32_t L_5 = V_1;
 		*((int32_t*)L_3) = (int32_t)((int32_t)il2cpp_codegen_add(L_4, L_5));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:161>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:169>
 		String_t** L_6 = ___1_questionString;
 		String_t* L_7;
 		L_7 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
@@ -3438,13 +3544,13 @@ IL_0017:
 		L_9 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(L_7, _stringLiteral41D7D721EB92533F364B02AAC885BBC1473C5589, L_8, _stringLiteralE908144AF9E49D3C09BA8265753985DBEDA329F9, NULL);
 		*((RuntimeObject**)L_6) = (RuntimeObject*)L_9;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_6, (void*)(RuntimeObject*)L_9);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:162>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:170>
 		return;
 	}
 
 IL_004e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:167>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:175>
 		int32_t L_10 = __this->____mediumRound;
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_11 = __this->____mediumMultipliers;
 		NullCheck(L_11);
@@ -3468,20 +3574,20 @@ IL_004e:
 
 IL_006e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:168>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:176>
 		BasketballGameManager_ShuffleMediumMultipliers_m99886589E35CC1F05EFD661C500C693D68144DEC(__this, NULL);
 	}
 
 IL_0074:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:170>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:178>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_15 = __this->____mediumMultipliers;
 		int32_t L_16 = __this->____mediumRound;
 		NullCheck(L_15);
 		int32_t L_17;
 		L_17 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_15, L_16, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
 		V_2 = L_17;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:171>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:179>
 		int32_t L_18 = __this->____mediumRound;
 		__this->____mediumRound = ((int32_t)il2cpp_codegen_add(L_18, 1));
 		int32_t L_19 = V_2;
@@ -3515,7 +3621,7 @@ IL_0074:
 
 IL_00b5:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:176>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:184>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_20 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_20, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_21 = L_20;
@@ -3531,13 +3637,13 @@ IL_00b5:
 		NullCheck(L_24);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_24, ((int32_t)10), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 		V_3 = L_24;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:176>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:184>
 		goto IL_0182;
 	}
 
 IL_00dd:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:177>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:185>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_25 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_25, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_26 = L_25;
@@ -3550,13 +3656,13 @@ IL_00dd:
 		NullCheck(L_28);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_28, ((int32_t)10), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 		V_3 = L_28;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:177>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:185>
 		goto IL_0182;
 	}
 
 IL_00fe:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:178>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:186>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_29 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_29, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_30 = L_29;
@@ -3572,13 +3678,13 @@ IL_00fe:
 		NullCheck(L_33);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_33, ((int32_t)10), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 		V_3 = L_33;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:178>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:186>
 		goto IL_0182;
 	}
 
 IL_0123:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:179>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:187>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_34 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_34, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_35 = L_34;
@@ -3594,13 +3700,13 @@ IL_0123:
 		NullCheck(L_38);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_38, ((int32_t)10), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 		V_3 = L_38;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:179>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:187>
 		goto IL_0182;
 	}
 
 IL_0148:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:180>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:188>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_39 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_39, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_40 = L_39;
@@ -3616,13 +3722,13 @@ IL_0148:
 		NullCheck(L_43);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_43, ((int32_t)10), List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 		V_3 = L_43;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:180>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:188>
 		goto IL_0182;
 	}
 
 IL_016d:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:181>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:189>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_44 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_44, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_45 = L_44;
@@ -3636,18 +3742,18 @@ IL_016d:
 
 IL_0182:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:184>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:192>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_47 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_47, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		V_4 = L_47;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:185>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:193>
 		V_5 = 1;
 		goto IL_01a7;
 	}
 
 IL_018e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:186>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:194>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_48 = V_3;
 		int32_t L_49 = V_5;
 		NullCheck(L_48);
@@ -3659,7 +3765,7 @@ IL_018e:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:187>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:195>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_51 = V_4;
 		int32_t L_52 = V_5;
 		NullCheck(L_51);
@@ -3668,14 +3774,14 @@ IL_018e:
 
 IL_01a1:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:185>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:193>
 		int32_t L_53 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_53, 1));
 	}
 
 IL_01a7:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:185>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:193>
 		int32_t L_54 = V_5;
 		if ((((int32_t)L_54) <= ((int32_t)((int32_t)10))))
 		{
@@ -3683,10 +3789,10 @@ IL_01a7:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:189>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:197>
 		int32_t L_55 = V_2;
 		V_0 = L_55;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:190>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:198>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_56 = V_4;
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_57 = V_4;
 		NullCheck(L_57);
@@ -3698,12 +3804,12 @@ IL_01a7:
 		int32_t L_60;
 		L_60 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_56, L_59, List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
 		V_1 = L_60;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:191>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:199>
 		int32_t* L_61 = ___2_answer;
 		int32_t L_62 = V_0;
 		int32_t L_63 = V_1;
 		*((int32_t*)L_61) = (int32_t)((int32_t)il2cpp_codegen_multiply(L_62, L_63));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:192>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:200>
 		String_t** L_64 = ___1_questionString;
 		String_t* L_65;
 		L_65 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
@@ -3713,26 +3819,26 @@ IL_01a7:
 		L_67 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(L_65, _stringLiteral1DAB2B731CABAF96C21339FF0A0E75F0FE08E2F4, L_66, _stringLiteralE908144AF9E49D3C09BA8265753985DBEDA329F9, NULL);
 		*((RuntimeObject**)L_64) = (RuntimeObject*)L_67;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_64, (void*)(RuntimeObject*)L_67);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:193>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:201>
 		return;
 	}
 
 IL_01e9:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:199>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:207>
 		int32_t L_68;
 		L_68 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		V_0 = L_68;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:200>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:208>
 		int32_t L_69;
 		L_69 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		V_1 = L_69;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:201>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:209>
 		int32_t* L_70 = ___2_answer;
 		int32_t L_71 = V_0;
 		int32_t L_72 = V_1;
 		*((int32_t*)L_70) = (int32_t)((int32_t)il2cpp_codegen_multiply(L_71, L_72));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:202>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:210>
 		String_t** L_73 = ___1_questionString;
 		String_t* L_74;
 		L_74 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
@@ -3742,7 +3848,7 @@ IL_01e9:
 		L_76 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(L_74, _stringLiteral1DAB2B731CABAF96C21339FF0A0E75F0FE08E2F4, L_75, _stringLiteralE908144AF9E49D3C09BA8265753985DBEDA329F9, NULL);
 		*((RuntimeObject**)L_73) = (RuntimeObject*)L_76;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_73, (void*)(RuntimeObject*)L_76);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:205>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:213>
 		return;
 	}
 }
@@ -3769,11 +3875,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager__ctor_mDC2930633C8
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
 		L_2 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
 		__this->___wrongColor = L_2;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:24>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:29>
 		__this->___targetScore = ((int32_t)10);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:25>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:30>
 		__this->___feedbackDuration = (2.0f);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:35>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:40>
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_3 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
 		List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8(L_3, List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var);
 		__this->____mediumMultipliers = L_3;
@@ -3791,7 +3897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketballGameManager__ctor_mDC2930633C8
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 38148
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__20__ctor_m4E757304A5CC47DA6D043C48DD89558A99F4F957 (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__23__ctor_m7C5EC54828253759BBBFC69312C91C34B37CFB9C (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -3801,14 +3907,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__20__ctor_m4E757304A
 	}
 }
 // Method Definition Index: 38149
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__20_System_IDisposable_Dispose_m8665ADC9EAD51A65D2A8F4F707291C29B7435B64 (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__23_System_IDisposable_Dispose_m9FEB07CEB81151AA4A0708B82EA305C5DC5DDE8F (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
 // Method Definition Index: 38150
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowFeedbackU3Ed__20_MoveNext_m31A8E854E59FB182A7A0A3F929088EEAA8332432 (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowFeedbackU3Ed__23_MoveNext_m307889DC80C8F2AF938B14085826F5573C9FEF5E (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3844,25 +3950,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CShowFeedbackU3Ed__20_MoveNext_m31A8E8
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:88>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:96>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_4 = V_1;
 		NullCheck(L_4);
 		L_4->___isProcessing = (bool)1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:89>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:97>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_5 = V_1;
 		NullCheck(L_5);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___questionText;
 		String_t* L_7 = __this->___message;
 		NullCheck(L_6);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, L_7);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:90>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:98>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_8 = V_1;
 		NullCheck(L_8);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = L_8->___questionText;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10 = __this->___color;
 		NullCheck(L_9);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_9, L_10);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:92>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:100>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_11 = V_1;
 		NullCheck(L_11);
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_12 = L_11->___feedbackLight;
@@ -3875,7 +3981,7 @@ IL_0017:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:92>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:100>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_14 = V_1;
 		NullCheck(L_14);
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_15 = L_14->___feedbackLight;
@@ -3886,7 +3992,7 @@ IL_0017:
 
 IL_0066:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:94>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:102>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_17 = V_1;
 		NullCheck(L_17);
 		float L_18 = L_17->___feedbackDuration;
@@ -3901,7 +4007,7 @@ IL_0066:
 IL_0080:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:96>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:104>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_20 = V_1;
 		NullCheck(L_20);
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_21 = L_20->___feedbackLight;
@@ -3914,7 +4020,7 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:96>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:104>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_23 = V_1;
 		NullCheck(L_23);
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_24 = L_23->___feedbackLight;
@@ -3927,20 +4033,20 @@ IL_0080:
 
 IL_00a6:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:98>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:106>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_27 = V_1;
 		NullCheck(L_27);
 		L_27->___isProcessing = (bool)0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:99>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:107>
 		BasketballGameManager_tBD182848172DD45A5C64A5F45822AE982EE8234C* L_28 = V_1;
 		NullCheck(L_28);
 		BasketballGameManager_GenerateNewQuestion_m11BAD8473D0051953031137D0090E24E55D94B72(L_28, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:100>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketballGameManager.cs:108>
 		return (bool)0;
 	}
 }
 // Method Definition Index: 38151
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8165E5400A2B6268C655923CD9C610D0F071A641 (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__23_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m69B83DBFA2C029056F96FC5774C4A2DE72091835 (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -3948,16 +4054,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__20_System
 	}
 }
 // Method Definition Index: 38152
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__20_System_Collections_IEnumerator_Reset_m1D61987AC0568F48D1F65B52893800BF7DD5F8BF (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CShowFeedbackU3Ed__23_System_Collections_IEnumerator_Reset_m5415F9BE0F57429DF0C8ECB0A1A53535639777DC (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CShowFeedbackU3Ed__20_System_Collections_IEnumerator_Reset_m1D61987AC0568F48D1F65B52893800BF7DD5F8BF_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CShowFeedbackU3Ed__23_System_Collections_IEnumerator_Reset_m5415F9BE0F57429DF0C8ECB0A1A53535639777DC_RuntimeMethod_var)));
 	}
 }
 // Method Definition Index: 38153
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__20_System_Collections_IEnumerator_get_Current_m6A6E4C6639D4CF34F03712E215511065E68275AD (U3CShowFeedbackU3Ed__20_t46F8AC0EA43040DAFA73FF021DC1DDCD6B70ABD9* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__23_System_Collections_IEnumerator_get_Current_m78177B6B86EBEE1C3BE937B770BEEA0F04FA06A6 (U3CShowFeedbackU3Ed__23_t6095A51A33847423E319196D276D0CA6F0833A7B* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -3975,12 +4081,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CShowFeedbackU3Ed__20_System
 // Method Definition Index: 38154
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_Start_m4778EDDC45F66642BB56B5967212FD1FAB4DEECD (BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:39>
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:44>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0;
+		L_0 = Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B(__this, Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var);
+		__this->___audioSource = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___audioSource), (void*)L_0);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:45>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_1 = __this->___audioSource;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:46>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_3);
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_4;
+		L_4 = GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14(L_3, GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var);
+		__this->___audioSource = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___audioSource), (void*)L_4);
+	}
+
+IL_002b:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:49>
 		BasketWeightChecker_LogCurrentDifficulty_m2DE4B0A615D198E68ADB426C12819C7E7E4E5663(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:40>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:50>
 		BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:41>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:51>
 		return;
 	}
 }
@@ -3999,9 +4141,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_LogCurrentDifficulty
 	int32_t V_0 = 0;
 	int32_t G_B3_0 = 0;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:45>
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:46>
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:47>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:55>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:56>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:57>
 		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_0;
 		L_0 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -4030,7 +4172,7 @@ IL_0010:
 IL_001a:
 	{
 		V_0 = G_B3_0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:49>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:59>
 		int32_t L_4 = V_0;
 		int32_t L_5 = L_4;
 		RuntimeObject* L_6 = Box(Difficulty_t17A86ED975E6C5C9F72E821655C0B340769B9707_il2cpp_TypeInfo_var, &L_5);
@@ -4038,7 +4180,7 @@ IL_001a:
 		L_7 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteralD6CD187967A8FF5EBD28F3D6332F463317186555, L_6, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_7, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:50>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:60>
 		return;
 	}
 }
@@ -4065,9 +4207,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_GenerateNewTarget_m7
 	BasketWeightChecker_tAD944D6AA508214AED3C327783A9B6D48A0BCF64* G_B11_1 = NULL;
 	String_t* G_B31_0 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:54>
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:55>
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:56>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:64>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:65>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:66>
 		DifficultyManager_t476F546A209C1C6F943E4A9A6514F9E1E8B600FB* L_0;
 		L_0 = DifficultyManager_get_Instance_m38F316D8B5181895C8C7005ED33B0EF9DF32EE71_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -4096,7 +4238,7 @@ IL_0010:
 IL_001a:
 	{
 		V_0 = G_B3_0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:58>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:68>
 		__this->___isAdditionQuestion = (bool)0;
 		int32_t L_4 = V_0;
 		switch (L_4)
@@ -4121,27 +4263,27 @@ IL_001a:
 
 IL_0039:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:64>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:74>
 		int32_t L_5;
 		L_5 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		__this->___lastFactorA = L_5;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:65>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:75>
 		int32_t L_6;
 		L_6 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		__this->___lastFactorB = L_6;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:66>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:76>
 		int32_t L_7 = __this->___lastFactorA;
 		int32_t L_8 = __this->___lastFactorB;
 		__this->___targetWeight = ((int32_t)il2cpp_codegen_add(L_7, L_8));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:67>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:77>
 		__this->___isAdditionQuestion = (bool)1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:68>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:78>
 		goto IL_0237;
 	}
 
 IL_0074:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:72>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:82>
 		int32_t L_9 = __this->___roundsCompleted;
 		V_1 = L_9;
 		int32_t L_10 = V_1;
@@ -4175,7 +4317,7 @@ IL_0074:
 
 IL_009a:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:76>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:86>
 		float L_11;
 		L_11 = Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B(NULL);
 		if ((((float)L_11) < ((float)(0.5f))))
@@ -4201,69 +4343,69 @@ IL_00ac:
 	{
 		NullCheck(G_B11_1);
 		G_B11_1->___lastFactorA = G_B11_0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:77>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:87>
 		int32_t L_12;
 		L_12 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		__this->___lastFactorB = L_12;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:78>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:88>
 		goto IL_0139;
 	}
 
 IL_00c1:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:82>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:92>
 		__this->___lastFactorA = 2;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:83>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:93>
 		int32_t L_13;
 		L_13 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(2, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_13;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:84>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:94>
 		goto IL_0139;
 	}
 
 IL_00d8:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:88>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:98>
 		__this->___lastFactorA = 3;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:89>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:99>
 		int32_t L_14;
 		L_14 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_14;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:90>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:100>
 		goto IL_0139;
 	}
 
 IL_00ef:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:94>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:104>
 		__this->___lastFactorA = 4;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:95>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:105>
 		int32_t L_15;
 		L_15 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_15;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:96>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:106>
 		goto IL_0139;
 	}
 
 IL_0106:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:100>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:110>
 		__this->___lastFactorA = 5;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:101>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:111>
 		int32_t L_16;
 		L_16 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_16;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:102>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:112>
 		goto IL_0139;
 	}
 
 IL_011d:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:106>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:116>
 		int32_t L_17;
 		L_17 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		__this->___lastFactorA = L_17;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:107>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:117>
 		int32_t L_18;
 		L_18 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, ((int32_t)11), NULL);
 		__this->___lastFactorB = L_18;
@@ -4271,17 +4413,17 @@ IL_011d:
 
 IL_0139:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:111>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:121>
 		int32_t L_19 = __this->___lastFactorA;
 		int32_t L_20 = __this->___lastFactorB;
 		__this->___targetWeight = ((int32_t)il2cpp_codegen_multiply(L_19, L_20));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:112>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:122>
 		goto IL_0237;
 	}
 
 IL_0151:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:117>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:127>
 		int32_t L_21 = __this->___roundsCompleted;
 		V_1 = L_21;
 		int32_t L_22 = V_1;
@@ -4315,75 +4457,75 @@ IL_0151:
 
 IL_0174:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:121>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:131>
 		__this->___lastFactorA = 6;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:122>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:132>
 		int32_t L_23;
 		L_23 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_23;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:123>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:133>
 		goto IL_0224;
 	}
 
 IL_018e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:127>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:137>
 		__this->___lastFactorA = 7;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:128>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:138>
 		int32_t L_24;
 		L_24 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_24;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:129>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:139>
 		goto IL_0224;
 	}
 
 IL_01a5:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:133>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:143>
 		__this->___lastFactorA = 8;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:134>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:144>
 		int32_t L_25;
 		L_25 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_25;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:135>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:145>
 		goto IL_0224;
 	}
 
 IL_01bc:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:139>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:149>
 		__this->___lastFactorA = ((int32_t)9);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:140>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:150>
 		int32_t L_26;
 		L_26 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_26;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:141>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:151>
 		goto IL_0224;
 	}
 
 IL_01d4:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:145>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:155>
 		int32_t L_27;
 		L_27 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(6, ((int32_t)10), NULL);
 		__this->___lastFactorA = L_27;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:146>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:156>
 		int32_t L_28;
 		L_28 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(3, ((int32_t)10), NULL);
 		__this->___lastFactorB = L_28;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:147>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:157>
 		goto IL_0224;
 	}
 
 IL_01f2:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:151>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:161>
 		int32_t L_29 = __this->___minFactor;
 		int32_t L_30 = __this->___maxFactor;
 		int32_t L_31;
 		L_31 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(L_29, ((int32_t)il2cpp_codegen_add(L_30, 1)), NULL);
 		__this->___lastFactorA = L_31;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:152>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:162>
 		int32_t L_32 = __this->___minFactor;
 		int32_t L_33 = __this->___maxFactor;
 		int32_t L_34;
@@ -4393,7 +4535,7 @@ IL_01f2:
 
 IL_0224:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:156>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:166>
 		int32_t L_35 = __this->___lastFactorA;
 		int32_t L_36 = __this->___lastFactorB;
 		__this->___targetWeight = ((int32_t)il2cpp_codegen_multiply(L_35, L_36));
@@ -4401,7 +4543,7 @@ IL_0224:
 
 IL_0237:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:160>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:170>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_37 = __this->___targetText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_38;
@@ -4412,7 +4554,7 @@ IL_0237:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:162>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:172>
 		bool L_39 = __this->___isAdditionQuestion;
 		if (L_39)
 		{
@@ -4432,7 +4574,7 @@ IL_0254:
 IL_0259:
 	{
 		V_2 = G_B31_0;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:163>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:173>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_40 = __this->___targetText;
 		int32_t L_41 = __this->___lastFactorA;
 		int32_t L_42 = L_41;
@@ -4449,7 +4591,7 @@ IL_0259:
 
 IL_0286:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:166>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:176>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_49 = __this->___currentText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_50;
@@ -4460,7 +4602,7 @@ IL_0286:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:167>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:177>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_51 = __this->___currentText;
 		NullCheck(L_51);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_51, _stringLiteralE6130A647EDA9B6C4E883A157D13D5ECA60E417A);
@@ -4468,7 +4610,7 @@ IL_0286:
 
 IL_02a4:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:169>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:179>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_52 = __this->___basketLight;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_53;
@@ -4479,7 +4621,7 @@ IL_02a4:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:170>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:180>
 		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_54 = __this->___basketLight;
 		NullCheck(L_54);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_54, (bool)0, NULL);
@@ -4487,7 +4629,7 @@ IL_02a4:
 
 IL_02be:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:171>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:181>
 		return;
 	}
 }
@@ -4504,20 +4646,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerEnter_m17B5
 	}
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_0 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:175>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:185>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1;
 		L_1 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:176>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:186>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_3)
 		{
-			goto IL_0064;
+			goto IL_0094;
 		}
 	}
 	{
@@ -4528,27 +4670,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerEnter_m17B5
 		L_6 = List_1_Contains_mB763294B7D9C4C7F1D89446AE276E991E94587BC(L_4, L_5, List_1_Contains_mB763294B7D9C4C7F1D89446AE276E991E94587BC_RuntimeMethod_var);
 		if (L_6)
 		{
-			goto IL_0064;
+			goto IL_0094;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:178>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:188>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_7 = __this->___objectsInBasket;
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = V_0;
 		NullCheck(L_7);
 		List_1_Add_m7E180794A20B911D4907125A9C8D6580E7CC7D51_inline(L_7, L_8, List_1_Add_m7E180794A20B911D4907125A9C8D6580E7CC7D51_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:180>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:190>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_9 = __this->___splashEffect;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
 		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_10)
 		{
-			goto IL_005e;
+			goto IL_0061;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:182>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:192>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_11 = __this->___splashEffect;
 		NullCheck(L_11);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
@@ -4562,21 +4704,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerEnter_m17B5
 		L_15 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_14, NULL);
 		NullCheck(L_12);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_12, L_15, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:183>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:193>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_16 = __this->___splashEffect;
 		NullCheck(L_16);
 		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_16, NULL);
 	}
 
-IL_005e:
+IL_0061:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:185>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:196>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_17 = __this->___audioSource;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_17, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_18)
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_19 = __this->___watersplashSound;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_20;
+		L_20 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_19, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_20)
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:197>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_21 = __this->___audioSource;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_22 = __this->___watersplashSound;
+		NullCheck(L_21);
+		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_21, L_22, NULL);
+	}
+
+IL_008e:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:198>
 		BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754(__this, NULL);
 	}
 
-IL_0064:
+IL_0094:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:187>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:200>
 		return;
 	}
 }
@@ -4593,13 +4765,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerExit_m666DA
 	}
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_0 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:191>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:204>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
 		NullCheck(L_0);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_1;
 		L_1 = Collider_get_attachedRigidbody_m060304DB909A1FACD260EBB619D64D39129739AD(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:192>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:205>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -4621,19 +4793,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_OnTriggerExit_m666DA
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:194>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:207>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_7 = __this->___objectsInBasket;
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = V_0;
 		NullCheck(L_7);
 		bool L_9;
 		L_9 = List_1_Remove_mE5EB1011929CA6332FA47E6969BE302D3E2B9160(L_7, L_8, List_1_Remove_mE5EB1011929CA6332FA47E6969BE302D3E2B9160_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:195>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:208>
 		BasketWeightChecker_CheckWeight_mEC38AF2CF6C84E8C888C4AAEC5CD9A80542C0754(__this, NULL);
 	}
 
 IL_0031:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:197>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:210>
 		return;
 	}
 }
@@ -4661,9 +4833,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_CheckWeight_mEC38AF2
 	memset((&V_2), 0, sizeof(V_2));
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_3 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:201>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:214>
 		V_0 = (0.0f);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:203>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:216>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_0 = __this->___objectsInBasket;
 		NullCheck(L_0);
 		Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 L_1;
@@ -4688,11 +4860,11 @@ FINALLY_0030:
 
 IL_0014_1:
 			{
-				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:203>
+				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:216>
 				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2;
 				L_2 = Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_inline((&V_2), Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_RuntimeMethod_var);
 				V_3 = L_2;
-				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:204>
+				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:217>
 				float L_3 = V_0;
 				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = V_3;
 				NullCheck(L_4);
@@ -4703,7 +4875,7 @@ IL_0014_1:
 
 IL_0025_1:
 			{
-				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:203>
+				//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:216>
 				bool L_6;
 				L_6 = Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A((&V_2), Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A_RuntimeMethod_var);
 				if (L_6)
@@ -4723,12 +4895,12 @@ IL_0025_1:
 
 IL_003e:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:206>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:219>
 		float L_7 = V_0;
 		int32_t L_8;
 		L_8 = Mathf_RoundToInt_m60F8B66CF27F1FA75AA219342BD184B75771EB4B_inline(L_7, NULL);
 		V_1 = L_8;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:208>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:221>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_9 = __this->___currentText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -4739,7 +4911,7 @@ IL_003e:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:209>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:222>
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_11 = __this->___currentText;
 		String_t* L_12;
 		L_12 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
@@ -4751,7 +4923,7 @@ IL_003e:
 
 IL_006f:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:211>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:224>
 		float L_14 = V_0;
 		int32_t L_15 = __this->___targetWeight;
 		float L_16;
@@ -4759,151 +4931,181 @@ IL_006f:
 		float L_17 = __this->___tolerance;
 		if ((!(((float)L_16) < ((float)L_17))))
 		{
-			goto IL_0152;
+			goto IL_017f;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:213>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_18 = __this->___basketLight;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:226>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_18 = __this->___audioSource;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_19;
 		L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_19)
 		{
-			goto IL_00bd;
+			goto IL_00b5;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:215>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_20 = __this->___basketLight;
-		NullCheck(L_20);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_20, (bool)1, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:216>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_21 = __this->___basketLight;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_22;
-		L_22 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
-		NullCheck(L_21);
-		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_21, L_22, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:217>
-		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_23 = __this->___confettiEffect;
-		NullCheck(L_23);
-		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_23, NULL);
-	}
-
-IL_00bd:
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:220>
-		int32_t L_24 = __this->___roundsCompleted;
-		__this->___roundsCompleted = ((int32_t)il2cpp_codegen_add(L_24, 1));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:222>
-		int32_t L_25 = __this->___roundsCompleted;
-		if ((((int32_t)L_25) < ((int32_t)5)))
-		{
-			goto IL_0117;
-		}
-	}
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:224>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_26 = __this->___targetText;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_20 = __this->___correctSound;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_27;
-		L_27 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_26, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_27)
+		bool L_21;
+		L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_21)
 		{
-			goto IL_00f2;
-		}
-	}
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:225>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_28 = __this->___targetText;
-		NullCheck(L_28);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_28, _stringLiteral60E26AA5D945597B380AC45E6D362BE600B81EE9);
-	}
-
-IL_00f2:
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:226>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_29 = __this->___currentText;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_30;
-		L_30 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_29, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_30)
-		{
-			goto IL_0110;
+			goto IL_00b5;
 		}
 	}
 	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:227>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_31 = __this->___currentText;
-		NullCheck(L_31);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_31, _stringLiteral7DEAAF4E2D610A4B9B0DB943C030ADFA704C7111);
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_22 = __this->___audioSource;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_23 = __this->___correctSound;
+		NullCheck(L_22);
+		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_22, L_23, NULL);
 	}
 
-IL_0110:
+IL_00b5:
 	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:228>
-		BasketWeightChecker_winGame_mB7B0E4CD76FF5F3E2573B43FA83B24436C9C6840(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:229>
-		return;
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_24 = __this->___basketLight;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_25;
+		L_25 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_24, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_25)
+		{
+			goto IL_00ea;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:230>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_26 = __this->___basketLight;
+		NullCheck(L_26);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_26, (bool)1, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:231>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_27 = __this->___basketLight;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_28;
+		L_28 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		NullCheck(L_27);
+		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_27, L_28, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:232>
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_29 = __this->___confettiEffect;
+		NullCheck(L_29);
+		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_29, NULL);
 	}
 
-IL_0117:
+IL_00ea:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:232>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_32 = __this->___currentText;
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:235>
+		int32_t L_30 = __this->___roundsCompleted;
+		__this->___roundsCompleted = ((int32_t)il2cpp_codegen_add(L_30, 1));
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:237>
+		int32_t L_31 = __this->___roundsCompleted;
+		if ((((int32_t)L_31) < ((int32_t)5)))
+		{
+			goto IL_0144;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:239>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_32 = __this->___targetText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_33;
 		L_33 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_32, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_33)
 		{
-			goto IL_0135;
+			goto IL_011f;
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:233>
-		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_34 = __this->___currentText;
-		NullCheck(L_34);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_34, _stringLiteral26E9F4C2192FBE5C10569FB1203839339597A092);
-	}
-
-IL_0135:
-	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:235>
-		MonoBehaviour_CancelInvoke_m268FFD58AFF64C07FD4C9B9B8B85F58BD86F3A01(__this, _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:236>
-		float L_35 = __this->___correctTextDuration;
-		MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB(__this, _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC, L_35, NULL);
-		return;
-	}
-
-IL_0152:
-	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:240>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_36 = __this->___basketLight;
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_34 = __this->___targetText;
+		NullCheck(L_34);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_34, _stringLiteral60E26AA5D945597B380AC45E6D362BE600B81EE9);
+	}
+
+IL_011f:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:241>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_35 = __this->___currentText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_37;
-		L_37 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_36, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_37)
+		bool L_36;
+		L_36 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_35, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_36)
 		{
-			goto IL_017c;
+			goto IL_013d;
 		}
 	}
 	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:242>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_38 = __this->___basketLight;
-		NullCheck(L_38);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_38, (bool)1, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:243>
-		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_39 = __this->___basketLight;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_40;
-		L_40 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
-		NullCheck(L_39);
-		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_39, L_40, NULL);
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_37 = __this->___currentText;
+		NullCheck(L_37);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_37, _stringLiteral7DEAAF4E2D610A4B9B0DB943C030ADFA704C7111);
 	}
 
-IL_017c:
+IL_013d:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:246>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:243>
+		BasketWeightChecker_winGame_mB7B0E4CD76FF5F3E2573B43FA83B24436C9C6840(__this, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:244>
+		return;
+	}
+
+IL_0144:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:247>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_38 = __this->___currentText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_39;
+		L_39 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_38, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_39)
+		{
+			goto IL_0162;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:248>
+		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_40 = __this->___currentText;
+		NullCheck(L_40);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_40, _stringLiteral26E9F4C2192FBE5C10569FB1203839339597A092);
+	}
+
+IL_0162:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:250>
+		MonoBehaviour_CancelInvoke_m268FFD58AFF64C07FD4C9B9B8B85F58BD86F3A01(__this, _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:251>
+		float L_41 = __this->___correctTextDuration;
+		MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB(__this, _stringLiteral06B37168601BD93BC8DBAD9D62FB55D5662243EC, L_41, NULL);
+		return;
+	}
+
+IL_017f:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:255>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_42 = __this->___basketLight;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_43;
+		L_43 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_42, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_43)
+		{
+			goto IL_01a9;
+		}
+	}
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:257>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_44 = __this->___basketLight;
+		NullCheck(L_44);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_44, (bool)1, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:258>
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_45 = __this->___basketLight;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_46;
+		L_46 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
+		NullCheck(L_45);
+		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_45, L_46, NULL);
+	}
+
+IL_01a9:
+	{
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:261>
 		return;
 	}
 }
@@ -4924,11 +5126,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_ResetAllBalls_mD5C4C
 	int32_t V_1 = 0;
 	Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* V_2 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:250>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:265>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62* L_0;
 		L_0 = Object_FindObjectsOfType_TisBall_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B_m676CB3F8A176F9F282C03FF73DBA4E3ED8C5E008(Object_FindObjectsOfType_TisBall_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B_m676CB3F8A176F9F282C03FF73DBA4E3ED8C5E008_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:252>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:267>
 		V_0 = L_0;
 		V_1 = 0;
 		goto IL_002c;
@@ -4936,22 +5138,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_ResetAllBalls_mD5C4C
 
 IL_000a:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:252>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:267>
 		BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62* L_1 = V_0;
 		int32_t L_2 = V_1;
 		NullCheck(L_1);
 		int32_t L_3 = L_2;
 		Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:254>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:269>
 		Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* L_5 = L_4;
 		NullCheck(L_5);
 		Ball_ResetPosition_m7A04E63D504E96CC50BFAAF0017E3A1EEFC9D9B6(L_5, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:256>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:271>
 		NullCheck(L_5);
 		Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* L_6;
 		L_6 = Component_GetComponent_TisGrabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_mFCBB6800CD4C352141423A49D9BE38892D8C44EC(L_5, Component_GetComponent_TisGrabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C_mFCBB6800CD4C352141423A49D9BE38892D8C44EC_RuntimeMethod_var);
 		V_2 = L_6;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:257>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:272>
 		Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* L_7 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_8;
@@ -4962,7 +5164,7 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:258>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:273>
 		Grabbable_t706622AE2843D3E14FBFB9B79244D2F0E7D9AB4C* L_9 = V_2;
 		NullCheck(L_9);
 		Grabbable_ResetBallState_mB9DE33FE1D18518EF6408238C8848FBC780C1CE8(L_9, NULL);
@@ -4976,7 +5178,7 @@ IL_0028:
 
 IL_002c:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:252>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:267>
 		int32_t L_11 = V_1;
 		BallU5BU5D_t7C524F21A24ABC8CC48D8B39BD85D39F9FF29F62* L_12 = V_0;
 		NullCheck(L_12);
@@ -4986,10 +5188,10 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:261>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:276>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralA0A1F14753B82C81052EA7509078DD8B837EA1E6, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:262>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:277>
 		return;
 	}
 }
@@ -5004,14 +5206,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_winGame_mB7B0E4CD76F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:266>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:281>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralDA9A9CA08BD9875E7EB99E5089F19CE1B8115A52, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:267>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:282>
 		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->___onGameCompleted;
 		NullCheck(L_0);
 		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(L_0, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:268>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:283>
 		return;
 	}
 }
@@ -5025,15 +5227,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker_StartNextRound_m9235
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:273>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:288>
 		BasketWeightChecker_ResetAllBalls_mD5C4C1DF2707902818EFD8FDF36EF73E37277927(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:276>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:291>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_0 = __this->___objectsInBasket;
 		NullCheck(L_0);
 		List_1_Clear_m07C977650071BA2868766F319367644BB006A29F_inline(L_0, List_1_Clear_m07C977650071BA2868766F319367644BB006A29F_RuntimeMethod_var);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:278>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:293>
 		BasketWeightChecker_GenerateNewTarget_m7430D6C3868325578FD87F772185D88A0F2F1578(__this, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:279>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:294>
 		return;
 	}
 }
@@ -5058,7 +5260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasketWeightChecker__ctor_m655A74D6FE236
 		__this->___tolerance = (0.100000001f);
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:20>
 		__this->___correctTextDuration = (3.0f);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:35>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/BasketWeightChecker.cs:40>
 		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_0 = (List_1_t70C71660C368B9474B9889CBADDC30685A5D2363*)il2cpp_codegen_object_new(List_1_t70C71660C368B9474B9889CBADDC30685A5D2363_il2cpp_TypeInfo_var);
 		List_1__ctor_mAEFDDA2AADB3407D6DDE862E67A61FBEC34B4025(L_0, List_1__ctor_mAEFDDA2AADB3407D6DDE862E67A61FBEC34B4025_RuntimeMethod_var);
 		__this->___objectsInBasket = L_0;

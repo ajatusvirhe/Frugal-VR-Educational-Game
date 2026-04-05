@@ -68,18 +68,91 @@ public class BasketWeightChecker : MonoBehaviour
                 break;
 
             case Difficulty.Medium:
-                // Medium: multiplication tables 1-5 and 10.
-                int[] mediumTables = { 1, 2, 3, 4, 5, 10 };
-                lastFactorA = mediumTables[Random.Range(0, mediumTables.Length)];
-                lastFactorB = Random.Range(1, 11);
+                // Medium: fixed 5-question progression.
+                switch (roundsCompleted)
+                {
+                    case 0:
+                        // First question: (1 or 10) x (1-10)
+                        lastFactorA = Random.value < 0.5f ? 1 : 10;
+                        lastFactorB = Random.Range(1, 11);
+                        break;
+
+                    case 1:
+                        // Second question: 2 x (2-9)
+                        lastFactorA = 2;
+                        lastFactorB = Random.Range(2, 10);
+                        break;
+
+                    case 2:
+                        // Third question: 3 x (3-9)
+                        lastFactorA = 3;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    case 3:
+                        // Fourth question: 4 x (3-9)
+                        lastFactorA = 4;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    case 4:
+                        // Fifth question: 5 x (3-9)
+                        lastFactorA = 5;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    default:
+                        // Fallback for any unexpected extra rounds.
+                        lastFactorA = Random.Range(1, 11);
+                        lastFactorB = Random.Range(1, 11);
+                        break;
+                }
+
                 targetWeight = lastFactorA * lastFactorB;
                 break;
 
             case Difficulty.Hard:
             default:
-                // Hard: multiplication 1-10 (existing behavior).
-                lastFactorA = Random.Range(minFactor, maxFactor + 1);
-                lastFactorB = Random.Range(minFactor, maxFactor + 1);
+                // Hard: fixed 5-question progression.
+                switch (roundsCompleted)
+                {
+                    case 0:
+                        // First question: 6 x (3-9)
+                        lastFactorA = 6;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    case 1:
+                        // Second question: 7 x (3-9)
+                        lastFactorA = 7;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    case 2:
+                        // Third question: 8 x (3-9)
+                        lastFactorA = 8;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    case 3:
+                        // Fourth question: 9 x (3-9)
+                        lastFactorA = 9;
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    case 4:
+                        // Fifth question: (6-9) x (3-9)
+                        lastFactorA = Random.Range(6, 10);
+                        lastFactorB = Random.Range(3, 10);
+                        break;
+
+                    default:
+                        // Fallback for any unexpected extra rounds.
+                        lastFactorA = Random.Range(minFactor, maxFactor + 1);
+                        lastFactorB = Random.Range(minFactor, maxFactor + 1);
+                        break;
+                }
+
                 targetWeight = lastFactorA * lastFactorB;
                 break;
         }

@@ -130,7 +130,9 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [],
+            "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -499,26 +501,14 @@
           },
           {
             "name": "Texture",
-            "scenes": [
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/FinalScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
             "name": "Texture2D",
-            "scenes": [
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/FinalScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -946,7 +936,8 @@
             "name": "ParticleSystem",
             "scenes": [
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity"
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -955,7 +946,8 @@
             "name": "ParticleSystemRenderer",
             "scenes": [
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity"
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1026,6 +1018,7 @@
           {
             "name": "SphereCollider",
             "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity",
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
             ],

@@ -24342,6 +24342,7 @@ struct Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A  : public Interactive
 	float ___grabSpeed;
 	float ___throwForce;
 	float ___holdDistance;
+	float ___verticalOffset;
 	bool ___useGravity;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
 };
@@ -32873,9 +32874,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5518[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5520[2] = 
 {
 	static_cast<int32_t>(offsetof(TeleportToScene_t3DE2407F4A9D59935B6C05B159F50984F795C547, ___sceneToLoad)),static_cast<int32_t>(offsetof(TeleportToScene_t3DE2407F4A9D59935B6C05B159F50984F795C547, ___doorController)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5521[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5521[8] = 
 {
-	static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___grabSpeed)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___throwForce)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___holdDistance)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___useGravity)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields, ___grabbed)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields, ___cam)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___rb)),};
+	static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___grabSpeed)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___throwForce)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___holdDistance)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___verticalOffset)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___useGravity)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields, ___grabbed)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields, ___cam)),static_cast<int32_t>(offsetof(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A, ___rb)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5522[4] = 
 {
 	static_cast<int32_t>(offsetof(FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B, ___returnTarget)),static_cast<int32_t>(offsetof(FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B, ___startPosition)),static_cast<int32_t>(offsetof(FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B, ___startRotation)),static_cast<int32_t>(offsetof(FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B, ___rb)),};

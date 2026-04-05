@@ -3728,6 +3728,7 @@ struct Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A  : public Interactive
 	float ___grabSpeed;
 	float ___throwForce;
 	float ___holdDistance;
+	float ___verticalOffset;
 	bool ___useGravity;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
 };

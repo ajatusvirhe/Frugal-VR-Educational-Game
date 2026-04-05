@@ -1580,6 +1580,7 @@ struct Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A  : public Interactive
 	float ___grabSpeed;
 	float ___throwForce;
 	float ___holdDistance;
+	float ___verticalOffset;
 	bool ___useGravity;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
 };
@@ -2464,6 +2465,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CameraInteract_GetPlayerHeight_m108A83D9DA96C61392C1AD846F411411F1AFB8F8 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_ThrowObject_m9E8BC2A143A0EC034917163465E8BC0510CF6D4D (Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_force, int32_t ___1_mode, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FootballReturnPoint_Return_m2D29806D15835DCD0612972A7DE16B38F327C106 (FootballReturnPoint_tFFD166924C5F58E0AF22B54F7C3EA474CB340A0B* __this, const RuntimeMethod* method) ;
@@ -6596,12 +6598,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Start_mB5CB1F2FF8680E9248A863A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:17>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:20>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0;
 		L_0 = Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8(__this, Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var);
 		__this->___rb = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb), (void*)L_0);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:18>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:21>
 		return;
 	}
 }
@@ -6616,7 +6618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Interact_mC8DD18891A50F3830137
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:22>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:25>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ((Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields*)il2cpp_codegen_static_fields_for(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var))->___grabbed;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
@@ -6629,7 +6631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Interact_mC8DD18891A50F3830137
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:25>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:27>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
 		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		((Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields*)il2cpp_codegen_static_fields_for(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var))->___grabbed = L_3;
@@ -6683,15 +6685,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_ThrowObject_m9E8BC2A143A0EC034
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_2, NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:42>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:43>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = __this->___rb;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = V_0;
-		float L_6 = __this->___throwForce;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
-		L_7 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_5, L_6, NULL);
+		L_7 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_6, (0.100000001f), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_5, L_7, NULL);
+		float L_9 = __this->___throwForce;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_8, L_9, NULL);
 		NullCheck(L_4);
-		Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC(L_4, L_7, 1, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:43>
+		Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC(L_4, L_10, 1, NULL);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:44>
 		return;
 	}
 }
@@ -6712,7 +6720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Update_m4DB6D8B4CDE64BF9F4B083
 	int32_t G_B6_0 = 0;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* G_B6_1 = NULL;
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:47>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:48>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ((Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields*)il2cpp_codegen_static_fields_for(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var))->___cam;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6734,7 +6742,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Update_m4DB6D8B4CDE64BF9F4B083
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:48>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:49>
 		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4;
 		L_4 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
 		NullCheck(L_4);
@@ -6746,7 +6754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable_Update_m4DB6D8B4CDE64BF9F4B083
 
 IL_0027:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:50>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:51>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_6 = __this->___rb;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = ((Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields*)il2cpp_codegen_static_fields_for(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var))->___grabbed;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
@@ -6778,7 +6786,7 @@ IL_0048:
 	{
 		NullCheck(G_B6_1);
 		Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389(G_B6_1, (bool)G_B6_0, NULL);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:52>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:53>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = ((Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields*)il2cpp_codegen_static_fields_for(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var))->___grabbed;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
 		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
@@ -6791,7 +6799,7 @@ IL_0048:
 		}
 	}
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:55>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:56>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = ((Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_StaticFields*)il2cpp_codegen_static_fields_for(Throwable_t56B3F62BABE1ABAF55492E9B8339DAF4E9F4228A_il2cpp_TypeInfo_var))->___cam;
 		NullCheck(L_14);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
@@ -6806,7 +6814,7 @@ IL_0048:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_15, L_19, NULL);
 		V_0 = L_20;
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:57>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:58>
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_21 = __this->___rb;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_0;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
@@ -6825,7 +6833,7 @@ IL_0048:
 
 IL_00ab:
 	{
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:59>
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:60>
 		return;
 	}
 }
@@ -6834,12 +6842,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Throwable__ctor_mAE24EB95204A3E3229E58A3
 {
 	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:5>
-		__this->___grabSpeed = (7.0f);
+		__this->___grabSpeed = (8.0f);
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:6>
 		__this->___throwForce = (15.0f);
-		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:7>
-		__this->___holdDistance = (2.0f);
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:9>
+		__this->___holdDistance = (3.5f);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:10>
+		__this->___verticalOffset = (-0.5f);
+		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/CardboardInteract(Scripts)/Throwable.cs:12>
 		__this->___useGravity = (bool)1;
 		Interactive__ctor_m9472BC9251A8B48C45C1CCF1C1ECBA21ACAA31F3(__this, NULL);
 		return;
@@ -7242,7 +7252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TeleportSpot__ctor_m57B6A1418186DE86BF99
 {
 	{
 		//<source_info:C:/Users/35840/Documents/GitHub/Frugal-VR-Educational-Game/Assets/scripts/TeleportSpot.cs:6>
-		__this->____teleportCooldown = (0.5f);
+		__this->____teleportCooldown = (1.0f);
 		Interactive__ctor_m9472BC9251A8B48C45C1CCF1C1ECBA21ACAA31F3(__this, NULL);
 		return;
 	}
@@ -8707,6 +8717,29 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RaycastHit_t6F30BD0B38B56401CA833
 		il2cpp_codegen_runtime_class_init_inline(CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D_il2cpp_TypeInfo_var);
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 L_0 = ((CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D_StaticFields*)il2cpp_codegen_static_fields_for(CameraInteract_t502B4F6EBA19CC5B23E9E97123A594A0DBA0B44D_il2cpp_TypeInfo_var))->___hit;
 		return L_0;
+	}
+}
+// Method Definition Index: 29877
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = V_0;
+		return L_1;
 	}
 }
 // Method Definition Index: 29864

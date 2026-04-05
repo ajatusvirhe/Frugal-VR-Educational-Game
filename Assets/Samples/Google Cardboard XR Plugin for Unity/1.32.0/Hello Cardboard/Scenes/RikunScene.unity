@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 4
+  twistMultiplierOverride: 0
   dwellTimerOverride: 0
   sceneToLoad: NikonScene
   doorController: {fileID: 316754126}
@@ -1330,15 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyDoor
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   difficulty: 2
   sceneToLoad: 
@@ -2337,15 +2329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   sceneToLoad: UrsulanScene
   doorController: {fileID: 411693754}
@@ -2487,15 +2471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChange
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
 --- !u!1 &414729148
 GameObject:
@@ -3609,15 +3585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyDoor
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   difficulty: 2
   sceneToLoad: TeleportTestScene
@@ -4281,15 +4249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   sceneToLoad: FinalScene
   doorController: {fileID: 558636605}
@@ -6287,15 +6247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyDoor
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   difficulty: 1
   sceneToLoad: TeleportTestScene
@@ -6460,15 +6412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -9606,15 +9550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyDoor
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   difficulty: 2
   sceneToLoad: TeleportTestScene
@@ -11228,15 +11164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Throwable
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   grabSpeed: 5
   throwForce: 20
@@ -12498,15 +12426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyDoor
   interactModeOverride: 0
-<<<<<<< Updated upstream
   twistMultiplierOverride: 2.5
-=======
-<<<<<<< HEAD
-  twistMultiplierOverride: 2
-=======
-  twistMultiplierOverride: 2.5
->>>>>>> 209f90da2743d2909cf5e9e90198b08c1e85f8a2
->>>>>>> Stashed changes
   dwellTimerOverride: 0
   difficulty: 0
   sceneToLoad: TeleportTestScene

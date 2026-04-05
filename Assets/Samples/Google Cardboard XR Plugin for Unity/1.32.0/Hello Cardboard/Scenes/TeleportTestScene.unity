@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   sceneToLoad: NikonScene
   doorController: {fileID: 227699003}
@@ -8270,7 +8270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 5
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   sceneToLoad: RikunScene
   doorController: {fileID: 1274216463}
@@ -10364,7 +10364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Throwable
   interactModeOverride: 0
-  twistMultiplierOverride: 5
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   throwForce: 20
@@ -10518,7 +10518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSurface
   interactModeOverride: 0
-  twistMultiplierOverride: 7
+  twistMultiplierOverride: 2
   dwellTimerOverride: 0
 --- !u!1 &2047812822
 GameObject:

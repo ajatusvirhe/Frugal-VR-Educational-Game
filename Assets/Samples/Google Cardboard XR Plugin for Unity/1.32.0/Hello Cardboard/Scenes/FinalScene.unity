@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 9ca22510633fbfd4399f1704cd9d5c72, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0f1401d983cde1c49a7f687a57e62c5a, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   sceneToLoad: RikunScene
   doorController: {fileID: 444555811}
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportSurface
   interactModeOverride: 0
-  twistMultiplierOverride: 5
+  twistMultiplierOverride: 2
   dwellTimerOverride: 0
 --- !u!1001 &2070007128
 PrefabInstance:
@@ -6154,7 +6154,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 0
   dwellTimerOverride: 0
-  _apexHeight: 5
+  _apexHeight: 15
   _startKinematic: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

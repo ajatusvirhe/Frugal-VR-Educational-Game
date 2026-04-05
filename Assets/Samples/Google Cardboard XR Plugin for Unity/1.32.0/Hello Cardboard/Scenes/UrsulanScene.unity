@@ -8320,6 +8320,8 @@ MonoBehaviour:
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
   confettiEffect: {fileID: 1142823597}
+  correctSound: {fileID: 8300000, guid: 175c7b7664bc5b14b8f78713234a6c28, type: 3}
+  wrongSound: {fileID: 8300000, guid: 7d50cbfdee9d01c4f941c05dbdcfce6a, type: 3}
   score: 0
   targetScore: 5
   feedbackDuration: 2

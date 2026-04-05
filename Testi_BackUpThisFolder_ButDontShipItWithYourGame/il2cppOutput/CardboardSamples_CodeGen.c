@@ -88,7 +88,7 @@ static const int32_t s_InvokerIndices[30] =
 	7517,
 	7783,
 	7783,
-	11047,
+	11048,
 	7783,
 	7783,
 	7651,
@@ -100,7 +100,7 @@ static const int32_t s_InvokerIndices[30] =
 	7651,
 	7783,
 	7651,
-	11126,
+	11127,
 	7783,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_CardboardSamples_CodeGenModule;

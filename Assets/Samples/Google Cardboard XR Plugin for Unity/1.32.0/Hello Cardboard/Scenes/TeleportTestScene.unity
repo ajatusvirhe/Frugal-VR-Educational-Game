@@ -221,7 +221,7 @@ MonoBehaviour:
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
   confettiEffect: {fileID: 931861255}
   score: 0
-  targetScore: 10
+  targetScore: 5
   feedbackDuration: 1.5
   onGameCompleted:
     m_PersistentCalls:

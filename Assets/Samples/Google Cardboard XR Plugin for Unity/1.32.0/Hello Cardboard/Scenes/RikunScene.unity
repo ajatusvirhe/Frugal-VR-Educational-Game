@@ -1277,7 +1277,7 @@ MonoBehaviour:
   dwellTimerOverride: 0
   difficulty: 2
   sceneToLoad: 
-  doorController: {fileID: 0}
+  doorController: {fileID: 316754126}
 --- !u!1 &345175834
 GameObject:
   m_ObjectHideFlags: 0

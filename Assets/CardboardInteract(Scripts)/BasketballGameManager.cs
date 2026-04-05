@@ -30,10 +30,27 @@ public class BasketballGameManager : MonoBehaviour
     private int correctAnswer;
     private bool isProcessing = false;
 
+    // Medium-tason kierrostenhallinta
+    private int _mediumRound = 0;
+    private List<int> _mediumMultipliers = new List<int>();
+
     void Start()
     {
         if (feedbackLight != null) feedbackLight.color = normalColor;
         GenerateNewQuestion();
+    }
+
+    private void ShuffleMediumMultipliers()
+    {
+        _mediumMultipliers = new List<int> { 1, 2, 3, 4, 5 };
+        for (int i = _mediumMultipliers.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            int tmp = _mediumMultipliers[i];
+            _mediumMultipliers[i] = _mediumMultipliers[j];
+            _mediumMultipliers[j] = tmp;
+        }
+        _mediumRound = 0;
     }
 
     public void CheckAnswer(int submittedAnswer)
@@ -92,7 +109,6 @@ public class BasketballGameManager : MonoBehaviour
             return;
         }
 
-        // Luetaan vaikeustaso — jos manageria ei löydy, käytetään oletuksena Easy
         Difficulty difficulty = DifficultyManager.Instance != null
             ? DifficultyManager.Instance.CurrentDifficulty
             : Difficulty.Easy;
@@ -103,7 +119,6 @@ public class BasketballGameManager : MonoBehaviour
         questionText.text = questionString;
         questionText.color = Color.white;
 
-        // Generoidaan väärät vastaukset
         List<int> answers = new List<int>();
         answers.Add(correctAnswer);
 
@@ -117,7 +132,6 @@ public class BasketballGameManager : MonoBehaviour
             if (!answers.Contains(wrongAnswer)) answers.Add(wrongAnswer);
         }
 
-        // Sekoitetaan vastaukset
         for (int i = 0; i < answers.Count; i++)
         {
             int temp = answers[i];
@@ -133,7 +147,6 @@ public class BasketballGameManager : MonoBehaviour
         }
     }
 
-    // GenerateQuestion — kaikki vaikeustasologiikka on tässä metodissa
     private void GenerateQuestion(Difficulty difficulty, out string questionString, out int answer)
     {
         int a, b;
@@ -148,24 +161,37 @@ public class BasketballGameManager : MonoBehaviour
                 questionString = a + " + " + b + " = ?";
                 break;
 
-            // MEDIUM: Kertotaulu 1–5 sekä kertotaulu x10
+            // MEDIUM: Kertotaulu 1–5, sekoitettu järjestys, vaikeutetut luvut
             case Difficulty.Medium:
-                // 50/50 mahdollisuus saada x10-kysymys tai 1–5-kertotaulukysymys
-                if (Random.value > 0.5f)
+            {
+                if (_mediumRound >= _mediumMultipliers.Count || _mediumMultipliers.Count == 0)
+                    ShuffleMediumMultipliers();
+
+                int multiplier = _mediumMultipliers[_mediumRound];
+                _mediumRound++;
+
+                List<int> excluded;
+                switch (multiplier)
                 {
-                    // Kertotaulu x10: a on 1–10, b on aina 10
-                    a = Random.Range(1, 11);
-                    b = 10;
+                    case 1:  excluded = new List<int> { 1, 2, 3, 10 }; break;
+                    case 2:  excluded = new List<int> { 1, 2, 10 };    break;
+                    case 3:  excluded = new List<int> { 1, 2, 3, 10 }; break;
+                    case 4:  excluded = new List<int> { 1, 2, 4, 10 }; break;
+                    case 5:  excluded = new List<int> { 1, 2, 5, 10 }; break;
+                    default: excluded = new List<int> { 1, 10 };       break;
                 }
-                else
-                {
-                    // Kertotaulu 1–5: molemmat luvut väliltä 1–5
-                    a = Random.Range(1, 6);
-                    b = Random.Range(1, 6);
-                }
+
+                List<int> pool = new List<int>();
+                for (int n = 1; n <= 10; n++)
+                    if (!excluded.Contains(n))
+                        pool.Add(n);
+
+                a = multiplier;
+                b = pool[Random.Range(0, pool.Count)];
                 answer = a * b;
                 questionString = a + " x " + b + " = ?";
                 break;
+            }
 
             // HARD: Kertotaulu 1–10 (alkuperäinen logiikka)
             case Difficulty.Hard:

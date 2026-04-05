@@ -19,6 +19,10 @@ public class BasketWeightChecker : MonoBehaviour
     public float tolerance = 0.1f;
     public float correctTextDuration = 3f;
 
+    [Header("Efektit")]
+    public ParticleSystem confettiEffect;
+    public ParticleSystem splashEffect;
+
     [Header("Peli läpi")]
     private int roundsCompleted = 0;
     public UnityEvent onGameCompleted; // Tämä tapahtuma voidaan asettaa Unityn editorissa, esimerkiksi näyttämään onnitteluteksti tai siirtymään seuraavaan kohtaukseen pelin päätyttyä.
@@ -99,6 +103,12 @@ public class BasketWeightChecker : MonoBehaviour
         if (rb != null && !objectsInBasket.Contains(rb))
         {
             objectsInBasket.Add(rb);
+                    //läiskis efekti
+            if (splashEffect != null)
+            {
+                splashEffect.transform.position = other.transform.position;
+                splashEffect.Play();
+            }
             CheckWeight();
         }
     }
@@ -131,6 +141,7 @@ public class BasketWeightChecker : MonoBehaviour
             {
                 basketLight.enabled = true;
                 basketLight.color = Color.green;
+                confettiEffect.Play();
             }
 
             roundsCompleted++;

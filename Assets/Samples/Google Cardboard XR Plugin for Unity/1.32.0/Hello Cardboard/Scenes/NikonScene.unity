@@ -7126,7 +7126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResetBalls
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
 --- !u!136 &552857263
 CapsuleCollider:
@@ -10087,6 +10087,8 @@ MonoBehaviour:
   correctTextDuration: 3
   confettiEffect: {fileID: 1206113509}
   splashEffect: {fileID: 3978089}
+  correctSound: {fileID: 8300000, guid: 175c7b7664bc5b14b8f78713234a6c28, type: 3}
+  watersplashSound: {fileID: 8300000, guid: ce4704dd9df43fb429b0da3516ab90ab, type: 3}
   onGameCompleted:
     m_PersistentCalls:
       m_Calls:
@@ -15141,7 +15143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   sceneToLoad: RikunScene
   doorController: {fileID: 1684366847}
@@ -15495,7 +15497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -16571,7 +16573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   sceneToLoad: UrsulanScene
   doorController: {fileID: 1684366847}
@@ -18367,7 +18369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -18593,7 +18595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -18810,7 +18812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19126,7 +19128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19372,7 +19374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19509,7 +19511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19608,7 +19610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19722,7 +19724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19859,7 +19861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -19952,7 +19954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20045,7 +20047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20159,7 +20161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20252,7 +20254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20389,7 +20391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20482,7 +20484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20575,7 +20577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1
@@ -20727,7 +20729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabbable
   interactModeOverride: 0
-  twistMultiplierOverride: 0
+  twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   grabSpeed: 5
   useGravity: 1

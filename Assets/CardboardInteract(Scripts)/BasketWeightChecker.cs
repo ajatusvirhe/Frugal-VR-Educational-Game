@@ -23,6 +23,11 @@ public class BasketWeightChecker : MonoBehaviour
     public ParticleSystem confettiEffect;
     public ParticleSystem splashEffect;
 
+    [Header("Ääniefektit")]
+    public AudioClip correctSound;
+    public AudioClip watersplashSound;
+    private AudioSource audioSource;
+
     [Header("Peli läpi")]
     private int roundsCompleted = 0;
     public UnityEvent onGameCompleted; // Tämä tapahtuma voidaan asettaa Unityn editorissa, esimerkiksi näyttämään onnitteluteksti tai siirtymään seuraavaan kohtaukseen pelin päätyttyä.
@@ -36,6 +41,11 @@ public class BasketWeightChecker : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+
         LogCurrentDifficulty();
         GenerateNewTarget();
     }
@@ -182,6 +192,9 @@ public class BasketWeightChecker : MonoBehaviour
                 splashEffect.transform.position = other.transform.position;
                 splashEffect.Play();
             }
+
+            if (audioSource != null && watersplashSound != null)
+            audioSource.PlayOneShot(watersplashSound);
             CheckWeight();
         }
     }
@@ -210,6 +223,8 @@ public class BasketWeightChecker : MonoBehaviour
 
         if (Mathf.Abs(totalWeight - targetWeight) < tolerance)
         {
+            if (audioSource != null && correctSound != null)
+                audioSource.PlayOneShot(correctSound);
             if (basketLight != null)
             {
                 basketLight.enabled = true;

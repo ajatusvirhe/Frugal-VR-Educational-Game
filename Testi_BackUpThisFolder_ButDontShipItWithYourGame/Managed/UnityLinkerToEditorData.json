@@ -53,7 +53,11 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -77,8 +81,18 @@
           },
           {
             "name": "AudioResource",
+            "scenes": [
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
             "scenes": [],
-            "dependencyType": 1,
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -456,7 +470,8 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
-              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity"
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/RikunScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -974,6 +989,7 @@
             "scenes": [
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/FinalScene.unity",
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/NikonScene.unity",
+              "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/TeleportTestScene.unity",
               "Assets/Samples/Google Cardboard XR Plugin for Unity/1.32.0/Hello Cardboard/Scenes/UrsulanScene.unity"
             ],
             "dependencyType": 0,

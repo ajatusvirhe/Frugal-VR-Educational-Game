@@ -5287,7 +5287,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Palauta pallot paikoilleen
+  m_text: Palauta pehmot paikoilleen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15146,7 +15146,7 @@ MonoBehaviour:
   twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
   sceneToLoad: RikunScene
-  doorController: {fileID: 1684366847}
+  doorController: {fileID: 1305915117}
 --- !u!1 &1306158454
 GameObject:
   m_ObjectHideFlags: 0

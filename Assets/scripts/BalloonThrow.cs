@@ -20,7 +20,7 @@ public class BalloonThrow : Interactive
         if (_startKinematic)
         {
             // keep the balloon in place until first interact/throw
-            _rb.isKinematic = true;
+            //_rb.isKinematic = true;
         }
     }
 

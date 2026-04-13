@@ -13346,7 +13346,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPSDisplay
   fpsText: {fileID: 102963356}
-  updateInterval: 0.2
 --- !u!114 &2031614249
 MonoBehaviour:
   m_ObjectHideFlags: 0

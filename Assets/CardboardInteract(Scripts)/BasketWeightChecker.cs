@@ -2,9 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BasketWeightChecker : MonoBehaviour
 {
+    private static int pendingRoundsCompleted = -1;
+
     [Header("Hard difficulty multiplication range")]
     public int minFactor = 1;
     public int maxFactor = 10;
@@ -21,11 +24,11 @@ public class BasketWeightChecker : MonoBehaviour
 
     [Header("Efektit")]
     public ParticleSystem confettiEffect;
-    public ParticleSystem splashEffect;
+    public ParticleSystem BlingEffect;
 
     [Header("Ääniefektit")]
     public AudioClip correctSound;
-    public AudioClip watersplashSound;
+    public AudioClip BlingSound;
     private AudioSource audioSource;
 
     [Header("Peli läpi")]
@@ -45,9 +48,23 @@ public class BasketWeightChecker : MonoBehaviour
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
 
+        if (pendingRoundsCompleted >= 0)
+        {
+            roundsCompleted = pendingRoundsCompleted;
+            pendingRoundsCompleted = -1;
+        }
 
         LogCurrentDifficulty();
         GenerateNewTarget();
+    }
+
+    public static void ReloadActiveSceneKeepingProgress()
+    {
+        BasketWeightChecker checker = FindObjectOfType<BasketWeightChecker>();
+        pendingRoundsCompleted = checker != null ? checker.roundsCompleted : 0;
+
+        Scene activeScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(activeScene.buildIndex);
     }
 
     void LogCurrentDifficulty()
@@ -186,15 +203,14 @@ public class BasketWeightChecker : MonoBehaviour
         if (rb != null && !objectsInBasket.Contains(rb))
         {
             objectsInBasket.Add(rb);
-                    //läiskis efekti
-            if (splashEffect != null)
+            if (BlingEffect != null)
             {
-                splashEffect.transform.position = other.transform.position;
-                splashEffect.Play();
+                BlingEffect.transform.position = other.transform.position;
+                BlingEffect.Play();
             }
 
-            if (audioSource != null && watersplashSound != null)
-            audioSource.PlayOneShot(watersplashSound);
+            if (audioSource != null && BlingSound != null)
+            audioSource.PlayOneShot(BlingSound);
             CheckWeight();
         }
     }
@@ -237,9 +253,9 @@ public class BasketWeightChecker : MonoBehaviour
             if (roundsCompleted >= 5) // Oletetaan, että peli vaatii 5 onnistunutta tehtävää voittoon
             {
                 if (targetText != null)
-                    targetText.text = $"Onnea! Olet saavuttanut tavoiteen!";
+                    targetText.text = $"Onnea! Olet saavuttanut tavoiteen! Voit nyt edetä!";
                 if (currentText != null)
-                    currentText.text = $"Voit nyt edetä!";
+                    currentText.text = $"";
                 winGame();
                 return; // Lopeta metodin suoritus, jotta ei generoida uutta tavoitetta pelin päätyttyä
             }
@@ -284,12 +300,6 @@ public class BasketWeightChecker : MonoBehaviour
 
     void StartNextRound()
 {
-    // RESET ALL BALLS
-    ResetAllBalls();
-
-    // CLEAR basket list
-    objectsInBasket.Clear();
-
-    GenerateNewTarget();
+    ReloadActiveSceneKeepingProgress();
 }
 }

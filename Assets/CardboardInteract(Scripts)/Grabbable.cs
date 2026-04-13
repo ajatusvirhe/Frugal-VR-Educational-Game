@@ -18,14 +18,17 @@ public class Grabbable : Interactive
     bool firstGrab = false;
     bool isGrabbed = false;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<Collider>();
 
         ballLayer = LayerMask.NameToLayer("Ball");
         defaultLayer = LayerMask.NameToLayer("Default");
+    }
 
+    private void Start()
+    {
         if (ballLayer != -1 && defaultLayer != -1)
         {
             // Keep all Ball-layer objects from colliding with Default before grab.
@@ -33,7 +36,8 @@ public class Grabbable : Interactive
             gameObject.layer = ballLayer;
         }
 
-        rb.useGravity = false; // optional: start without gravity
+        if (rb != null)
+            rb.useGravity = false; // optional: start without gravity
     }
 
     public new void Interact()
@@ -75,11 +79,21 @@ public class Grabbable : Interactive
         firstGrab = false;
         isGrabbed = false;
 
-        rb.useGravity = false;
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+        if (rb == null)
+            rb = GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            rb.useGravity = false;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
 
         // Put it back on Ball layer and ignore collisions
-        gameObject.layer = LayerMask.NameToLayer("Ball");
+        if (ballLayer == -1)
+            ballLayer = LayerMask.NameToLayer("Ball");
+
+        if (ballLayer != -1)
+            gameObject.layer = ballLayer;
     }
 }

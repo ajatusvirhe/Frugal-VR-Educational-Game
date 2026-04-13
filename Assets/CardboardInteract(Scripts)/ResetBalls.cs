@@ -2,20 +2,26 @@ using UnityEngine;
 
 public class ResetBalls : Interactive
 {
+    [Header("Audio")]
+    public AudioClip blingSound;
+
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
+
     public new void Interact()
     {
         base.Interact(); // optional: logs "Interacted with ..."
-        
-        Ball[] balls = FindObjectsOfType<Ball>();
-        foreach (Ball ball in balls)
-        {
-            ball.ResetPosition();
 
-            Grabbable grab = ball.GetComponent<Grabbable>();
-            if (grab != null)
-                grab.ResetBallState();
-        }
+        if (audioSource != null && blingSound != null)
+            audioSource.PlayOneShot(blingSound);
 
-        Debug.Log("All balls have been reset!");
+        Debug.Log("Reloading scene while keeping correct-answer progress.");
+        BasketWeightChecker.ReloadActiveSceneKeepingProgress();
     }
 }

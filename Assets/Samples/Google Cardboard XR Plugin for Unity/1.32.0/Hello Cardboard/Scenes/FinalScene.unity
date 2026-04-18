@@ -7429,6 +7429,7 @@ GameObject:
   - component: {fileID: 582646977}
   - component: {fileID: 582646979}
   - component: {fileID: 582646978}
+  - component: {fileID: 582646980}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7484,8 +7485,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294911744
-  m_fontColor: {r: 0, g: 0.15248537, b: 1, a: 1}
+    rgba: 4278811392
+  m_fontColor: {r: 0, g: 0.4811321, b: 0.035059646, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7554,6 +7555,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582646976}
   m_CullTransparentMesh: 1
+--- !u!114 &582646980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582646976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db72c94d30a2964eb9181f7037ee1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  textFI: Onneksi olkoon, voitit pelin!
+  textEN: Congratulations! You won!
 --- !u!1001 &596481900
 PrefabInstance:
   m_ObjectHideFlags: 0

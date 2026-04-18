@@ -5145,6 +5145,7 @@ GameObject:
   - component: {fileID: 53291192}
   - component: {fileID: 53291191}
   - component: {fileID: 53291190}
+  - component: {fileID: 53291193}
   m_Layer: 0
   m_Name: Reset
   m_TagString: Untagged
@@ -5199,10 +5200,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 40.9
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -5237,7 +5238,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -3.2085476, y: 0, z: -4.208786, w: 0}
+  m_margin: {x: -3.516861, y: -0.51582813, z: -5.319603, w: -5.990369}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -5310,9 +5311,23 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.008, y: 5.25}
+  m_AnchoredPosition: {x: 1.008, y: 5.748}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &53291193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53291188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db72c94d30a2964eb9181f7037ee1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  textFI: Palauta pehmot paikoilleen
+  textEN: Return stuffed animals back to their places
 --- !u!1 &62495780
 GameObject:
   m_ObjectHideFlags: 0
@@ -9566,6 +9581,7 @@ GameObject:
   - component: {fileID: 1109998936}
   - component: {fileID: 1109998935}
   - component: {fileID: 1109998934}
+  - component: {fileID: 1109998937}
   m_Layer: 0
   m_Name: Ohjeet
   m_TagString: Untagged
@@ -9621,10 +9637,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
+  m_fontSize: 49.25
   m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -9659,7 +9675,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -33.92136, y: 0, z: -35.64257, w: 0}
+  m_margin: {x: -34.459698, y: -0.6317425, z: -34.60667, w: -11.197591}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -9735,6 +9751,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0.04, y: 7.63}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1109998937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109998933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db72c94d30a2964eb9181f7037ee1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  textFI: "Laita pehmoleluja laatikkoon niin, ett\xE4 vaakaan tulee oikea paino.
+    Tee oikein viisi kertaa, niin voit jatkaa!"
+  textEN: 'Place the stuffed animals in the box so that the scale shows the correct
+    weight. Do it correctly five times and you can continue!
+
+
+
+'
 --- !u!1 &1159298461
 GameObject:
   m_ObjectHideFlags: 0
@@ -15736,8 +15772,8 @@ Transform:
   m_GameObject: {fileID: 1418029001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.821, y: 4.898, z: -9.78}
-  m_LocalScale: {x: 0.1, y: 1.8209455, z: 5.9357266}
+  m_LocalPosition: {x: 0.821, y: 5.17, z: -9.78}
+  m_LocalScale: {x: 0.1, y: 2.481038, z: 5.9357266}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -16233,6 +16269,7 @@ GameObject:
   - component: {fileID: 1662067989}
   - component: {fileID: 1662067988}
   - component: {fileID: 1662067987}
+  - component: {fileID: 1662067990}
   m_Layer: 0
   m_Name: BackToStart
   m_TagString: Untagged
@@ -16287,10 +16324,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 41.25
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -16325,7 +16362,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -12.446157, y: -5.3804445, z: -12.38095, w: 0}
+  m_margin: {x: -13.982723, y: -6.3428116, z: -12.38095, w: 1.406064}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -16401,6 +16438,20 @@ RectTransform:
   m_AnchoredPosition: {x: 9.96, y: 6.12}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1662067990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662067986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db72c94d30a2964eb9181f7037ee1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  textFI: Palaa takaisin alkuun valitsemaan vaikeustaso painamalla nappia.
+  textEN: Return back to the start to re-choose difficulty by pressing button.
 --- !u!1 &1683627403
 GameObject:
   m_ObjectHideFlags: 0

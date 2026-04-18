@@ -82,13 +82,19 @@ public class BasketballGameManager : MonoBehaviour
     {
         if (confettiEffect != null) confettiEffect.Play();
         if (audioSource != null && correctSound != null) audioSource.PlayOneShot(correctSound);
-        StartCoroutine(ShowFeedback("Oikein!", correctColor));
+
+        string msg = LanguageManager.CurrentLanguage == "FI" ? "Oikein!" : "Correct!";
+        StartCoroutine(ShowFeedback(msg, correctColor));
     }
 
     private void OnWrongAnswer()
     {
         if (audioSource != null && wrongSound != null) audioSource.PlayOneShot(wrongSound);
-        StartCoroutine(ShowFeedback("Väärin, oikea vastaus on " + correctAnswer, wrongColor));
+
+        string msg = LanguageManager.CurrentLanguage == "FI"
+            ? "Väärin, oikea vastaus on " + correctAnswer
+            : "Wrong, the correct answer is " + correctAnswer;
+        StartCoroutine(ShowFeedback(msg, wrongColor));
     }
 
     IEnumerator ShowFeedback(string message, Color color)
@@ -111,7 +117,9 @@ public class BasketballGameManager : MonoBehaviour
     {
         if (score >= targetScore)
         {
-            questionText.text = "Tehtävä valmis. Voit jatkaa seuraavaan huoneeseen";
+            questionText.text = LanguageManager.CurrentLanguage == "FI"
+                ? "Tehtävä valmis. Voit jatkaa seuraavaan huoneeseen"
+                : "Task complete. You can continue to the next room";
             questionText.color = Color.yellow;
             if (feedbackLight != null) feedbackLight.color = Color.yellow;
             return;

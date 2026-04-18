@@ -45,6 +45,10 @@ public class CameraInteract : MonoBehaviour
         instance = this;
     }
 
+    public void SetNormalLayer()
+    {
+        interactLayer = ~0; // ~0 tarkoittaa "kaikki layerit"
+    }
     void Update()
     {
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxInteractDistance, interactLayer) && hit.transform.GetComponent<Interactive>())

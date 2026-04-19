@@ -25,6 +25,7 @@ public class BasketWeightChecker : MonoBehaviour
     [Header("Efektit")]
     public ParticleSystem confettiEffect;
     public ParticleSystem BlingEffect;
+    public ParticleSystem portalEffect;
 
     [Header("Ääniefektit")]
     public AudioClip correctSound;
@@ -34,6 +35,10 @@ public class BasketWeightChecker : MonoBehaviour
     [Header("Peli läpi")]
     private int roundsCompleted = 0;
     public UnityEvent onGameCompleted; // Tämä tapahtuma voidaan asettaa Unityn editorissa, esimerkiksi näyttämään onnitteluteksti tai siirtymään seuraavaan kohtaukseen pelin päätyttyä.
+
+    [Header("Win Object Swap")]
+    public GameObject objectToHideOnWin;
+    public GameObject objectToShowOnWin;
 
     private int targetWeight;
     private int lastFactorA;
@@ -256,6 +261,13 @@ public class BasketWeightChecker : MonoBehaviour
 
             if (roundsCompleted >= 5) // Oletetaan, että peli vaatii 5 onnistunutta tehtävää voittoon
             {
+                if (audioSource != null && correctSound != null)
+                    audioSource.PlayOneShot(correctSound);
+                if (portalEffect != null)
+                    portalEffect.Play();
+                ResetAllBalls();
+                objectsInBasket.Clear();
+
                 if (targetText != null)
                     targetText.text = IsFinnish
                         ? "Onnea! Saavutit tavoitteen! Voit nyt edetä!"
@@ -300,6 +312,12 @@ public class BasketWeightChecker : MonoBehaviour
 
     void winGame()
     {
+        if (objectToHideOnWin != null)
+            objectToHideOnWin.SetActive(false);
+
+        if (objectToShowOnWin != null)
+            objectToShowOnWin.SetActive(true);
+
         Debug.Log("Peli voitettu! Kaikki tehtävät suoritettu.");
         onGameCompleted.Invoke(); // Kutsu tapahtuma, kun pelaaja saavuttaa tavoitepisteet
     }

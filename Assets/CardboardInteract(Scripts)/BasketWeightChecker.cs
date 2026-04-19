@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
@@ -46,6 +47,7 @@ public class BasketWeightChecker : MonoBehaviour
     private bool isAdditionQuestion;
 
     private List<Rigidbody> objectsInBasket = new List<Rigidbody>();
+    private bool isWinSequenceRunning = false;
 
     private bool IsFinnish => LanguageManager.CurrentLanguage == "FI";
 
@@ -236,6 +238,9 @@ public class BasketWeightChecker : MonoBehaviour
 
     void CheckWeight()
     {
+        if (isWinSequenceRunning)
+            return;
+
         float totalWeight = 0f;
 
         foreach (Rigidbody rb in objectsInBasket)
@@ -248,8 +253,6 @@ public class BasketWeightChecker : MonoBehaviour
 
         if (Mathf.Abs(totalWeight - targetWeight) < tolerance)
         {
-            if (audioSource != null && correctSound != null)
-                audioSource.PlayOneShot(correctSound);
             if (basketLight != null)
             {
                 basketLight.enabled = true;
@@ -261,10 +264,6 @@ public class BasketWeightChecker : MonoBehaviour
 
             if (roundsCompleted >= 5) // Oletetaan, että peli vaatii 5 onnistunutta tehtävää voittoon
             {
-                if (audioSource != null && correctSound != null)
-                    audioSource.PlayOneShot(correctSound);
-                if (portalEffect != null)
-                    portalEffect.Play();
                 ResetAllBalls();
                 objectsInBasket.Clear();
 
@@ -274,9 +273,13 @@ public class BasketWeightChecker : MonoBehaviour
                         : "Congratulations! You reached the target! You can now continue!";
                 if (currentText != null)
                     currentText.text = $"";
-                winGame();
+
+                StartCoroutine(PlayWinEffectsThenComplete());
                 return; // Lopeta metodin suoritus, jotta ei generoida uutta tavoitetta pelin päätyttyä
             }
+
+            if (audioSource != null && correctSound != null)
+                audioSource.PlayOneShot(correctSound);
 
             if (currentText != null)
                 currentText.text = IsFinnish ? "Oikein!" : "Correct!";
@@ -308,6 +311,20 @@ public class BasketWeightChecker : MonoBehaviour
         }
 
         Debug.Log("All balls reset after correct answer");
+    }
+
+    IEnumerator PlayWinEffectsThenComplete()
+    {
+        isWinSequenceRunning = true;
+
+        if (audioSource != null && correctSound != null)
+            audioSource.PlayOneShot(correctSound);
+
+        if (portalEffect != null)
+            portalEffect.Play();
+
+        yield return new WaitForSeconds(1f);
+        winGame();
     }
 
     void winGame()

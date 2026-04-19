@@ -39,6 +39,10 @@ public class BasketballGameManager : MonoBehaviour
     private int _mediumRound = 0;
     private List<int> _mediumMultipliers = new List<int>();
 
+    // Hard-tason kierrostenhallinta
+    private int _hardRound = 0;
+    private List<int> _hardMultipliers = new List<int>();
+
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -57,6 +61,19 @@ public class BasketballGameManager : MonoBehaviour
             _mediumMultipliers[j] = tmp;
         }
         _mediumRound = 0;
+    }
+
+    private void ShuffleHardMultipliers()
+    {
+        _hardMultipliers = new List<int> { 6, 7, 8, 9, 10 };
+        for (int i = _hardMultipliers.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            int tmp = _hardMultipliers[i];
+            _hardMultipliers[i] = _hardMultipliers[j];
+            _hardMultipliers[j] = tmp;
+        }
+        _hardRound = 0;
     }
 
     public void CheckAnswer(int submittedAnswer)
@@ -209,14 +226,38 @@ public class BasketballGameManager : MonoBehaviour
                 break;
             }
 
-            // HARD: Kertotaulu 1–10 (alkuperäinen logiikka)
+            // HARD: Kertotaulu 6–10, sekoitettu järjestys, vaikeutetut luvut
             case Difficulty.Hard:
             default:
-                a = Random.Range(1, 11);
-                b = Random.Range(1, 11);
+            {
+                if (_hardRound >= _hardMultipliers.Count || _hardMultipliers.Count == 0)
+                    ShuffleHardMultipliers();
+
+                int multiplier = _hardMultipliers[_hardRound];
+                _hardRound++;
+
+                List<int> excluded;
+                switch (multiplier)
+                {
+                    case 6:  excluded = new List<int> { 1, 2, 6, 10 };  break;
+                    case 7:  excluded = new List<int> { 1, 2, 7, 10 };  break;
+                    case 8:  excluded = new List<int> { 1, 2, 8, 10 };  break;
+                    case 9:  excluded = new List<int> { 1, 2, 9, 10 };  break;
+                    case 10: excluded = new List<int> { 1, 2, 5, 10 };  break;
+                    default: excluded = new List<int> { 1, 10 };        break;
+                }
+
+                List<int> pool = new List<int>();
+                for (int n = 1; n <= 10; n++)
+                    if (!excluded.Contains(n))
+                        pool.Add(n);
+
+                a = multiplier;
+                b = pool[Random.Range(0, pool.Count)];
                 answer = a * b;
                 questionString = a + " x " + b + " = ?";
                 break;
+            }
         }
     }
 }

@@ -18,6 +18,8 @@ public class Grabbable : Interactive
     bool firstGrab = false;
     bool isGrabbed = false;
 
+    public bool IsGrabbed => isGrabbed;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -71,6 +73,29 @@ public class Grabbable : Interactive
         {
             Vector3 targetPoint = cam.position + cam.forward * grabDistance;
             rb.linearVelocity = (targetPoint - transform.position) * grabSpeed;
+        }
+    }
+
+    public void ForceReleaseGrab()
+    {
+        ForceReleaseGrab(0f, 0f, true, 0f);
+    }
+
+    public void ForceReleaseGrab(float linearVelocityMultiplier, float angularVelocityMultiplier, bool clampUpwardVelocity = true, float maxUpwardVelocity = 0f)
+    {
+        isGrabbed = false;
+
+        if (rb == null)
+            rb = GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            Vector3 reducedLinearVelocity = rb.linearVelocity * Mathf.Clamp01(linearVelocityMultiplier);
+            if (clampUpwardVelocity && reducedLinearVelocity.y > maxUpwardVelocity)
+                reducedLinearVelocity.y = maxUpwardVelocity;
+
+            rb.linearVelocity = reducedLinearVelocity;
+            rb.angularVelocity *= Mathf.Clamp01(angularVelocityMultiplier);
         }
     }
 

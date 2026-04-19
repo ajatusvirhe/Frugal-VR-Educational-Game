@@ -42,6 +42,8 @@ public class BasketWeightChecker : MonoBehaviour
 
     private List<Rigidbody> objectsInBasket = new List<Rigidbody>();
 
+    private bool IsFinnish => LanguageManager.CurrentLanguage == "FI";
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -187,11 +189,13 @@ public class BasketWeightChecker : MonoBehaviour
         if (targetText != null)
         {
             string symbol = isAdditionQuestion ? "+" : "×";
-            targetText.text = $"Tavoite paino: {lastFactorA} {symbol} {lastFactorB}";
+            targetText.text = IsFinnish
+                ? $"Tavoitepaino: {lastFactorA} {symbol} {lastFactorB}"
+                : $"Target weight: {lastFactorA} {symbol} {lastFactorB}";
         }
 
         if (currentText != null)
-            currentText.text = "Tämän hetkinen paino: 0";
+            currentText.text = IsFinnish ? "Tämänhetkinen paino: 0" : "Current weight: 0";
 
         if (basketLight != null)
             basketLight.enabled = false;
@@ -235,7 +239,7 @@ public class BasketWeightChecker : MonoBehaviour
         int roundedWeight = Mathf.RoundToInt(totalWeight);
         
         if (currentText != null)
-            currentText.text = "Tämän hetkinen paino: " + roundedWeight;
+            currentText.text = (IsFinnish ? "Tämänhetkinen paino: " : "Current weight: ") + roundedWeight;
 
         if (Mathf.Abs(totalWeight - targetWeight) < tolerance)
         {
@@ -253,7 +257,9 @@ public class BasketWeightChecker : MonoBehaviour
             if (roundsCompleted >= 5) // Oletetaan, että peli vaatii 5 onnistunutta tehtävää voittoon
             {
                 if (targetText != null)
-                    targetText.text = $"Onnea! Olet saavuttanut tavoiteen! Voit nyt edetä!";
+                    targetText.text = IsFinnish
+                        ? "Onnea! Saavutit tavoitteen! Voit nyt edetä!"
+                        : "Congratulations! You reached the target! You can now continue!";
                 if (currentText != null)
                     currentText.text = $"";
                 winGame();
@@ -261,7 +267,7 @@ public class BasketWeightChecker : MonoBehaviour
             }
 
             if (currentText != null)
-                currentText.text = $"Oikein!";
+                currentText.text = IsFinnish ? "Oikein!" : "Correct!";
 
             CancelInvoke(nameof(StartNextRound));
             Invoke(nameof(StartNextRound), correctTextDuration);

@@ -1,12 +1,50 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class MenuButton : Interactive
 {
     public enum ButtonAction { HideMenu, SetLanguageFI, SetLanguageEN }
-
     public ButtonAction action;
     public GameObject menuCanvas;
-    public CameraInteract cameraInteract; // raahaa CameraInteract tähän
+    public CameraInteract cameraInteract;
+
+    [Header("Kielikorostus")]
+    public string thisLanguage; // kirjoita "FI" tai "EN" Inspectorissa
+    public Color selectedColor = Color.yellow;
+    public Color normalColor = Color.white;
+
+    private TextMeshProUGUI buttonText;
+
+    void OnEnable()
+    {
+        buttonText = GetComponentInChildren<TextMeshProUGUI>();
+        LanguageManager.OnLanguageChanged += UpdateHighlight;
+        UpdateHighlight();
+    }
+
+    void OnDisable()
+    {
+        LanguageManager.OnLanguageChanged -= UpdateHighlight;
+    }
+
+    void UpdateHighlight()
+    {
+        if (buttonText == null || string.IsNullOrEmpty(thisLanguage)) return;
+
+        if (LanguageManager.CurrentLanguage == thisLanguage)
+        {
+            buttonText.color = selectedColor;
+            buttonText.fontStyle = FontStyles.Bold;
+            transform.localScale = Vector3.one * 1.2f;
+        }
+        else
+        {
+            buttonText.color = normalColor;
+            buttonText.fontStyle = FontStyles.Normal;
+            transform.localScale = Vector3.one;
+        }
+    }
 
     public new void Interact()
     {
@@ -14,8 +52,9 @@ public class MenuButton : Interactive
         {
             case ButtonAction.HideMenu:
                 menuCanvas.SetActive(false);
+                PlayerPrefs.SetInt("hasPlayed", 1);
                 if (cameraInteract != null)
-                    cameraInteract.SetNormalLayer(); // vaihda layer
+                    cameraInteract.SetNormalLayer();
                 break;
             case ButtonAction.SetLanguageFI:
                 LanguageManager.SetLanguage("FI");

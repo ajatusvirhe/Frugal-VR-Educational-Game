@@ -10,13 +10,21 @@ public static class LanguageManager
     static void Init()
     {
         CurrentLanguage = PlayerPrefs.GetString("language", "FI");
-        // Kuunnellaan kun uusi scene latautuu
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Kutsutaan event kun scene latautuu, jolloin kaikki LocalizedText päivittyy
+        // Piilotetaan valikko automaattisesti jos peli on jo pelattu
+        if (PlayerPrefs.GetInt("hasPlayed", 0) == 1)
+        {
+            var menu = GameObject.FindWithTag("MainMenu");
+            if (menu != null) menu.SetActive(false);
+
+            var camInteract = Camera.main?.GetComponent<CameraInteract>();
+            if (camInteract != null) camInteract.SetNormalLayer();
+        }
+
         OnLanguageChanged?.Invoke();
     }
 

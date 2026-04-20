@@ -15,14 +15,10 @@ public static class LanguageManager
 
     private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Piilotetaan valikko automaattisesti jos peli on jo pelattu
         if (PlayerPrefs.GetInt("hasPlayed", 0) == 1)
         {
             var menu = GameObject.FindWithTag("MainMenu");
             if (menu != null) menu.SetActive(false);
-
-            var camInteract = Camera.main?.GetComponent<CameraInteract>();
-            if (camInteract != null) camInteract.SetNormalLayer();
         }
 
         OnLanguageChanged?.Invoke();

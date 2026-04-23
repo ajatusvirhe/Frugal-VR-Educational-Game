@@ -3,6 +3,9 @@ using UnityEngine;
 public class Grabbable : Interactive
 {
     [SerializeField] float grabSpeed = 5f;
+    [Header("Hold Distance Mode")]
+    [SerializeField] bool useFixedDistanceForFarObjects = false;
+    [SerializeField] float fixedHoldDistance = 10f;
     public bool useGravity = true;
 
     int ballLayer;
@@ -60,7 +63,12 @@ public class Grabbable : Interactive
 
         if (isGrabbed && cam != null)
         {
-            grabDistance = Vector3.Distance(cam.position, transform.position);
+            float currentDistance = Vector3.Distance(cam.position, transform.position);
+
+            if (useFixedDistanceForFarObjects && currentDistance > fixedHoldDistance)
+                grabDistance = Mathf.Max(0.1f, fixedHoldDistance);
+            else
+                grabDistance = currentDistance;
         }
     }
 

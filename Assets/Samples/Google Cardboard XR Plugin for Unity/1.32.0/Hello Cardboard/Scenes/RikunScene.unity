@@ -10556,6 +10556,7 @@ GameObject:
   - component: {fileID: 1027177494}
   - component: {fileID: 1027177493}
   - component: {fileID: 1027177492}
+  - component: {fileID: 1027177495}
   m_Layer: 5
   m_Name: StartScreen
   m_TagString: MainMenu
@@ -10652,6 +10653,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1027177495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027177490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d52e7e9283c55d48ae59e7bad054a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuController
+  menuCanvas: {fileID: 1027177490}
+  cameraInteract: {fileID: 1885152156}
 --- !u!1 &1029066554
 GameObject:
   m_ObjectHideFlags: 0

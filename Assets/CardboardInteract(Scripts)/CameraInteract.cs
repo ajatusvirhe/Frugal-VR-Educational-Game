@@ -43,16 +43,6 @@ public class CameraInteract : MonoBehaviour
     private void Start()
     {
         instance = this;
-
-        // Aseta oikea layer heti kun kamera on valmis
-        if (PlayerPrefs.GetInt("hasPlayed", 0) == 1)
-        {
-            SetNormalLayer();
-        }
-        else
-        {
-            SetMenuLayer();
-        }
     }
     public void SetNormalLayer()
     {

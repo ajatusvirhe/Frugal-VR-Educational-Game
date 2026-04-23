@@ -5,21 +5,26 @@ public class MenuController : MonoBehaviour
     public GameObject menuCanvas;
     public CameraInteract cameraInteract;
 
+    // static muuttuja – nollautuu kun peli käynnistetään uudelleen
+    // mutta pysyy kun siirrytään scenestä toiseen
+    private static bool hasPlayed = false;
+
     void Start()
     {
-        bool hasPlayed = PlayerPrefs.GetInt("hasPlayed", 0) == 1;
-
         if (hasPlayed)
         {
-            // Palataan alkusceneen pelin jälkeen – ei valikkoa, kaikki interaktoitavissa
             menuCanvas.SetActive(false);
             cameraInteract.SetNormalLayer();
         }
         else
         {
-            // Ensimmäinen kerta – valikko näkyviin, vain napit toimivat
             menuCanvas.SetActive(true);
             cameraInteract.SetMenuLayer();
         }
+    }
+
+    public static void SetPlayed()
+    {
+        hasPlayed = true;
     }
 }

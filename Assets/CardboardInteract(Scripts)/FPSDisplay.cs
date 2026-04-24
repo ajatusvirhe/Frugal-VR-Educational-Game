@@ -9,7 +9,8 @@ public class FPSDisplay : MonoBehaviour
     {
         float fps = 1f / Time.unscaledDeltaTime;
         float frameTime = Time.unscaledDeltaTime * 1000f;
-
-        fpsText.text = $"FPS: {fps:F0}\nFrametime: {frameTime:F1} ms\nGyro: {Input.gyro.rotationRate}";
+        fpsText.text = $"FPS: {fps:F0}\nFrametime: {frameTime:F1} ms\n" +
+                    $"Target: {Application.targetFrameRate}\n" +
+                    $"Screen Hz: {Screen.currentResolution.refreshRateRatio.numerator}";
     }
 }

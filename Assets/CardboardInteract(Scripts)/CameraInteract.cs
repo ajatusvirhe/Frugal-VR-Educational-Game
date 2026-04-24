@@ -43,7 +43,6 @@ public class CameraInteract : MonoBehaviour
     private void Start()
     {
         instance = this;
-        Application.targetFrameRate = 120;
     }
     public void SetNormalLayer()
     {

@@ -21,7 +21,10 @@ public class Grabbable : Interactive
     bool firstGrab = false;
     bool isGrabbed = false;
 
+    static Grabbable currentGrabbedItem = null;
+
     public bool IsGrabbed => isGrabbed;
+    public static bool IsAnyItemGrabbed => currentGrabbedItem != null;
 
     private void Awake()
     {
@@ -58,12 +61,16 @@ public class Grabbable : Interactive
             rb.useGravity = useGravity;
         }
 
+        if (!isGrabbed && currentGrabbedItem != null && currentGrabbedItem != this)
+            return;
+
         // In fixed distance mode, prevent release via twist/dwell - only drop areas can release
         if (useFixedDistanceForFarObjects && isGrabbed)
             return;
 
         // Toggle grab state
         isGrabbed = !isGrabbed;
+        currentGrabbedItem = isGrabbed ? this : null;
 
         if (isGrabbed && cam != null)
         {
@@ -96,6 +103,8 @@ public class Grabbable : Interactive
     public void ForceReleaseGrab(float linearVelocityMultiplier, float angularVelocityMultiplier, bool clampUpwardVelocity = true, float maxUpwardVelocity = 0f)
     {
         isGrabbed = false;
+        if (currentGrabbedItem == this)
+            currentGrabbedItem = null;
 
         if (rb == null)
             rb = GetComponent<Rigidbody>();
@@ -115,6 +124,8 @@ public class Grabbable : Interactive
     {
         firstGrab = false;
         isGrabbed = false;
+        if (currentGrabbedItem == this)
+            currentGrabbedItem = null;
 
         if (rb == null)
             rb = GetComponent<Rigidbody>();

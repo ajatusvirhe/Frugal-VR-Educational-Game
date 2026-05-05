@@ -524,7 +524,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
-  sceneToLoad: NikonScene
+  sceneToLoad: UrsulanScene
   doorController: {fileID: 227699003}
 --- !u!65 &227699002
 BoxCollider:

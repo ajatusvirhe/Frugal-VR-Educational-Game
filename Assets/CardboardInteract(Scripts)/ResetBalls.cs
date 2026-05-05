@@ -6,6 +6,7 @@ public class ResetBalls : Interactive
     public AudioClip blingSound;
 
     private AudioSource audioSource;
+    private bool isResetting;
 
     private void Awake()
     {
@@ -18,8 +19,20 @@ public class ResetBalls : Interactive
     {
         base.Interact(); // optional: logs "Interacted with ..."
 
+        if (isResetting)
+            return;
+
+        StartCoroutine(ResetAfterDelay());
+    }
+
+    private System.Collections.IEnumerator ResetAfterDelay()
+    {
+        isResetting = true;
+
         if (audioSource != null && blingSound != null)
             audioSource.PlayOneShot(blingSound);
+
+        yield return new WaitForSeconds(1f);
 
         Debug.Log("Reloading scene while keeping correct-answer progress.");
         BasketWeightChecker.ReloadActiveSceneKeepingProgress();

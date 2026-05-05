@@ -58,6 +58,10 @@ public class Grabbable : Interactive
             rb.useGravity = useGravity;
         }
 
+        // In fixed distance mode, prevent release via twist/dwell - only drop areas can release
+        if (useFixedDistanceForFarObjects && isGrabbed)
+            return;
+
         // Toggle grab state
         isGrabbed = !isGrabbed;
 

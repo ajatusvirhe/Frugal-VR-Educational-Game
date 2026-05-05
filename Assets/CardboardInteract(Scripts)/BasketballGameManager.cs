@@ -19,75 +19,84 @@ public class BasketballGameManager : MonoBehaviour
     [Header("Visuaaliefektit")]
     public ParticleSystem confettiEffect;
 
+    [Header("Peli läpi -efektit")]
+    public ParticleSystem completionEffect1;
+    public ParticleSystem completionEffect2;
+
     [Header("Ääniefektit")]
     public AudioClip correctSound;
     public AudioClip wrongSound;
-    private AudioSource audioSource;
 
     [Header("Pelin asetukset")]
-    public int score = 0;
-    public int targetScore = 10;
+    public int targetScore = 5;
     public float feedbackDuration = 2f;
 
     [Header("Peli läpi")]
     public UnityEvent onGameCompleted;
 
+    // Score is private to prevent accidental external modification
+    private int score;
     private int correctAnswer;
-    private bool isProcessing = false;
+    private bool isProcessing;
+    private bool gameCompleted;
+    private AudioSource audioSource;
 
-    // Medium-tason kierrostenhallinta
-    private int _mediumRound = 0;
-    private List<int> _mediumMultipliers = new List<int>();
+    // Multiplier rotation for Medium (1-5) and Hard (6-10)
+    private int _mediumRound;
+    private int _hardRound;
+    private readonly List<int> _mediumMultipliers = new List<int>();
+    private readonly List<int> _hardMultipliers = new List<int>();
 
-    // Hard-tason kierrostenhallinta
-    private int _hardRound = 0;
-    private List<int> _hardMultipliers = new List<int>();
+    // Excluded second-factors per multiplier, to keep questions non-trivial
+    private static readonly Dictionary<int, List<int>> MultiplierExclusions = new Dictionary<int, List<int>>
+    {
+        { 1,  new List<int> { 1, 2, 3, 10 } },
+        { 2,  new List<int> { 1, 2, 10 } },
+        { 3,  new List<int> { 1, 2, 3, 10 } },
+        { 4,  new List<int> { 1, 2, 4, 10 } },
+        { 5,  new List<int> { 1, 2, 5, 10 } },
+        { 6,  new List<int> { 1, 2, 6, 10 } },
+        { 7,  new List<int> { 1, 2, 7, 10 } },
+        { 8,  new List<int> { 1, 2, 8, 10 } },
+        { 9,  new List<int> { 1, 2, 9, 10 } },
+        { 10, new List<int> { 1, 2, 5, 10 } },
+    };
+
+    // -------------------------------------------------------------------------
+    // Unity lifecycle
+    // -------------------------------------------------------------------------
 
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        if (feedbackLight != null) feedbackLight.color = normalColor;
+        // GetComponent first - avoids stacking AudioSources if Start runs again
+        audioSource = gameObject.GetComponent<AudioSource>()
+                      ?? gameObject.AddComponent<AudioSource>();
+
+        if (feedbackLight != null)
+            feedbackLight.color = normalColor;
+
         GenerateNewQuestion();
     }
 
-    private void ShuffleMediumMultipliers()
-    {
-        _mediumMultipliers = new List<int> { 1, 2, 3, 4, 5 };
-        for (int i = _mediumMultipliers.Count - 1; i > 0; i--)
-        {
-            int j = Random.Range(0, i + 1);
-            int tmp = _mediumMultipliers[i];
-            _mediumMultipliers[i] = _mediumMultipliers[j];
-            _mediumMultipliers[j] = tmp;
-        }
-        _mediumRound = 0;
-    }
-
-    private void ShuffleHardMultipliers()
-    {
-        _hardMultipliers = new List<int> { 6, 7, 8, 9, 10 };
-        for (int i = _hardMultipliers.Count - 1; i > 0; i--)
-        {
-            int j = Random.Range(0, i + 1);
-            int tmp = _hardMultipliers[i];
-            _hardMultipliers[i] = _hardMultipliers[j];
-            _hardMultipliers[j] = tmp;
-        }
-        _hardRound = 0;
-    }
+    // -------------------------------------------------------------------------
+    // Answer handling
+    // -------------------------------------------------------------------------
 
     public void CheckAnswer(int submittedAnswer)
     {
-        if (isProcessing) return;
+        if (isProcessing || gameCompleted) return;
 
         if (submittedAnswer == correctAnswer)
         {
             score++;
+            OnCorrectAnswer();
+
             if (score >= targetScore)
             {
-                onGameCompleted.Invoke();
+                gameCompleted = true;
+                StartCoroutine(TriggerGameCompleted());
             }
-            OnCorrectAnswer();
+
         }
         else
         {
@@ -111,12 +120,18 @@ public class BasketballGameManager : MonoBehaviour
         string msg = LanguageManager.CurrentLanguage == "FI"
             ? "Väärin, oikea vastaus on " + correctAnswer
             : "Wrong, the correct answer is " + correctAnswer;
+
         StartCoroutine(ShowFeedback(msg, wrongColor));
     }
 
-    IEnumerator ShowFeedback(string message, Color color)
+    // -------------------------------------------------------------------------
+    // Feedback coroutine
+    // -------------------------------------------------------------------------
+
+    private IEnumerator ShowFeedback(string message, Color color)
     {
         isProcessing = true;
+
         questionText.text = message;
         questionText.color = color;
 
@@ -127,56 +142,114 @@ public class BasketballGameManager : MonoBehaviour
         if (feedbackLight != null) feedbackLight.color = normalColor;
 
         isProcessing = false;
-        GenerateNewQuestion();
+
+        if (!gameCompleted)
+            GenerateNewQuestion();
     }
+
+    // -------------------------------------------------------------------------
+    // Game completion
+    // -------------------------------------------------------------------------
+
+    // Waits for ShowFeedback to finish, then fires all completion behaviour
+    private IEnumerator TriggerGameCompleted()
+    {
+        yield return new WaitUntil(() => !isProcessing);
+
+        onGameCompleted.Invoke();
+        StartCompletionEffects();
+        ShowCompletionText();
+    }
+
+    private void ShowCompletionText()
+    {
+        questionText.text = LanguageManager.CurrentLanguage == "FI"
+            ? "Voit jatkaa seuraavaan huoneeseen"
+            : "You can continue to the next room";
+        questionText.color = Color.yellow;
+        if (feedbackLight != null) feedbackLight.color = Color.yellow;
+    }
+
+    private void StartCompletionEffects()
+    {
+        if (completionEffect1 != null) completionEffect1.Play();
+        if (completionEffect2 != null) completionEffect2.Play();
+    }
+
+    // -------------------------------------------------------------------------
+    // Question generation
+    // -------------------------------------------------------------------------
 
     public void GenerateNewQuestion()
     {
-        if (score >= targetScore)
-        {
-            questionText.text = LanguageManager.CurrentLanguage == "FI"
-                ? "Tehtävä valmis. Voit jatkaa seuraavaan huoneeseen"
-                : "Task complete. You can continue to the next room";
-            questionText.color = Color.yellow;
-            if (feedbackLight != null) feedbackLight.color = Color.yellow;
-            return;
-        }
-
-        Difficulty difficulty = DifficultyManager.Instance != null
-            ? DifficultyManager.Instance.CurrentDifficulty
-            : Difficulty.Easy;
-
-        string questionString;
-        GenerateQuestion(difficulty, out questionString, out correctAnswer);
-
+        GenerateQuestion(CurrentDifficulty(), out string questionString, out correctAnswer);
         questionText.text = questionString;
         questionText.color = Color.white;
 
-        List<int> answers = new List<int>();
-        answers.Add(correctAnswer);
-
-        int attempts = 0;
-        while (answers.Count < 3 && attempts < 100)
-        {
-            attempts++;
-            string dummy;
-            int wrongAnswer;
-            GenerateQuestion(difficulty, out dummy, out wrongAnswer);
-            if (!answers.Contains(wrongAnswer)) answers.Add(wrongAnswer);
-        }
-
-        for (int i = 0; i < answers.Count; i++)
-        {
-            int temp = answers[i];
-            int randomIndex = Random.Range(i, answers.Count);
-            answers[i] = answers[randomIndex];
-            answers[randomIndex] = temp;
-        }
+        List<int> answers = BuildAnswerList(correctAnswer);
 
         for (int i = 0; i < basketTexts.Length; i++)
         {
             if (basketTexts[i] != null)
-                basketTexts[i].text = answers[i].ToString();
+                basketTexts[i].text = i < answers.Count ? answers[i].ToString() : "?";
+        }
+    }
+
+    private Difficulty CurrentDifficulty()
+    {
+        return DifficultyManager.Instance != null
+            ? DifficultyManager.Instance.CurrentDifficulty
+            : Difficulty.Easy;
+    }
+
+    // Builds a shuffled list of [correctAnswer, wrongAnswer1, wrongAnswer2]
+    private List<int> BuildAnswerList(int correct)
+    {
+        List<int> answers = new List<int> { correct };
+        answers.AddRange(GetWrongAnswers(correct, needed: 2));
+        ShuffleList(answers);
+        return answers;
+    }
+
+    // Generates distractor answers without touching round counters
+    private List<int> GetWrongAnswers(int correct, int needed)
+    {
+        List<int> result = new List<int>();
+        int attempts = 0;
+
+        while (result.Count < needed && attempts < 200)
+        {
+            attempts++;
+            int candidate = GenerateRandomAnswer(CurrentDifficulty());
+            if (candidate != correct && !result.Contains(candidate))
+                result.Add(candidate);
+        }
+
+        return result;
+    }
+
+    // Generates a plausible answer for the given difficulty (used only for distractors)
+    private int GenerateRandomAnswer(Difficulty difficulty)
+    {
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                return Random.Range(1, 11) + Random.Range(1, 11);
+
+            case Difficulty.Medium:
+            {
+                int m = Random.Range(1, 6);
+                List<int> pool = BuildPool(m);
+                return m * pool[Random.Range(0, pool.Count)];
+            }
+
+            case Difficulty.Hard:
+            default:
+            {
+                int m = Random.Range(6, 11);
+                List<int> pool = BuildPool(m);
+                return m * pool[Random.Range(0, pool.Count)];
+            }
         }
     }
 
@@ -186,78 +259,76 @@ public class BasketballGameManager : MonoBehaviour
 
         switch (difficulty)
         {
-            // EASY: Yhteenlasku, luvut 1–10
             case Difficulty.Easy:
                 a = Random.Range(1, 11);
                 b = Random.Range(1, 11);
                 answer = a + b;
-                questionString = a + " + " + b + " = ?";
+                questionString = $"{a} + {b} = ?";
                 break;
 
-            // MEDIUM: Kertotaulu 1–5, sekoitettu järjestys, vaikeutetut luvut
             case Difficulty.Medium:
-            {
-                if (_mediumRound >= _mediumMultipliers.Count || _mediumMultipliers.Count == 0)
-                    ShuffleMediumMultipliers();
-
-                int multiplier = _mediumMultipliers[_mediumRound];
-                _mediumRound++;
-
-                List<int> excluded;
-                switch (multiplier)
-                {
-                    case 1:  excluded = new List<int> { 1, 2, 3, 10 }; break;
-                    case 2:  excluded = new List<int> { 1, 2, 10 };    break;
-                    case 3:  excluded = new List<int> { 1, 2, 3, 10 }; break;
-                    case 4:  excluded = new List<int> { 1, 2, 4, 10 }; break;
-                    case 5:  excluded = new List<int> { 1, 2, 5, 10 }; break;
-                    default: excluded = new List<int> { 1, 10 };       break;
-                }
-
-                List<int> pool = new List<int>();
-                for (int n = 1; n <= 10; n++)
-                    if (!excluded.Contains(n))
-                        pool.Add(n);
-
-                a = multiplier;
-                b = pool[Random.Range(0, pool.Count)];
+                GenerateMultiplicationQuestion(_mediumMultipliers, ref _mediumRound, 1, 5, out a, out b);
                 answer = a * b;
-                questionString = a + " x " + b + " = ?";
+                questionString = $"{a} x {b} = ?";
                 break;
-            }
 
-            // HARD: Kertotaulu 6–10, sekoitettu järjestys, vaikeutetut luvut
             case Difficulty.Hard:
             default:
-            {
-                if (_hardRound >= _hardMultipliers.Count || _hardMultipliers.Count == 0)
-                    ShuffleHardMultipliers();
-
-                int multiplier = _hardMultipliers[_hardRound];
-                _hardRound++;
-
-                List<int> excluded;
-                switch (multiplier)
-                {
-                    case 6:  excluded = new List<int> { 1, 2, 6, 10 };  break;
-                    case 7:  excluded = new List<int> { 1, 2, 7, 10 };  break;
-                    case 8:  excluded = new List<int> { 1, 2, 8, 10 };  break;
-                    case 9:  excluded = new List<int> { 1, 2, 9, 10 };  break;
-                    case 10: excluded = new List<int> { 1, 2, 5, 10 };  break;
-                    default: excluded = new List<int> { 1, 10 };        break;
-                }
-
-                List<int> pool = new List<int>();
-                for (int n = 1; n <= 10; n++)
-                    if (!excluded.Contains(n))
-                        pool.Add(n);
-
-                a = multiplier;
-                b = pool[Random.Range(0, pool.Count)];
+                GenerateMultiplicationQuestion(_hardMultipliers, ref _hardRound, 6, 10, out a, out b);
                 answer = a * b;
-                questionString = a + " x " + b + " = ?";
+                questionString = $"{a} x {b} = ?";
                 break;
-            }
+        }
+    }
+
+    // Shared logic for Medium and Hard multiplication questions
+    private void GenerateMultiplicationQuestion(
+        List<int> multiplierList, ref int round,
+        int rangeMin, int rangeMax,
+        out int a, out int b)
+    {
+        if (round >= multiplierList.Count || multiplierList.Count == 0)
+        {
+            multiplierList.Clear();
+            for (int n = rangeMin; n <= rangeMax; n++) multiplierList.Add(n);
+            ShuffleList(multiplierList);
+            round = 0;
+        }
+
+        a = multiplierList[round];
+        round++;
+
+        List<int> pool = BuildPool(a);
+        b = pool[Random.Range(0, pool.Count)];
+    }
+
+    // Builds the allowed second-factor pool for a given multiplier
+    private static List<int> BuildPool(int multiplier)
+    {
+        List<int> excluded = MultiplierExclusions.ContainsKey(multiplier)
+            ? MultiplierExclusions[multiplier]
+            : new List<int> { 1, 10 };
+
+        List<int> pool = new List<int>();
+        for (int n = 1; n <= 10; n++)
+            if (!excluded.Contains(n))
+                pool.Add(n);
+
+        return pool;
+    }
+
+    // -------------------------------------------------------------------------
+    // Utilities
+    // -------------------------------------------------------------------------
+
+    private static void ShuffleList<T>(List<T> list)
+    {
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            T tmp = list[i];
+            list[i] = list[j];
+            list[j] = tmp;
         }
     }
 }

@@ -218,7 +218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e313c9e9782828546be079365f69be00, type: 2}
+  - {fileID: 2100000, guid: 1dd87c63f16780a48b03dceff7a5deac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2971,8 +2971,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279253531
-  m_fontColor: {r: 0.105882354, g: 0.22745098, b: 0.0627451, a: 1}
+    rgba: 4283200586
+  m_fontColor: {r: 0.2901961, g: 0.454902, b: 0.29803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

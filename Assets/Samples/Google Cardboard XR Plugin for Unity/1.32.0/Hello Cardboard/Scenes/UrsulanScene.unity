@@ -576,7 +576,7 @@ MonoBehaviour:
   interactModeOverride: 0
   twistMultiplierOverride: 2.5
   dwellTimerOverride: 0
-  sceneToLoad: FinalScene
+  sceneToLoad: NikonScene
   doorController: {fileID: 132667009}
 --- !u!1001 &144616058
 PrefabInstance:

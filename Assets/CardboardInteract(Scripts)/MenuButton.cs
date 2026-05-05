@@ -52,7 +52,6 @@ public class MenuButton : Interactive
         {
             case ButtonAction.HideMenu:
                 menuCanvas.SetActive(false);
-                MenuController.SetPlayed();
                 if (cameraInteract != null)
                     cameraInteract.SetNormalLayer();
                 break;
